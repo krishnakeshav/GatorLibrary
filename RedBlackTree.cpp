@@ -13,48 +13,59 @@ int RBTree::ColorFlipCount()
     return color_flip_count;
 }
 
-rbtnode* RBTree::rotate_left(rbtnode* node)
+void RBTree::rotate_left(rbtnode *&root, rbtnode *&pt)
 {
-    rbtnode* parent_node = node->right;
-    rbtnode* x = parent_node->right;
-    rbtnode* y = parent_node->left;
-    
-    parent_node->left = node;
-    
-    node->right = y;
-    node->parent = parent_node;
-    
-    if (y != nullptr)
-    {
-        y->parent = node;
-    }
-    return parent_node;
+    rbtnode *pt_right = pt->right;
+ 
+    pt->right = pt_right->left;
+ 
+    if (pt->right != NULL)
+        pt->right->parent = pt;
+ 
+    pt_right->parent = pt->parent;
+ 
+    if (pt->parent == NULL)
+        root = pt_right;
+ 
+    else if (pt == pt->parent->left)
+        pt->parent->left = pt_right;
+ 
+    else
+        pt->parent->right = pt_right;
+ 
+    pt_right->left = pt;
+    pt->parent = pt_right;
 }
 
-rbtnode* RBTree::rotate_right(rbtnode* node)
+void RBTree::rotate_right(rbtnode *&root, rbtnode *&pt)
 {
-    rbtnode* parent_node = node->left;
-    rbtnode* x = parent_node->left;
-    rbtnode* y = parent_node->right;
-    
-    parent_node->right = node;
-    
-    node->left = y;
-    node->parent = parent_node;
-    
-    if (y != nullptr)
-    {
-        y->parent = node;
-    }
-    return parent_node;
+    rbtnode *pt_left = pt->left;
+ 
+    pt->left = pt_left->right;
+ 
+    if (pt->left != NULL)
+        pt->left->parent = pt;
+ 
+    pt_left->parent = pt->parent;
+ 
+    if (pt->parent == NULL)
+        root = pt_left;
+ 
+    else if (pt == pt->parent->left)
+        pt->parent->left = pt_left;
+ 
+    else
+        pt->parent->right = pt_left;
+ 
+    pt_left->right = pt;
+    pt->parent = pt_left;
 }
 
 rbtnode* RBTree::insert_node(rbtnode* root_node, rbtnode* node)
 {
     if (root_node == nullptr)
     {
-        root_node = node;
-        return root_node;
+        return node;
     }
     if (node->key > root_node->key)
     {
@@ -69,12 +80,12 @@ rbtnode* RBTree::insert_node(rbtnode* root_node, rbtnode* node)
     return root_node;
 }
 
-void RBTree::fix_colorviolation(rbtnode* rootnode, rbtnode* node)
+void RBTree::fix_colorviolation(rbtnode *&rootnode, rbtnode *&node)
 {
     rbtnode* parent_node = NULL;
     rbtnode* grandparent = NULL;
 
-// fix the condition such that if node->color is red then node->parent->color is not evaluated
+// if node->color is red then node->parent->color is not evaluated
     while ((node != rootnode) && (node->color != BLACK) && (node->parent->color == RED))
     {
         parent_node = node->parent;
@@ -99,19 +110,15 @@ void RBTree::fix_colorviolation(rbtnode* rootnode, rbtnode* node)
                 // if node is right child of parent, left rotation is required
                 if (node == parent_node->right)
                 {
-                    rotate_left(node);
+                    rotate_left(rootnode, parent_node);
                     node = parent_node;
                     parent_node = node->parent;
                 }
                 // if node is left child of parent, right rotation is required
-                rotate_right(node);
+                rotate_right(rootnode, grandparent);
                 swap(parent_node->color, grandparent->color);
                 node = parent_node;
             }
-            // if node is left child of a parent
-            rotate_right(node);
-            swap(parent_node->color, grandparent->color);
-            node = parent_node;
         }
         // parent is right child of grandparent
         else
@@ -130,12 +137,12 @@ void RBTree::fix_colorviolation(rbtnode* rootnode, rbtnode* node)
                 // if node is left child of parent, right rotation is required
                 if (node == parent_node->left)
                 {
-                    rotate_right(node);
+                    rotate_right(rootnode, parent_node);
                     node = parent_node;
                     parent_node = node->parent;
                 }
                 // if node is right child of parent, left rotation is required
-                rotate_left(node);
+                rotate_left(rootnode, grandparent);
                 swap(parent_node->color, grandparent->color);
                 node = parent_node;
             }

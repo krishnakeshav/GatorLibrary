@@ -27,20 +27,21 @@ public:
 class RBTree
 {
     private:
-        rbtnode* root;
+        
         int color_flip_count;
 
         NodeLocation location;
 
-        rbtnode* rotate_left(rbtnode* node);
-        rbtnode* rotate_right(rbtnode* node);
-        void fix_colorviolation(rbtnode* root_node, rbtnode* node);
+        void rotate_left(rbtnode *&, rbtnode *&);
+        void rotate_right(rbtnode *&, rbtnode *&);
+        void fix_colorviolation(rbtnode *&, rbtnode *&);
 
         rbtnode* insert_node(rbtnode* root_node, rbtnode* node);
 
     public:
+        rbtnode *root;
         RBTree();
-        
+
         int ColorFlipCount();
         rbtnode* begin();
         rbtnode* end();

@@ -12,7 +12,7 @@ public:
     int PatronId;
     int PriorityNumber;
     string TimeOfReservation;
-    reservation(int patronId, int priorityNumber, string timeOfReservation);
+    reservation(int patronId, int priorityNumber);
 };
 
 class Compare

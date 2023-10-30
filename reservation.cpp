@@ -1,8 +1,13 @@
 #include "reservation.hpp"
 
-reservation::reservation(int patronId, int priorityNumber, string timeOfReservation)
+#include <ctime>
+#include <iostream>
+
+reservation::reservation(int patronId, int priorityNumber)
 {
     PatronId = patronId;
     PriorityNumber = priorityNumber;
-    TimeOfReservation = timeOfReservation;
+    time_t now = time(0);
+    cout << "New reservation created at " << ctime(&now) << " for patron " << patronId << endl;
+    TimeOfReservation = ctime(&now);
 }

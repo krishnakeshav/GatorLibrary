@@ -6,18 +6,18 @@
 #include <iostream>
 
 #include "reservation.hpp"
+#include "utilities.hpp"
 
 using namespace std;
 
 class book
 {
-private:
-    /* data */
+
 public:
     int BookId;
     string BookName;
     string AuthorName;
-    bool AvailabilityStatus;
+    BookAvailability AvailabilityStatus;
     int BorrowedBy;
 
     priority_queue<reservation, vector<reservation>, Compare> ReservationHeap;
@@ -26,5 +26,8 @@ public:
     void DeleteReservation(int patronID);
     void PrintBook();
     
-    book(int id, string name, string author);
+    book(int id, string name, string author, string availabilityStatus);
+    book(int id, string name, string author, BookAvailability available);
+
+    ~book();
 };
