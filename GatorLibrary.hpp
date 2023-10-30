@@ -10,12 +10,10 @@ using namespace std;
 class GatorLibrary
 {
 private:
-    unordered_map<int, book> mBooks;
-    
+    rbtree rbtBooks;
 
 public:
-    rbtree rbtBooks;
-    
+
     void PrintBook(int bookID);
     void PrintBooks(int bookID1, int bookID2);
     void InsertBook(int bookID, string bookName, string authorName, string availabilityStatus);

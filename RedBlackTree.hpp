@@ -9,7 +9,6 @@
 using namespace std;
 
 enum Color { RED, BLACK };
-enum NodeLocation { LL, LR, RL, RR };
 
 class RbtNode {
 public:
@@ -27,10 +26,9 @@ public:
 class RBTree
 {
     private:
-        
-        int color_flip_count;
+        rbtnode *root;
 
-        NodeLocation location;
+        int color_flip_count;
 
         void rotate_left(rbtnode *&, rbtnode *&);
         void rotate_right(rbtnode *&, rbtnode *&);
@@ -39,7 +37,6 @@ class RBTree
         rbtnode* insert_node(rbtnode* root_node, rbtnode* node);
 
     public:
-        rbtnode *root;
         RBTree();
 
         int ColorFlipCount();

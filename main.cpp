@@ -17,7 +17,6 @@ int main()
     {
         library.PrintBook(i);
     }
-    cout << "root ->" << library.rbtBooks.root->value.BookId << endl;
     library.BorrowBook(1, 1, 1);
     library.BorrowBook(2, 1, 2);
     library.PrintBook(1);
