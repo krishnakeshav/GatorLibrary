@@ -117,48 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named GatorLibrary
+# Target rules for targets named gatorLibrary
 
 # Build rule for target.
-GatorLibrary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GatorLibrary
-.PHONY : GatorLibrary
+gatorLibrary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gatorLibrary
+.PHONY : gatorLibrary
 
 # fast build rule for target.
-GatorLibrary/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GatorLibrary.dir/build.make CMakeFiles/GatorLibrary.dir/build
-.PHONY : GatorLibrary/fast
-
-GatorLibrary.o: GatorLibrary.cpp.o
-.PHONY : GatorLibrary.o
-
-# target to build an object file
-GatorLibrary.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GatorLibrary.dir/build.make CMakeFiles/GatorLibrary.dir/GatorLibrary.cpp.o
-.PHONY : GatorLibrary.cpp.o
-
-GatorLibrary.i: GatorLibrary.cpp.i
-.PHONY : GatorLibrary.i
-
-# target to preprocess a source file
-GatorLibrary.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GatorLibrary.dir/build.make CMakeFiles/GatorLibrary.dir/GatorLibrary.cpp.i
-.PHONY : GatorLibrary.cpp.i
-
-GatorLibrary.s: GatorLibrary.cpp.s
-.PHONY : GatorLibrary.s
-
-# target to generate assembly for a file
-GatorLibrary.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GatorLibrary.dir/build.make CMakeFiles/GatorLibrary.dir/GatorLibrary.cpp.s
-.PHONY : GatorLibrary.cpp.s
+gatorLibrary/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/build
+.PHONY : gatorLibrary/fast
 
 book.o: book.cpp.o
 .PHONY : book.o
 
 # target to build an object file
 book.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GatorLibrary.dir/build.make CMakeFiles/GatorLibrary.dir/book.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/book.cpp.o
 .PHONY : book.cpp.o
 
 book.i: book.cpp.i
@@ -166,7 +142,7 @@ book.i: book.cpp.i
 
 # target to preprocess a source file
 book.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GatorLibrary.dir/build.make CMakeFiles/GatorLibrary.dir/book.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/book.cpp.i
 .PHONY : book.cpp.i
 
 book.s: book.cpp.s
@@ -174,15 +150,63 @@ book.s: book.cpp.s
 
 # target to generate assembly for a file
 book.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GatorLibrary.dir/build.make CMakeFiles/GatorLibrary.dir/book.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/book.cpp.s
 .PHONY : book.cpp.s
+
+gator_library.o: gator_library.cpp.o
+.PHONY : gator_library.o
+
+# target to build an object file
+gator_library.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/gator_library.cpp.o
+.PHONY : gator_library.cpp.o
+
+gator_library.i: gator_library.cpp.i
+.PHONY : gator_library.i
+
+# target to preprocess a source file
+gator_library.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/gator_library.cpp.i
+.PHONY : gator_library.cpp.i
+
+gator_library.s: gator_library.cpp.s
+.PHONY : gator_library.s
+
+# target to generate assembly for a file
+gator_library.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/gator_library.cpp.s
+.PHONY : gator_library.cpp.s
+
+gl_input.o: gl_input.cpp.o
+.PHONY : gl_input.o
+
+# target to build an object file
+gl_input.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/gl_input.cpp.o
+.PHONY : gl_input.cpp.o
+
+gl_input.i: gl_input.cpp.i
+.PHONY : gl_input.i
+
+# target to preprocess a source file
+gl_input.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/gl_input.cpp.i
+.PHONY : gl_input.cpp.i
+
+gl_input.s: gl_input.cpp.s
+.PHONY : gl_input.s
+
+# target to generate assembly for a file
+gl_input.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/gl_input.cpp.s
+.PHONY : gl_input.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GatorLibrary.dir/build.make CMakeFiles/GatorLibrary.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -190,7 +214,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GatorLibrary.dir/build.make CMakeFiles/GatorLibrary.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -198,32 +222,56 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GatorLibrary.dir/build.make CMakeFiles/GatorLibrary.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-redblacktree.o: redblacktree.cpp.o
-.PHONY : redblacktree.o
+redblack_tree.o: redblack_tree.cpp.o
+.PHONY : redblack_tree.o
 
 # target to build an object file
-redblacktree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GatorLibrary.dir/build.make CMakeFiles/GatorLibrary.dir/redblacktree.cpp.o
-.PHONY : redblacktree.cpp.o
+redblack_tree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o
+.PHONY : redblack_tree.cpp.o
 
-redblacktree.i: redblacktree.cpp.i
-.PHONY : redblacktree.i
+redblack_tree.i: redblack_tree.cpp.i
+.PHONY : redblack_tree.i
 
 # target to preprocess a source file
-redblacktree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GatorLibrary.dir/build.make CMakeFiles/GatorLibrary.dir/redblacktree.cpp.i
-.PHONY : redblacktree.cpp.i
+redblack_tree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.i
+.PHONY : redblack_tree.cpp.i
 
-redblacktree.s: redblacktree.cpp.s
-.PHONY : redblacktree.s
+redblack_tree.s: redblack_tree.cpp.s
+.PHONY : redblack_tree.s
 
 # target to generate assembly for a file
-redblacktree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GatorLibrary.dir/build.make CMakeFiles/GatorLibrary.dir/redblacktree.cpp.s
-.PHONY : redblacktree.cpp.s
+redblack_tree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.s
+.PHONY : redblack_tree.cpp.s
+
+reservation.o: reservation.cpp.o
+.PHONY : reservation.o
+
+# target to build an object file
+reservation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/reservation.cpp.o
+.PHONY : reservation.cpp.o
+
+reservation.i: reservation.cpp.i
+.PHONY : reservation.i
+
+# target to preprocess a source file
+reservation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/reservation.cpp.i
+.PHONY : reservation.cpp.i
+
+reservation.s: reservation.cpp.s
+.PHONY : reservation.s
+
+# target to generate assembly for a file
+reservation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/reservation.cpp.s
+.PHONY : reservation.cpp.s
 
 # Help Target
 help:
@@ -233,19 +281,25 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... GatorLibrary"
-	@echo "... GatorLibrary.o"
-	@echo "... GatorLibrary.i"
-	@echo "... GatorLibrary.s"
+	@echo "... gatorLibrary"
 	@echo "... book.o"
 	@echo "... book.i"
 	@echo "... book.s"
+	@echo "... gator_library.o"
+	@echo "... gator_library.i"
+	@echo "... gator_library.s"
+	@echo "... gl_input.o"
+	@echo "... gl_input.i"
+	@echo "... gl_input.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... redblacktree.o"
-	@echo "... redblacktree.i"
-	@echo "... redblacktree.s"
+	@echo "... redblack_tree.o"
+	@echo "... redblack_tree.i"
+	@echo "... redblack_tree.s"
+	@echo "... reservation.o"
+	@echo "... reservation.i"
+	@echo "... reservation.s"
 .PHONY : help
 
 

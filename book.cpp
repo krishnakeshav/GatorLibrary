@@ -23,14 +23,33 @@ book::~book()
 
 void book::PrintBook()
 {
-    cout << "Book ID: " << BookId << endl;
-    cout << "Book Name: " << BookName << endl;
-    cout << "Author Name: " << AuthorName << endl;
-    cout << "Availability Status: " << utilities::status_tostring(AvailabilityStatus) << endl;
+    cout << "BookID = " << BookId << endl;
+    cout << "Title = " << BookName << endl;
+    cout << "Author = " << AuthorName << endl;
+    cout << "Availability = " << utilities::status_tostring(AvailabilityStatus) << endl;
     cout << "Borrowed By: " << BorrowedBy << endl;
+    printReservations();
+}
+
+void book::printReservations()
+{
+    priority_queue<reservation, vector<reservation>, Compare> temp = ReservationHeap;
+    cout << "Reservations = [";
+    while (!temp.empty())
+    {
+        reservation top = temp.top();
+        cout << top.PatronId;
+        temp.pop();
+        if (!temp.empty()) {
+            std::cout << ", ";
+        }
+    }
+    cout << "]" << endl;
 }
 
 void book::AddReservation(reservation newReservation)
 {
     ReservationHeap.push(newReservation);
+    cout << "Book " << BookId << " reserved by Patron " << newReservation.PatronId << endl;
+    //cout << endl;
 }

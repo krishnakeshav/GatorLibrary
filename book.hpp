@@ -13,6 +13,9 @@ using namespace std;
 class book
 {
 
+private:
+    void printReservations();
+
 public:
     int BookId;
     string BookName;

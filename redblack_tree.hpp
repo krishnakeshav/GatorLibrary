@@ -21,6 +21,8 @@ public:
 
 public:
     RbtNode(int k, const book& v) : key(k), value(v), left(nullptr), right(nullptr), parent(nullptr), color(RED) {}
+
+    RbtNode* sibling() const;
 };
 
 class RBTree
@@ -36,6 +38,12 @@ class RBTree
 
         rbtnode* insert_node(rbtnode* root_node, rbtnode* node);
 
+        void remove(rbtnode* node);
+
+        rbtnode* BSTreplace(rbtnode* x);
+        rbtnode* successor(rbtnode* x);
+        void fix_double_black(rbtnode* node);
+
     public:
         RBTree();
 
@@ -46,7 +54,9 @@ class RBTree
         void add(book book_info);
         void remove(int key);
         rbtnode* find(int key) const;
+        std::vector<int> findclosest(int targetId) const;
 
         // function to overload the operator []
         rbtnode* operator[](int key) const;
+        bool empty() const;
 };

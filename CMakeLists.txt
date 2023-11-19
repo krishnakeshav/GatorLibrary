@@ -1,19 +1,18 @@
 cmake_minimum_required(VERSION 3.23.5)
 
-project(GatorLibrary)
+project(GatorLibrary VERSION 1.0)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Add your source and header files to the project
-add_executable(GatorLibrary
+add_executable(gatorLibrary
     main.cpp
     book.cpp
-    redblacktree.cpp
-    GatorLibrary.cpp
+    reservation.cpp
+    redblack_tree.cpp
+    gator_library.cpp
+    gl_input.cpp
 )
 
-target_include_directories(GatorLibrary PRIVATE GatorLibrary)
-
-# Set the project version
-project(GatorLibrary VERSION 1.0)
+target_include_directories(gatorLibrary PRIVATE gatorLibrary)
