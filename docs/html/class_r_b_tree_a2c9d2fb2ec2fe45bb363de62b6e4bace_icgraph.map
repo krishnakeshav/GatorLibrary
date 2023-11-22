@@ -1,0 +1,6 @@
+<map id="RBTree::insert_node" name="RBTree::insert_node">
+<area shape="rect" id="Node000001" title=" " alt="" coords="149,29,290,55"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="247,16,238,10,219,8,202,10,193,15,191,20,196,28,191,30,186,21,189,11,200,5,219,3,240,5,250,12"/>
+<area shape="rect" id="Node000002" href="$class_r_b_tree.html#a30b4f0d5202b253454fafd082d3d2652" title="Adds a new book to the red&#45;black tree." alt="" coords="5,29,101,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,45,101,45,101,40,133,40"/>
+</map>

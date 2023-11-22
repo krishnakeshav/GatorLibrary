@@ -1,0 +1,51 @@
+<map id="gl_input::run" name="gl_input::run">
+<area shape="rect" id="Node000001" title="Run the program with the given input." alt="" coords="5,279,98,304"/>
+<area shape="rect" id="Node000002" href="$classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="146,279,287,304"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,289,130,289,130,294,98,294"/>
+<area shape="rect" id="Node000003" href="$classgl__input.html#a3366b00643086f0b3aec7ba93884715f" title="Borrow a book from the library." alt="" coords="583,228,736,254"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="272,275,335,264,456,250,567,242,568,247,456,255,335,269,273,281"/>
+<area shape="rect" id="Node000005" href="$classgl__input.html#ae14132daff275eb39f4c25afe4b6f570" title="Count the number of color flips in the red&#45;black tree." alt="" coords="344,128,502,154"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="224,277,266,221,298,190,334,163,342,158,345,163,336,167,301,194,270,225,228,280"/>
+<area shape="rect" id="Node000007" href="$classgl__input.html#a8b49079e3caa356e876a1ca73dbb02b0" title="Delete a book from the library." alt="" coords="349,79,497,104"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="220,277,235,244,259,199,292,153,333,113,339,110,342,114,337,118,296,157,263,202,240,246,225,279"/>
+<area shape="rect" id="Node000013" href="$classgl__input.html#a3355afbd09ac1671667a24bb6046631f" title="Find the book Id closest to the targetId." alt="" coords="335,377,511,403"/>
+<area shape="poly" id="edge13_Node000002_Node000013" title=" " alt="" coords="237,303,280,333,336,364,351,370,349,375,334,369,278,338,233,307"/>
+<area shape="rect" id="Node000016" href="$classgl__input.html#aeed43a038e4db4886314ccd8f5636231" title="Insert a new book into the library." alt="" coords="351,279,496,304"/>
+<area shape="poly" id="edge16_Node000002_Node000016" title=" " alt="" coords="287,289,335,289,335,294,287,294"/>
+<area shape="rect" id="Node000018" href="$classgl__input.html#a7248cd404c62a7eec3320a1c94795dfe" title="Display the book details." alt="" coords="590,452,729,478"/>
+<area shape="poly" id="edge18_Node000002_Node000018" title=" " alt="" coords="224,304,237,338,260,383,293,428,313,447,336,462,368,476,401,485,470,492,536,488,594,479,595,484,537,494,470,497,400,490,366,481,334,467,310,451,289,432,256,386,233,340,219,306"/>
+<area shape="rect" id="Node000019" href="$classgl__input.html#ac96457c61a01a5c116c8c42d227c063a" title="Display the book details for all books in the range." alt="" coords="351,328,496,354"/>
+<area shape="poly" id="edge20_Node000002_Node000019" title=" " alt="" coords="274,302,352,321,351,326,273,308"/>
+<area shape="rect" id="Node000021" href="$classgl__input.html#a86b7b6643a49247e2f3b5e784c327800" title="Terminate the program." alt="" coords="356,427,490,452"/>
+<area shape="poly" id="edge23_Node000002_Node000021" title=" " alt="" coords="229,303,271,357,302,387,336,413,345,418,342,422,334,418,298,391,267,361,224,307"/>
+<area shape="rect" id="Node000022" href="$classgl__input.html#aeea77865bd73e2701e186050f4bd480d" title="Return a book to the library." alt="" coords="350,177,496,203"/>
+<area shape="poly" id="edge24_Node000002_Node000022" title=" " alt="" coords="236,276,280,249,334,220,365,206,367,211,336,225,283,253,239,280"/>
+<area shape="rect" id="Node000004" href="$class_gator_library.html#a467a91656bd4ca083699c86729277057" title="Borrow a book from the library." alt="" coords="808,203,979,228"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="736,230,792,224,793,229,736,235"/>
+<area shape="rect" id="Node000006" href="$class_gator_library.html#ac3634d61c160904cf59c602ad3fb655a" title="Display the number of color flips in the red black tree." alt="" coords="566,128,753,154"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="503,138,550,138,550,144,503,144"/>
+<area shape="rect" id="Node000008" href="$class_gator_library.html#a1375b1f484f7eb778c3dfd11f6a15839" title="Delete a book from the library." alt="" coords="575,79,744,104"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="498,89,560,89,560,94,498,94"/>
+<area shape="rect" id="Node000009" href="$classpq__reservation.html#a14715e85417c6b032a73c8511072d995" title="Check if the priority queue is empty." alt="" coords="818,128,969,154"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="725,102,815,122,813,127,723,108"/>
+<area shape="rect" id="Node000010" href="$classpq__reservation.html#a752a562cbea3fea06730fa06c4745948" title="Remove the highest priority reservation from the priority queue." alt="" coords="826,29,961,55"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="723,75,813,56,815,61,725,81"/>
+<area shape="rect" id="Node000012" href="$classpq__reservation.html#a020ac7d684f06fcf19a9f4d37f9adb26" title="Get the highest priority reservation from the priority queue." alt="" coords="827,79,960,104"/>
+<area shape="poly" id="edge12_Node000008_Node000012" title=" " alt="" coords="744,89,812,89,812,94,744,94"/>
+<area shape="rect" id="Node000011" href="$classpq__reservation.html#a074e200eda4173be4969bbb794f47c6d" title="Heapify the heap starting from the given index." alt="" coords="1027,29,1183,55"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="961,40,1011,40,1011,45,961,45"/>
+<area shape="poly" id="edge11_Node000011_Node000011" title=" " alt="" coords="1070,31,1063,21,1067,11,1082,5,1105,3,1131,5,1144,12,1142,17,1130,10,1105,8,1083,10,1071,15,1068,20,1074,27"/>
+<area shape="rect" id="Node000014" href="$class_gator_library.html#abbfcbf67113738572dd7f6220517bca0" title="Find the book Id closest to the targetId." alt="" coords="559,377,760,403"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="512,388,544,388,544,393,512,393"/>
+<area shape="rect" id="Node000015" href="$class_gator_library.html#a1f19418782655c17b104421e2129982f" title="Display the book details." alt="" coords="815,377,972,403"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="760,388,799,388,799,393,760,393"/>
+<area shape="rect" id="Node000017" href="$class_gator_library.html#ad540160a89c5b6b9ec43f48371051f42" title="Insert a new book into the library." alt="" coords="578,279,741,304"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="496,289,562,289,562,294,496,294"/>
+<area shape="poly" id="edge19_Node000018_Node000015" title=" " alt="" coords="701,449,835,406,837,411,703,454"/>
+<area shape="rect" id="Node000020" href="$class_gator_library.html#a85e968d5fdea85c2be8d6ba19c8c1f0a" title="Display the book details for all books in the range." alt="" coords="577,328,742,354"/>
+<area shape="poly" id="edge21_Node000019_Node000020" title=" " alt="" coords="496,338,562,338,562,344,496,344"/>
+<area shape="poly" id="edge22_Node000020_Node000015" title=" " alt="" coords="725,352,815,371,813,376,723,357"/>
+<area shape="rect" id="Node000023" href="$class_gator_library.html#ab40ed9fc49d838f9797d6e7aa1e3d4ed" title="Return a book to the library." alt="" coords="575,177,744,203"/>
+<area shape="poly" id="edge25_Node000022_Node000023" title=" " alt="" coords="497,188,559,188,559,193,497,193"/>
+<area shape="poly" id="edge26_Node000023_Node000004" title=" " alt="" coords="745,197,792,202,792,207,744,202"/>
+</map>

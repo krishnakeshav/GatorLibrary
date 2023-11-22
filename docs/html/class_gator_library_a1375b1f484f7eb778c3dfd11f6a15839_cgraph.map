@@ -1,0 +1,12 @@
+<map id="GatorLibrary::DeleteBook" name="GatorLibrary::DeleteBook">
+<area shape="rect" id="Node000001" title="Delete a book from the library." alt="" coords="5,55,174,80"/>
+<area shape="rect" id="Node000002" href="$classpq__reservation.html#a14715e85417c6b032a73c8511072d995" title="Check if the priority queue is empty." alt="" coords="222,5,372,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,51,224,33,226,38,147,57"/>
+<area shape="rect" id="Node000003" href="$classpq__reservation.html#a752a562cbea3fea06730fa06c4745948" title="Remove the highest priority reservation from the priority queue." alt="" coords="229,55,365,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,65,214,65,214,70,174,70"/>
+<area shape="rect" id="Node000005" href="$classpq__reservation.html#a020ac7d684f06fcf19a9f4d37f9adb26" title="Get the highest priority reservation from the priority queue." alt="" coords="231,104,363,130"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="147,78,226,97,224,102,146,84"/>
+<area shape="rect" id="Node000004" href="$classpq__reservation.html#a074e200eda4173be4969bbb794f47c6d" title="Heapify the heap starting from the given index." alt="" coords="420,55,576,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="365,65,405,65,405,70,365,70"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="464,56,458,46,462,36,476,30,498,28,523,31,536,38,533,42,521,36,498,33,477,35,466,40,463,45,469,53"/>
+</map>

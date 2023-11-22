@@ -14,7 +14,10 @@
 #include <type_traits>
 #include "book.hpp"
 
+/// @brief Red-black tree type
 #define rbtree RBTree
+
+/// @brief Red-black tree node type
 #define rbtnode RbtNode
 
 using namespace std;

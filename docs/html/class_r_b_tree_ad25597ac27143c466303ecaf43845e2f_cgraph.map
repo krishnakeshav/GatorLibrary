@@ -1,0 +1,5 @@
+<map id="RBTree::operator[]" name="RBTree::operator[]">
+<area shape="rect" id="Node000001" title="Overloads the subscript operator to find a book in the red&#45;black tree based on the given key." alt="" coords="5,5,135,31"/>
+<area shape="rect" id="Node000002" href="$class_r_b_tree.html#a36c110fa7818d2695eb14e48f6260bda" title="Finds a book in the red&#45;black tree based on the given key." alt="" coords="183,5,278,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,16,167,16,167,21,135,21"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="RBTree::fix_double_black" name="RBTree::fix_double_black">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,139,70"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="37,29,35,19,41,10,53,5,72,3,92,5,104,11,102,16,91,10,72,8,55,10,44,14,40,20,42,28"/>
+<area shape="rect" id="Node000002" href="$class_r_b_tree.html#af57ab67a97b47722acad4f82d59850b1" title=" " alt="" coords="190,12,323,37"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="139,38,174,33,175,38,139,43"/>
+<area shape="rect" id="Node000003" href="$class_r_b_tree.html#a842820f689bddad749a5a3ec05856f0c" title=" " alt="" coords="187,61,326,87"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="139,56,172,60,171,65,139,61"/>
+</map>

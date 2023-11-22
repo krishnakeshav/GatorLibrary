@@ -1,0 +1,23 @@
+<map id="book.cpp" name="book.cpp">
+<area shape="rect" id="Node000001" title=": This file contains the implementation of the book class." alt="" coords="108,5,183,31"/>
+<area shape="rect" id="Node000002" href="$book_8hpp.html" title=" " alt="" coords="108,79,183,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,31,148,63,143,63,143,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="37,300,91,326"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="120,108,85,127,51,155,25,187,11,227,8,239,11,251,22,271,38,288,34,292,18,274,6,253,3,239,6,226,20,185,48,151,82,123,117,103"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="257,300,314,326"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="184,96,285,115,332,131,350,140,362,151,371,169,374,188,370,207,362,226,339,262,312,291,308,287,334,259,358,224,365,206,368,188,366,171,358,154,347,145,330,136,284,121,183,101"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="74,153,145,178"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="142,106,125,140,120,138,137,104"/>
+<area shape="rect" id="Node000006" href="$reservation_8hpp.html" title=" " alt="" coords="132,226,242,252"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="151,104,182,211,177,212,146,106"/>
+<area shape="rect" id="Node000007" href="$utilities_8hpp.html" title="This file contains the declaration of the utilities class and the BookAvailability enum." alt="" coords="20,226,108,252"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="117,108,87,126,74,139,64,154,57,182,60,211,54,211,52,182,59,152,70,136,84,122,115,103"/>
+<area shape="rect" id="Node000008" href="$priority__queue_8hpp.html" title=" " alt="" coords="220,153,348,178"/>
+<area shape="poly" id="edge10_Node000002_Node000008" title=" " alt="" coords="170,103,248,143,246,147,168,108"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="167,255,99,294,96,290,165,250"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="205,250,258,289,255,293,202,255"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="67,252,67,284,61,284,61,252"/>
+<area shape="poly" id="edge12_Node000008_Node000006" title=" " alt="" coords="269,181,217,219,214,215,266,177"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="266,226,323,252"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="289,178,293,211,288,211,283,179"/>
+</map>

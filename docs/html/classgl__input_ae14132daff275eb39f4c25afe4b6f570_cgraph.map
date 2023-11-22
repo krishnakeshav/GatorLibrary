@@ -1,0 +1,5 @@
+<map id="gl_input::parse_colorflip" name="gl_input::parse_colorflip">
+<area shape="rect" id="Node000001" title="Count the number of color flips in the red&#45;black tree." alt="" coords="5,5,164,31"/>
+<area shape="rect" id="Node000002" href="$class_gator_library.html#ac3634d61c160904cf59c602ad3fb655a" title="Display the number of color flips in the red black tree." alt="" coords="212,5,399,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,16,196,16,196,21,164,21"/>
+</map>

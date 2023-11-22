@@ -1,0 +1,155 @@
+\doxysection{gl\+\_\+input.\+cpp File Reference}
+\hypertarget{gl__input_8cpp}{}\label{gl__input_8cpp}\index{gl\_input.cpp@{gl\_input.cpp}}
+
+
+Implementation of the \doxylink{classgl__input}{gl\+\_\+input} class.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include "{}gator\+\_\+library.\+hpp"{}}\newline
+Include dependency graph for gl\+\_\+input.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gl__input_8cpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{gl__input_8cpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classgl__input}{gl\+\_\+input}}
+\begin{DoxyCompactList}\small\item\em Class to parse the input and call the appropriate functions
+
+This class provides functionality to parse the input and call the appropriate functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{gl__input_8cpp_a87d7f88129361059fe96135a3827e2a3}{INB}}~string("{}Insert\+Book("{})
+\begin{DoxyCompactList}\small\item\em string constant for the Insert\+Book() command \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gl__input_8cpp_a2a06f3773d46878dc58f8dadd6fd0d72}{PB}}~string("{}Print\+Book("{})
+\begin{DoxyCompactList}\small\item\em string constant for the Print\+Book() command \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gl__input_8cpp_a9c5acfa05f2c01a3510978b2644384e7}{PBS}}~string("{}Print\+Books("{})
+\begin{DoxyCompactList}\small\item\em string constant for the Borrow\+Book() command \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gl__input_8cpp_ad91fa5bb7926a489c6e63eb6f6ca4a19}{BB}}~string("{}Borrow\+Book("{})
+\begin{DoxyCompactList}\small\item\em string constant for the Borrow\+Book() command \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gl__input_8cpp_a171160a766f85c8816b898ed24d28408}{RB}}~string("{}Return\+Book("{})
+\begin{DoxyCompactList}\small\item\em string constant for the Return\+Book() command \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gl__input_8cpp_acbcee443d6d55cb8600b3f240f5cf907}{Q}}~string("{}Quit("{})
+\begin{DoxyCompactList}\small\item\em string constant for the Quit() command \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gl__input_8cpp_aa1f0559f8030e9c4a7434d677c854527}{DB}}~string("{}Delete\+Book("{})
+\begin{DoxyCompactList}\small\item\em string constant for the Delete\+Book() command \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gl__input_8cpp_ab8810923f4741bb47d152f812f6607d8}{CFC}}~string("{}Color\+Flip\+Count("{})
+\begin{DoxyCompactList}\small\item\em string constant for the Color\+Flip\+Count() command \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gl__input_8cpp_a6d67b0e849ebff5f15e420295c1c520a}{FCB}}~string("{}Find\+Closest\+Book("{})
+\begin{DoxyCompactList}\small\item\em string constant for the Find\+Closest\+Book() command \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of the \doxylink{classgl__input}{gl\+\_\+input} class. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{gl__input_8cpp_ad91fa5bb7926a489c6e63eb6f6ca4a19}\label{gl__input_8cpp_ad91fa5bb7926a489c6e63eb6f6ca4a19} 
+\index{gl\_input.cpp@{gl\_input.cpp}!BB@{BB}}
+\index{BB@{BB}!gl\_input.cpp@{gl\_input.cpp}}
+\doxysubsubsection{\texorpdfstring{BB}{BB}}
+{\footnotesize\ttfamily \#define BB~string("{}Borrow\+Book("{})}
+
+
+
+string constant for the Borrow\+Book() command 
+
+\Hypertarget{gl__input_8cpp_ab8810923f4741bb47d152f812f6607d8}\label{gl__input_8cpp_ab8810923f4741bb47d152f812f6607d8} 
+\index{gl\_input.cpp@{gl\_input.cpp}!CFC@{CFC}}
+\index{CFC@{CFC}!gl\_input.cpp@{gl\_input.cpp}}
+\doxysubsubsection{\texorpdfstring{CFC}{CFC}}
+{\footnotesize\ttfamily \#define CFC~string("{}Color\+Flip\+Count("{})}
+
+
+
+string constant for the Color\+Flip\+Count() command 
+
+\Hypertarget{gl__input_8cpp_aa1f0559f8030e9c4a7434d677c854527}\label{gl__input_8cpp_aa1f0559f8030e9c4a7434d677c854527} 
+\index{gl\_input.cpp@{gl\_input.cpp}!DB@{DB}}
+\index{DB@{DB}!gl\_input.cpp@{gl\_input.cpp}}
+\doxysubsubsection{\texorpdfstring{DB}{DB}}
+{\footnotesize\ttfamily \#define DB~string("{}Delete\+Book("{})}
+
+
+
+string constant for the Delete\+Book() command 
+
+\Hypertarget{gl__input_8cpp_a6d67b0e849ebff5f15e420295c1c520a}\label{gl__input_8cpp_a6d67b0e849ebff5f15e420295c1c520a} 
+\index{gl\_input.cpp@{gl\_input.cpp}!FCB@{FCB}}
+\index{FCB@{FCB}!gl\_input.cpp@{gl\_input.cpp}}
+\doxysubsubsection{\texorpdfstring{FCB}{FCB}}
+{\footnotesize\ttfamily \#define FCB~string("{}Find\+Closest\+Book("{})}
+
+
+
+string constant for the Find\+Closest\+Book() command 
+
+\Hypertarget{gl__input_8cpp_a87d7f88129361059fe96135a3827e2a3}\label{gl__input_8cpp_a87d7f88129361059fe96135a3827e2a3} 
+\index{gl\_input.cpp@{gl\_input.cpp}!INB@{INB}}
+\index{INB@{INB}!gl\_input.cpp@{gl\_input.cpp}}
+\doxysubsubsection{\texorpdfstring{INB}{INB}}
+{\footnotesize\ttfamily \#define INB~string("{}Insert\+Book("{})}
+
+
+
+string constant for the Insert\+Book() command 
+
+\Hypertarget{gl__input_8cpp_a2a06f3773d46878dc58f8dadd6fd0d72}\label{gl__input_8cpp_a2a06f3773d46878dc58f8dadd6fd0d72} 
+\index{gl\_input.cpp@{gl\_input.cpp}!PB@{PB}}
+\index{PB@{PB}!gl\_input.cpp@{gl\_input.cpp}}
+\doxysubsubsection{\texorpdfstring{PB}{PB}}
+{\footnotesize\ttfamily \#define PB~string("{}Print\+Book("{})}
+
+
+
+string constant for the Print\+Book() command 
+
+\Hypertarget{gl__input_8cpp_a9c5acfa05f2c01a3510978b2644384e7}\label{gl__input_8cpp_a9c5acfa05f2c01a3510978b2644384e7} 
+\index{gl\_input.cpp@{gl\_input.cpp}!PBS@{PBS}}
+\index{PBS@{PBS}!gl\_input.cpp@{gl\_input.cpp}}
+\doxysubsubsection{\texorpdfstring{PBS}{PBS}}
+{\footnotesize\ttfamily \#define PBS~string("{}Print\+Books("{})}
+
+
+
+string constant for the Borrow\+Book() command 
+
+\Hypertarget{gl__input_8cpp_acbcee443d6d55cb8600b3f240f5cf907}\label{gl__input_8cpp_acbcee443d6d55cb8600b3f240f5cf907} 
+\index{gl\_input.cpp@{gl\_input.cpp}!Q@{Q}}
+\index{Q@{Q}!gl\_input.cpp@{gl\_input.cpp}}
+\doxysubsubsection{\texorpdfstring{Q}{Q}}
+{\footnotesize\ttfamily \#define Q~string("{}Quit("{})}
+
+
+
+string constant for the Quit() command 
+
+\Hypertarget{gl__input_8cpp_a171160a766f85c8816b898ed24d28408}\label{gl__input_8cpp_a171160a766f85c8816b898ed24d28408} 
+\index{gl\_input.cpp@{gl\_input.cpp}!RB@{RB}}
+\index{RB@{RB}!gl\_input.cpp@{gl\_input.cpp}}
+\doxysubsubsection{\texorpdfstring{RB}{RB}}
+{\footnotesize\ttfamily \#define RB~string("{}Return\+Book("{})}
+
+
+
+string constant for the Return\+Book() command 
+

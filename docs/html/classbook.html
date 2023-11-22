@@ -23,7 +23,7 @@
   <td id="projectalign">
    <div id="projectname">Gator Library
    </div>
-   <div id="projectbrief">An implmentation of library to demonstate Red-Black Tree and Priority Queue</div>
+   <div id="projectbrief">An implementation of the Red-Black Tree and Priority queue data structure in C++.</div>
   </td>
  </tr>
  </tbody>
@@ -73,53 +73,126 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classbook-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">book Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents a book in the library.  
+ <a href="classbook.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="book_8hpp_source.html">book.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for book:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbook__coll__graph.png" border="0" usemap="#abook_coll__map" alt="Collaboration graph"/></div>
+<map name="abook_coll__map" id="abook_coll__map">
+<area shape="rect" title="Represents a book in the library." alt="" coords="5,274,145,539"/>
+<area shape="rect" href="classpq__reservation.html" title="A priority queue implementation for reservations.This class represents a priority queue that stores r..." alt="" coords="13,5,137,211"/>
+<area shape="poly" title=" " alt="" coords="78,210,78,257,73,257,73,210"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8e052ff5ca9ea81f810945ba77abfe1d" id="r_a8e052ff5ca9ea81f810945ba77abfe1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbook.html#a8e052ff5ca9ea81f810945ba77abfe1d">AddReservation</a> (<a class="el" href="classreservation.html">reservation</a> newReservation)</td></tr>
-<tr class="memdesc:a8e052ff5ca9ea81f810945ba77abfe1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add reservation for the patron in the reservation heap.  <br /></td></tr>
+<tr class="memdesc:a8e052ff5ca9ea81f810945ba77abfe1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new reservation for the book.  <br /></td></tr>
 <tr class="separator:a8e052ff5ca9ea81f810945ba77abfe1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a788269f966a08a6780ee9c1443932af0" id="r_a788269f966a08a6780ee9c1443932af0"><td class="memItemLeft" align="right" valign="top"><a id="a788269f966a08a6780ee9c1443932af0" name="a788269f966a08a6780ee9c1443932af0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteReservation</b> (int patronID)</td></tr>
+<tr class="memitem:a788269f966a08a6780ee9c1443932af0" id="r_a788269f966a08a6780ee9c1443932af0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbook.html#a788269f966a08a6780ee9c1443932af0">DeleteReservation</a> (int patronID)</td></tr>
+<tr class="memdesc:a788269f966a08a6780ee9c1443932af0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a reservation for the book.  <br /></td></tr>
 <tr class="separator:a788269f966a08a6780ee9c1443932af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54b2fad21271748ca441329e97d2fc5e" id="r_a54b2fad21271748ca441329e97d2fc5e"><td class="memItemLeft" align="right" valign="top"><a id="a54b2fad21271748ca441329e97d2fc5e" name="a54b2fad21271748ca441329e97d2fc5e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintBook</b> ()</td></tr>
+<tr class="memitem:a54b2fad21271748ca441329e97d2fc5e" id="r_a54b2fad21271748ca441329e97d2fc5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbook.html#a54b2fad21271748ca441329e97d2fc5e">PrintBook</a> ()</td></tr>
+<tr class="memdesc:a54b2fad21271748ca441329e97d2fc5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the details of the book.  <br /></td></tr>
 <tr class="separator:a54b2fad21271748ca441329e97d2fc5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48d39da017ded63c86fe746940d1991a" id="r_a48d39da017ded63c86fe746940d1991a"><td class="memItemLeft" align="right" valign="top"><a id="a48d39da017ded63c86fe746940d1991a" name="a48d39da017ded63c86fe746940d1991a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>book</b> (int id, string name, string author, string availabilityStatus)</td></tr>
+<tr class="memitem:a48d39da017ded63c86fe746940d1991a" id="r_a48d39da017ded63c86fe746940d1991a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbook.html#a48d39da017ded63c86fe746940d1991a">book</a> (int id, string name, string author, string availabilityStatus)</td></tr>
+<tr class="memdesc:a48d39da017ded63c86fe746940d1991a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a book object with the given parameters.  <br /></td></tr>
 <tr class="separator:a48d39da017ded63c86fe746940d1991a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98ca199cecaf0490e35d5657071a30e0" id="r_a98ca199cecaf0490e35d5657071a30e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbook.html#a98ca199cecaf0490e35d5657071a30e0">book</a> (int id, string name, string author, <a class="el" href="utilities_8hpp.html#ac016fb47b0b9353584f9b15d67379900">BookAvailability</a> available)</td></tr>
-<tr class="memdesc:a98ca199cecaf0490e35d5657071a30e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for book class.  <br /></td></tr>
+<tr class="memdesc:a98ca199cecaf0490e35d5657071a30e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a book object with the given parameters.  <br /></td></tr>
 <tr class="separator:a98ca199cecaf0490e35d5657071a30e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a807e512df9551f568ed2b7bae11f3884" id="r_a807e512df9551f568ed2b7bae11f3884"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbook.html#a807e512df9551f568ed2b7bae11f3884">~book</a> ()</td></tr>
+<tr class="memdesc:a807e512df9551f568ed2b7bae11f3884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructs the book object.  <br /></td></tr>
+<tr class="separator:a807e512df9551f568ed2b7bae11f3884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a2269c854494b84085d4e147540e102f1" id="r_a2269c854494b84085d4e147540e102f1"><td class="memItemLeft" align="right" valign="top"><a id="a2269c854494b84085d4e147540e102f1" name="a2269c854494b84085d4e147540e102f1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>BookId</b></td></tr>
+<tr class="memitem:a2269c854494b84085d4e147540e102f1" id="r_a2269c854494b84085d4e147540e102f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbook.html#a2269c854494b84085d4e147540e102f1">BookId</a></td></tr>
 <tr class="separator:a2269c854494b84085d4e147540e102f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabf81a2670b3e611587f60185eabeb85" id="r_aabf81a2670b3e611587f60185eabeb85"><td class="memItemLeft" align="right" valign="top"><a id="aabf81a2670b3e611587f60185eabeb85" name="aabf81a2670b3e611587f60185eabeb85"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>BookName</b></td></tr>
+<tr class="memitem:aabf81a2670b3e611587f60185eabeb85" id="r_aabf81a2670b3e611587f60185eabeb85"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbook.html#aabf81a2670b3e611587f60185eabeb85">BookName</a></td></tr>
 <tr class="separator:aabf81a2670b3e611587f60185eabeb85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a374ee31e7a19d62d483dbcc34a4b3351" id="r_a374ee31e7a19d62d483dbcc34a4b3351"><td class="memItemLeft" align="right" valign="top"><a id="a374ee31e7a19d62d483dbcc34a4b3351" name="a374ee31e7a19d62d483dbcc34a4b3351"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>AuthorName</b></td></tr>
+<tr class="memitem:a374ee31e7a19d62d483dbcc34a4b3351" id="r_a374ee31e7a19d62d483dbcc34a4b3351"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbook.html#a374ee31e7a19d62d483dbcc34a4b3351">AuthorName</a></td></tr>
 <tr class="separator:a374ee31e7a19d62d483dbcc34a4b3351"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04cabe52b6bba198d849b66235d39024" id="r_a04cabe52b6bba198d849b66235d39024"><td class="memItemLeft" align="right" valign="top"><a id="a04cabe52b6bba198d849b66235d39024" name="a04cabe52b6bba198d849b66235d39024"></a>
-<a class="el" href="utilities_8hpp.html#ac016fb47b0b9353584f9b15d67379900">BookAvailability</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AvailabilityStatus</b></td></tr>
+<tr class="memitem:a04cabe52b6bba198d849b66235d39024" id="r_a04cabe52b6bba198d849b66235d39024"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utilities_8hpp.html#ac016fb47b0b9353584f9b15d67379900">BookAvailability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbook.html#a04cabe52b6bba198d849b66235d39024">AvailabilityStatus</a></td></tr>
 <tr class="separator:a04cabe52b6bba198d849b66235d39024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfc5ffc1210c50c812795c41c6f3ffc9" id="r_adfc5ffc1210c50c812795c41c6f3ffc9"><td class="memItemLeft" align="right" valign="top"><a id="adfc5ffc1210c50c812795c41c6f3ffc9" name="adfc5ffc1210c50c812795c41c6f3ffc9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>BorrowedBy</b></td></tr>
+<tr class="memitem:adfc5ffc1210c50c812795c41c6f3ffc9" id="r_adfc5ffc1210c50c812795c41c6f3ffc9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbook.html#adfc5ffc1210c50c812795c41c6f3ffc9">BorrowedBy</a></td></tr>
 <tr class="separator:adfc5ffc1210c50c812795c41c6f3ffc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ed95fa88d96348d7d3c54d332db5f32" id="r_a8ed95fa88d96348d7d3c54d332db5f32"><td class="memItemLeft" align="right" valign="top"><a id="a8ed95fa88d96348d7d3c54d332db5f32" name="a8ed95fa88d96348d7d3c54d332db5f32"></a>
-<a class="el" href="classpq__reservation.html">pq_reservation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ReservationHeap</b></td></tr>
+<tr class="memitem:a8ed95fa88d96348d7d3c54d332db5f32" id="r_a8ed95fa88d96348d7d3c54d332db5f32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpq__reservation.html">pq_reservation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbook.html#a8ed95fa88d96348d7d3c54d332db5f32">ReservationHeap</a></td></tr>
 <tr class="separator:a8ed95fa88d96348d7d3c54d332db5f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a05bd9e6f05387cd59a79338f5a20e0ba" id="r_a05bd9e6f05387cd59a79338f5a20e0ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbook.html#a05bd9e6f05387cd59a79338f5a20e0ba">printReservations</a> ()</td></tr>
+<tr class="memdesc:a05bd9e6f05387cd59a79338f5a20e0ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the reservations for the book.  <br /></td></tr>
+<tr class="separator:a05bd9e6f05387cd59a79338f5a20e0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a book in the library. </p>
+<p>This class provides functionality to manage reservations, borrowings, and information about a book. It contains member variables to store the book's ID, name, author, availability status, and borrower. The class also includes a priority queue for managing reservations. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classreservation.html" title="The reservation class stores the priority number, patron id, and the time of reservation.">reservation</a> <a class="el" href="classpq__reservation.html" title="A priority queue implementation for reservations.This class represents a priority queue that stores r...">pq_reservation</a> </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a48d39da017ded63c86fe746940d1991a" name="a48d39da017ded63c86fe746940d1991a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48d39da017ded63c86fe746940d1991a">&#9670;&#160;</a></span>book() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">book::book </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>author</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>availabilityStatus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a book object with the given parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the book. </td></tr>
+    <tr><td class="paramname">name</td><td>The name of the book. </td></tr>
+    <tr><td class="paramname">author</td><td>The name of the author of the book. </td></tr>
+    <tr><td class="paramname">availabilityStatus</td><td>The availability status of the book as a string. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a98ca199cecaf0490e35d5657071a30e0" name="a98ca199cecaf0490e35d5657071a30e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98ca199cecaf0490e35d5657071a30e0">&#9670;&#160;</a></span>book()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a98ca199cecaf0490e35d5657071a30e0">&#9670;&#160;</a></span>book() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,16 +229,35 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>BorrowedBy</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Constructor for book class. </p>
+<p>Constructs a book object with the given parameters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>book id </td></tr>
-    <tr><td class="paramname">name</td><td>book name </td></tr>
-    <tr><td class="paramname">author</td><td>book author </td></tr>
-    <tr><td class="paramname">available</td><td>book availability </td></tr>
+    <tr><td class="paramname">id</td><td>The ID of the book. </td></tr>
+    <tr><td class="paramname">name</td><td>The name of the book. </td></tr>
+    <tr><td class="paramname">author</td><td>The name of the author of the book. </td></tr>
+    <tr><td class="paramname">available</td><td>The availability status of the book as an enum value. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a807e512df9551f568ed2b7bae11f3884" name="a807e512df9551f568ed2b7bae11f3884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a807e512df9551f568ed2b7bae11f3884">&#9670;&#160;</a></span>~book()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">book::~book </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructs the book object. </p>
 
 </div>
 </div>
@@ -186,20 +278,242 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>BorrowedBy</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Add reservation for the patron in the reservation heap. </p>
+<p>Adds a new reservation for the book. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">newReservation</td><td>reservation.</td></tr>
+    <tr><td class="paramname">newReservation</td><td>The reservation to be added. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classreservation.html" title="The reservation class stores the priority number, patron id, and the time of reservation.">reservation</a></dd></dl>
 <p>Add the reservation to the reservation heap. Reservation heap is a min heap based on priority number and time of reservation. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbook_a8e052ff5ca9ea81f810945ba77abfe1d_cgraph.png" border="0" usemap="#aclassbook_a8e052ff5ca9ea81f810945ba77abfe1d_cgraph" alt=""/></div>
+<map name="aclassbook_a8e052ff5ca9ea81f810945ba77abfe1d_cgraph" id="aclassbook_a8e052ff5ca9ea81f810945ba77abfe1d_cgraph">
+<area shape="rect" title="Adds a new reservation for the book." alt="" coords="5,5,156,31"/>
+<area shape="rect" href="classpq__reservation.html#a9269eff4bbc6b109320fbd7e807e344e" title="Push a new reservation into the priority queue." alt="" coords="204,5,346,31"/>
+<area shape="poly" title=" " alt="" coords="156,16,188,16,188,21,156,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a788269f966a08a6780ee9c1443932af0" name="a788269f966a08a6780ee9c1443932af0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a788269f966a08a6780ee9c1443932af0">&#9670;&#160;</a></span>DeleteReservation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void book::DeleteReservation </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>patronID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deletes a reservation for the book. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">patronID</td><td>The ID of the patron whose reservation needs to be deleted. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a54b2fad21271748ca441329e97d2fc5e" name="a54b2fad21271748ca441329e97d2fc5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54b2fad21271748ca441329e97d2fc5e">&#9670;&#160;</a></span>PrintBook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void book::PrintBook </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints the details of the book. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbook_a54b2fad21271748ca441329e97d2fc5e_cgraph.png" border="0" usemap="#aclassbook_a54b2fad21271748ca441329e97d2fc5e_cgraph" alt=""/></div>
+<map name="aclassbook_a54b2fad21271748ca441329e97d2fc5e_cgraph" id="aclassbook_a54b2fad21271748ca441329e97d2fc5e_cgraph">
+<area shape="rect" title="Prints the details of the book." alt="" coords="5,80,120,106"/>
+<area shape="rect" href="classbook.html#a05bd9e6f05387cd59a79338f5a20e0ba" title="Prints the reservations for the book." alt="" coords="168,55,327,80"/>
+<area shape="poly" title=" " alt="" coords="120,82,152,78,153,83,120,88"/>
+<area shape="rect" href="classutilities.html#aaec035a37b6c2805c16bffdf840083d6" title="Converts a BookAvailability enum value to its corresponding string representation." alt="" coords="169,104,326,130"/>
+<area shape="poly" title=" " alt="" coords="120,98,154,102,153,107,120,103"/>
+<area shape="rect" href="classpq__reservation.html#a14715e85417c6b032a73c8511072d995" title="Check if the priority queue is empty." alt="" coords="375,5,525,31"/>
+<area shape="poly" title=" " alt="" coords="303,51,379,33,380,38,304,57"/>
+<area shape="rect" href="classpq__reservation.html#a752a562cbea3fea06730fa06c4745948" title="Remove the highest priority reservation from the priority queue." alt="" coords="383,55,518,80"/>
+<area shape="poly" title=" " alt="" coords="327,65,367,65,367,70,327,70"/>
+<area shape="rect" href="classpq__reservation.html#a020ac7d684f06fcf19a9f4d37f9adb26" title="Get the highest priority reservation from the priority queue." alt="" coords="384,104,516,130"/>
+<area shape="poly" title=" " alt="" coords="304,78,380,97,379,102,303,84"/>
+<area shape="rect" href="classpq__reservation.html#a074e200eda4173be4969bbb794f47c6d" title="Heapify the heap starting from the given index." alt="" coords="573,55,730,80"/>
+<area shape="poly" title=" " alt="" coords="518,65,558,65,558,70,518,70"/>
+<area shape="poly" title=" " alt="" coords="618,56,611,46,615,36,629,30,652,28,676,31,689,38,686,42,675,36,651,33,630,35,619,40,617,45,622,53"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a05bd9e6f05387cd59a79338f5a20e0ba" name="a05bd9e6f05387cd59a79338f5a20e0ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05bd9e6f05387cd59a79338f5a20e0ba">&#9670;&#160;</a></span>printReservations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void book::printReservations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prints the reservations for the book. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbook_a05bd9e6f05387cd59a79338f5a20e0ba_cgraph.png" border="0" usemap="#aclassbook_a05bd9e6f05387cd59a79338f5a20e0ba_cgraph" alt=""/></div>
+<map name="aclassbook_a05bd9e6f05387cd59a79338f5a20e0ba_cgraph" id="aclassbook_a05bd9e6f05387cd59a79338f5a20e0ba_cgraph">
+<area shape="rect" title="Prints the reservations for the book." alt="" coords="5,55,165,80"/>
+<area shape="rect" href="classpq__reservation.html#a14715e85417c6b032a73c8511072d995" title="Check if the priority queue is empty." alt="" coords="213,5,363,31"/>
+<area shape="poly" title=" " alt="" coords="140,51,217,33,218,38,142,57"/>
+<area shape="rect" href="classpq__reservation.html#a752a562cbea3fea06730fa06c4745948" title="Remove the highest priority reservation from the priority queue." alt="" coords="220,55,356,80"/>
+<area shape="poly" title=" " alt="" coords="165,65,205,65,205,70,165,70"/>
+<area shape="rect" href="classpq__reservation.html#a020ac7d684f06fcf19a9f4d37f9adb26" title="Get the highest priority reservation from the priority queue." alt="" coords="222,104,354,130"/>
+<area shape="poly" title=" " alt="" coords="142,78,218,97,217,102,140,84"/>
+<area shape="rect" href="classpq__reservation.html#a074e200eda4173be4969bbb794f47c6d" title="Heapify the heap starting from the given index." alt="" coords="411,55,567,80"/>
+<area shape="poly" title=" " alt="" coords="356,65,396,65,396,70,356,70"/>
+<area shape="poly" title=" " alt="" coords="455,56,449,46,453,36,467,30,489,28,514,31,527,38,524,42,512,36,489,33,468,35,457,40,454,45,460,53"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbook_a05bd9e6f05387cd59a79338f5a20e0ba_icgraph.png" border="0" usemap="#aclassbook_a05bd9e6f05387cd59a79338f5a20e0ba_icgraph" alt=""/></div>
+<map name="aclassbook_a05bd9e6f05387cd59a79338f5a20e0ba_icgraph" id="aclassbook_a05bd9e6f05387cd59a79338f5a20e0ba_icgraph">
+<area shape="rect" title="Prints the reservations for the book." alt="" coords="168,5,327,31"/>
+<area shape="rect" href="classbook.html#a54b2fad21271748ca441329e97d2fc5e" title="Prints the details of the book." alt="" coords="5,5,120,31"/>
+<area shape="poly" title=" " alt="" coords="152,21,120,21,120,16,152,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a374ee31e7a19d62d483dbcc34a4b3351" name="a374ee31e7a19d62d483dbcc34a4b3351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a374ee31e7a19d62d483dbcc34a4b3351">&#9670;&#160;</a></span>AuthorName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string book::AuthorName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The name of the author of the book. </p>
+
+</div>
+</div>
+<a id="a04cabe52b6bba198d849b66235d39024" name="a04cabe52b6bba198d849b66235d39024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04cabe52b6bba198d849b66235d39024">&#9670;&#160;</a></span>AvailabilityStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="utilities_8hpp.html#ac016fb47b0b9353584f9b15d67379900">BookAvailability</a> book::AvailabilityStatus</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The availability status of the book. </p>
+
+</div>
+</div>
+<a id="a2269c854494b84085d4e147540e102f1" name="a2269c854494b84085d4e147540e102f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2269c854494b84085d4e147540e102f1">&#9670;&#160;</a></span>BookId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int book::BookId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The ID of the book. </p>
+
+</div>
+</div>
+<a id="aabf81a2670b3e611587f60185eabeb85" name="aabf81a2670b3e611587f60185eabeb85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf81a2670b3e611587f60185eabeb85">&#9670;&#160;</a></span>BookName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string book::BookName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The name of the book. </p>
+
+</div>
+</div>
+<a id="adfc5ffc1210c50c812795c41c6f3ffc9" name="adfc5ffc1210c50c812795c41c6f3ffc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfc5ffc1210c50c812795c41c6f3ffc9">&#9670;&#160;</a></span>BorrowedBy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int book::BorrowedBy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The ID of the patron who borrowed the book. </p>
+
+</div>
+</div>
+<a id="a8ed95fa88d96348d7d3c54d332db5f32" name="a8ed95fa88d96348d7d3c54d332db5f32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ed95fa88d96348d7d3c54d332db5f32">&#9670;&#160;</a></span>ReservationHeap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpq__reservation.html">pq_reservation</a> book::ReservationHeap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The priority queue for managing reservations. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="book_8hpp_source.html">book.hpp</a></li>
-<li><b>book.cpp</b></li>
+<li><a class="el" href="book_8cpp.html">book.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

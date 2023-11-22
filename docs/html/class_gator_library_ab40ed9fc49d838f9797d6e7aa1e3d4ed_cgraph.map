@@ -1,0 +1,5 @@
+<map id="GatorLibrary::ReturnBook" name="GatorLibrary::ReturnBook">
+<area shape="rect" id="Node000001" title="Return a book to the library." alt="" coords="5,5,175,31"/>
+<area shape="rect" id="Node000002" href="$class_gator_library.html#a467a91656bd4ca083699c86729277057" title="Borrow a book from the library." alt="" coords="223,5,394,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,16,207,16,207,21,175,21"/>
+</map>

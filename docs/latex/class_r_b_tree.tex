@@ -9,30 +9,65 @@ Header file for the \doxylink{class_r_b_tree}{RBTree} class and \doxylink{class_
 
 {\ttfamily \#include $<$redblack\+\_\+tree.\+hpp$>$}
 
+
+
+Collaboration diagram for RBTree\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_r_b_tree__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_r_b_tree_a19921f34f32f777bb3c4b85d4ff1d9de}\label{class_r_b_tree_a19921f34f32f777bb3c4b85d4ff1d9de} 
-{\bfseries RBTree} ()
+\mbox{\hyperlink{class_r_b_tree_a19921f34f32f777bb3c4b85d4ff1d9de}{RBTree}} ()
 \begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_r_b_tree}{RBTree} object. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_r_b_tree_aa248971031b20c9d240816bc60bb2eff}{Color\+Flip\+Count}} ()
 \begin{DoxyCompactList}\small\item\em Returns the number of color flips performed during tree operations. \end{DoxyCompactList}\item 
-rbtnode \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_r_b_tree_a4956d555591326e0552f3c59d6a2b51a}{begin}} ()
+\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_r_b_tree_a4956d555591326e0552f3c59d6a2b51a}{begin}} ()
 \begin{DoxyCompactList}\small\item\em Returns a pointer to the first node in the red-\/black tree. \end{DoxyCompactList}\item 
-rbtnode \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_r_b_tree_a281395aa680a897a349e15a9271c2709}{end}} ()
+\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_r_b_tree_a281395aa680a897a349e15a9271c2709}{end}} ()
 \begin{DoxyCompactList}\small\item\em Returns a pointer to the end of the red-\/black tree. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_r_b_tree_a30b4f0d5202b253454fafd082d3d2652}{add}} (\mbox{\hyperlink{classbook}{book}} book\+\_\+info)
 \begin{DoxyCompactList}\small\item\em Adds a new book to the red-\/black tree. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_r_b_tree_ae537eec905557804f2bbaefe4839938c}{remove}} (int key)
 \begin{DoxyCompactList}\small\item\em Removes a book from the red-\/black tree based on the given key. \end{DoxyCompactList}\item 
-rbtnode \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_r_b_tree_a36c110fa7818d2695eb14e48f6260bda}{find}} (int key) const
+\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_r_b_tree_a36c110fa7818d2695eb14e48f6260bda}{find}} (int key) const
 \begin{DoxyCompactList}\small\item\em Finds a book in the red-\/black tree based on the given key. \end{DoxyCompactList}\item 
 std\+::vector$<$ int $>$ \mbox{\hyperlink{class_r_b_tree_a7ce47cffb39921ceb63e2dff3c2b0baf}{findclosest}} (int target\+Id) const
 \begin{DoxyCompactList}\small\item\em Finds the closest book IDs to the given target ID in the red-\/black tree. \end{DoxyCompactList}\item 
-rbtnode \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_r_b_tree_ad25597ac27143c466303ecaf43845e2f}{operator\mbox{[}$\,$\mbox{]}}} (int key) const
+\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_r_b_tree_ad25597ac27143c466303ecaf43845e2f}{operator\mbox{[}$\,$\mbox{]}}} (int key) const
 \begin{DoxyCompactList}\small\item\em Overloads the subscript operator to find a book in the red-\/black tree based on the given key. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_r_b_tree_a5bf4f482a4b1cabde2c7ae392abe961f}{empty}} () const
 \begin{DoxyCompactList}\small\item\em Checks if the red-\/black tree is empty. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_r_b_tree_af57ab67a97b47722acad4f82d59850b1}{rotate\+\_\+left}} (\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}\&, \mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}\&)
+\item 
+void \mbox{\hyperlink{class_r_b_tree_a842820f689bddad749a5a3ec05856f0c}{rotate\+\_\+right}} (\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}\&, \mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}\&)
+\item 
+void \mbox{\hyperlink{class_r_b_tree_af44b6c927db53c246d3e7580d76dad76}{fix\+\_\+colorviolation}} (\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}\&, \mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}\&)
+\item 
+\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_r_b_tree_a2c9d2fb2ec2fe45bb363de62b6e4bace}{insert\+\_\+node}} (\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}root\+\_\+node, \mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}node)
+\item 
+void \mbox{\hyperlink{class_r_b_tree_ad62799965b1dcdb2b1ce88ce1091fd8b}{remove}} (\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}node)
+\item 
+\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_r_b_tree_a123fb74ae98e0fe08507e55b227fe70b}{BSTreplace}} (\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}x)
+\item 
+\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_r_b_tree_ac33611b18a4e2aaa546a5e9cdb7f165a}{successor}} (\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}x)
+\item 
+void \mbox{\hyperlink{class_r_b_tree_a12378d828ffe1e580c9606df7b4f0408}{fix\+\_\+double\+\_\+black}} (\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}node)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_r_b_tree_a739954776487e6c75c2d7530a579bb41}{root}}
+\item 
+int \mbox{\hyperlink{class_r_b_tree_a7e73da9bd55cf0ab95289c4f82656601}{color\+\_\+flip\+\_\+count}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -43,6 +78,19 @@ Represents a red-\/black tree data structure.
 This file defines the \doxylink{class_r_b_tree}{RBTree} class and \doxylink{class_rbt_node}{Rbt\+Node} class, which implement a red-\/black tree data structure. The \doxylink{class_r_b_tree}{RBTree} class provides methods for adding, removing, and finding nodes in the red-\/black tree. The \doxylink{class_rbt_node}{Rbt\+Node} class represents a node in the red-\/black tree and stores a key-\/value pair.
 
 The \doxylink{class_r_b_tree}{RBTree} class represents a red-\/black tree data structure. It provides methods for adding, removing, and finding nodes in the red-\/black tree. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_r_b_tree_a19921f34f32f777bb3c4b85d4ff1d9de}\label{class_r_b_tree_a19921f34f32f777bb3c4b85d4ff1d9de} 
+\index{RBTree@{RBTree}!RBTree@{RBTree}}
+\index{RBTree@{RBTree}!RBTree@{RBTree}}
+\doxysubsubsection{\texorpdfstring{RBTree()}{RBTree()}}
+{\footnotesize\ttfamily RBTree\+::\+RBTree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{class_r_b_tree}{RBTree} object. 
+
+
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_r_b_tree_a30b4f0d5202b253454fafd082d3d2652}\label{class_r_b_tree_a30b4f0d5202b253454fafd082d3d2652} 
@@ -60,11 +108,19 @@ Adds a new book to the red-\/black tree.
 {\em book\+\_\+info} & The book to add. \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_b_tree_a30b4f0d5202b253454fafd082d3d2652_cgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_r_b_tree_a4956d555591326e0552f3c59d6a2b51a}\label{class_r_b_tree_a4956d555591326e0552f3c59d6a2b51a} 
 \index{RBTree@{RBTree}!begin@{begin}}
 \index{begin@{begin}!RBTree@{RBTree}}
 \doxysubsubsection{\texorpdfstring{begin()}{begin()}}
-{\footnotesize\ttfamily rbtnode \texorpdfstring{$\ast$}{*} RBTree\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*} RBTree\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -73,6 +129,28 @@ Returns a pointer to the first node in the red-\/black tree.
 \begin{DoxyReturn}{Returns}
 Pointer to the first node. 
 \end{DoxyReturn}
+\Hypertarget{class_r_b_tree_a123fb74ae98e0fe08507e55b227fe70b}\label{class_r_b_tree_a123fb74ae98e0fe08507e55b227fe70b} 
+\index{RBTree@{RBTree}!BSTreplace@{BSTreplace}}
+\index{BSTreplace@{BSTreplace}!RBTree@{RBTree}}
+\doxysubsubsection{\texorpdfstring{BSTreplace()}{BSTreplace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*} RBTree\+::\+BSTreplace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Finds the node that can replace the given node in the red-\/black tree. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_r_b_tree_a123fb74ae98e0fe08507e55b227fe70b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_b_tree_a123fb74ae98e0fe08507e55b227fe70b_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_r_b_tree_aa248971031b20c9d240816bc60bb2eff}\label{class_r_b_tree_aa248971031b20c9d240816bc60bb2eff} 
 \index{RBTree@{RBTree}!ColorFlipCount@{ColorFlipCount}}
 \index{ColorFlipCount@{ColorFlipCount}!RBTree@{RBTree}}
@@ -103,7 +181,7 @@ True if the tree is empty, false otherwise.
 \index{RBTree@{RBTree}!end@{end}}
 \index{end@{end}!RBTree@{RBTree}}
 \doxysubsubsection{\texorpdfstring{end()}{end()}}
-{\footnotesize\ttfamily rbtnode \texorpdfstring{$\ast$}{*} RBTree\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*} RBTree\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -116,7 +194,7 @@ Pointer to the end.
 \index{RBTree@{RBTree}!find@{find}}
 \index{find@{find}!RBTree@{RBTree}}
 \doxysubsubsection{\texorpdfstring{find()}{find()}}
-{\footnotesize\ttfamily rbtnode \texorpdfstring{$\ast$}{*} RBTree\+::find (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*} RBTree\+::find (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption}) const}
 
 
 
@@ -130,6 +208,14 @@ Finds a book in the red-\/black tree based on the given key.
 \begin{DoxyReturn}{Returns}
 Pointer to the node containing the book, or nullptr if not found. 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_r_b_tree_a36c110fa7818d2695eb14e48f6260bda_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_r_b_tree_a7ce47cffb39921ceb63e2dff3c2b0baf}\label{class_r_b_tree_a7ce47cffb39921ceb63e2dff3c2b0baf} 
 \index{RBTree@{RBTree}!findclosest@{findclosest}}
 \index{findclosest@{findclosest}!RBTree@{RBTree}}
@@ -148,11 +234,77 @@ Finds the closest book IDs to the given target ID in the red-\/black tree.
 \begin{DoxyReturn}{Returns}
 A vector of closest book IDs. 
 \end{DoxyReturn}
+\Hypertarget{class_r_b_tree_af44b6c927db53c246d3e7580d76dad76}\label{class_r_b_tree_af44b6c927db53c246d3e7580d76dad76} 
+\index{RBTree@{RBTree}!fix\_colorviolation@{fix\_colorviolation}}
+\index{fix\_colorviolation@{fix\_colorviolation}!RBTree@{RBTree}}
+\doxysubsubsection{\texorpdfstring{fix\_colorviolation()}{fix\_colorviolation()}}
+{\footnotesize\ttfamily void RBTree\+::fix\+\_\+colorviolation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}\&}]{rootnode,  }\item[{\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}\&}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Fixes the color violation after inserting a node. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_r_b_tree_af44b6c927db53c246d3e7580d76dad76_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_r_b_tree_af44b6c927db53c246d3e7580d76dad76_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_r_b_tree_a12378d828ffe1e580c9606df7b4f0408}\label{class_r_b_tree_a12378d828ffe1e580c9606df7b4f0408} 
+\index{RBTree@{RBTree}!fix\_double\_black@{fix\_double\_black}}
+\index{fix\_double\_black@{fix\_double\_black}!RBTree@{RBTree}}
+\doxysubsubsection{\texorpdfstring{fix\_double\_black()}{fix\_double\_black()}}
+{\footnotesize\ttfamily void RBTree\+::fix\+\_\+double\+\_\+black (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Fixes the double black violation after removing a node. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_r_b_tree_a12378d828ffe1e580c9606df7b4f0408_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_b_tree_a12378d828ffe1e580c9606df7b4f0408_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_r_b_tree_a2c9d2fb2ec2fe45bb363de62b6e4bace}\label{class_r_b_tree_a2c9d2fb2ec2fe45bb363de62b6e4bace} 
+\index{RBTree@{RBTree}!insert\_node@{insert\_node}}
+\index{insert\_node@{insert\_node}!RBTree@{RBTree}}
+\doxysubsubsection{\texorpdfstring{insert\_node()}{insert\_node()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*} RBTree\+::insert\+\_\+node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}}]{root\+\_\+node,  }\item[{\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Inserts a node into the red-\/black tree. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_r_b_tree_a2c9d2fb2ec2fe45bb363de62b6e4bace_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_r_b_tree_a2c9d2fb2ec2fe45bb363de62b6e4bace_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_r_b_tree_ad25597ac27143c466303ecaf43845e2f}\label{class_r_b_tree_ad25597ac27143c466303ecaf43845e2f} 
 \index{RBTree@{RBTree}!operator\mbox{[}\mbox{]}@{operator[]}}
 \index{operator\mbox{[}\mbox{]}@{operator[]}!RBTree@{RBTree}}
 \doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
-{\footnotesize\ttfamily rbtnode \texorpdfstring{$\ast$}{*} RBTree\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*} RBTree\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption}) const}
 
 
 
@@ -166,10 +318,18 @@ Overloads the subscript operator to find a book in the red-\/black tree based on
 \begin{DoxyReturn}{Returns}
 Pointer to the node containing the book, or nullptr if not found. 
 \end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_r_b_tree_ad25597ac27143c466303ecaf43845e2f_cgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_r_b_tree_ae537eec905557804f2bbaefe4839938c}\label{class_r_b_tree_ae537eec905557804f2bbaefe4839938c} 
 \index{RBTree@{RBTree}!remove@{remove}}
 \index{remove@{remove}!RBTree@{RBTree}}
-\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void RBTree\+::remove (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})}
 
 
@@ -181,9 +341,96 @@ Removes a book from the red-\/black tree based on the given key.
 {\em key} & The key of the book to remove. \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_b_tree_ae537eec905557804f2bbaefe4839938c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_r_b_tree_ad62799965b1dcdb2b1ce88ce1091fd8b}\label{class_r_b_tree_ad62799965b1dcdb2b1ce88ce1091fd8b} 
+\index{RBTree@{RBTree}!remove@{remove}}
+\index{remove@{remove}!RBTree@{RBTree}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void RBTree\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+Removes a node from the red-\/black tree. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_b_tree_ad62799965b1dcdb2b1ce88ce1091fd8b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{class_r_b_tree_ad62799965b1dcdb2b1ce88ce1091fd8b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_r_b_tree_af57ab67a97b47722acad4f82d59850b1}\label{class_r_b_tree_af57ab67a97b47722acad4f82d59850b1} 
+\index{RBTree@{RBTree}!rotate\_left@{rotate\_left}}
+\index{rotate\_left@{rotate\_left}!RBTree@{RBTree}}
+\doxysubsubsection{\texorpdfstring{rotate\_left()}{rotate\_left()}}
+{\footnotesize\ttfamily void RBTree\+::rotate\+\_\+left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}\&}]{root,  }\item[{\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}\&}]{pt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Performs a left rotation on the given nodes. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_b_tree_af57ab67a97b47722acad4f82d59850b1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_r_b_tree_a842820f689bddad749a5a3ec05856f0c}\label{class_r_b_tree_a842820f689bddad749a5a3ec05856f0c} 
+\index{RBTree@{RBTree}!rotate\_right@{rotate\_right}}
+\index{rotate\_right@{rotate\_right}!RBTree@{RBTree}}
+\doxysubsubsection{\texorpdfstring{rotate\_right()}{rotate\_right()}}
+{\footnotesize\ttfamily void RBTree\+::rotate\+\_\+right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}\&}]{root,  }\item[{\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}\&}]{pt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Performs a right rotation on the given nodes. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_b_tree_a842820f689bddad749a5a3ec05856f0c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_r_b_tree_ac33611b18a4e2aaa546a5e9cdb7f165a}\label{class_r_b_tree_ac33611b18a4e2aaa546a5e9cdb7f165a} 
+\index{RBTree@{RBTree}!successor@{successor}}
+\index{successor@{successor}!RBTree@{RBTree}}
+\doxysubsubsection{\texorpdfstring{successor()}{successor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*} RBTree\+::successor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}} \texorpdfstring{$\ast$}{*}}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Finds the successor of the given node in the red-\/black tree. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_b_tree_ac33611b18a4e2aaa546a5e9cdb7f165a_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_r_b_tree_a7e73da9bd55cf0ab95289c4f82656601}\label{class_r_b_tree_a7e73da9bd55cf0ab95289c4f82656601} 
+\index{RBTree@{RBTree}!color\_flip\_count@{color\_flip\_count}}
+\index{color\_flip\_count@{color\_flip\_count}!RBTree@{RBTree}}
+\doxysubsubsection{\texorpdfstring{color\_flip\_count}{color\_flip\_count}}
+{\footnotesize\ttfamily int RBTree\+::color\+\_\+flip\+\_\+count\hspace{0.3cm}{\ttfamily [private]}}
+
+The number of color flips performed during tree operations. \Hypertarget{class_r_b_tree_a739954776487e6c75c2d7530a579bb41}\label{class_r_b_tree_a739954776487e6c75c2d7530a579bb41} 
+\index{RBTree@{RBTree}!root@{root}}
+\index{root@{root}!RBTree@{RBTree}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily \mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}}\texorpdfstring{$\ast$}{*} RBTree\+::root\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointer to the root node of the red-\/black tree. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{redblack__tree_8hpp}{redblack\+\_\+tree.\+hpp}}\item 
-redblack\+\_\+tree.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{redblack__tree_8cpp}{redblack\+\_\+tree.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="RBTree::fix_colorviolation" name="RBTree::fix_colorviolation">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,177,56"/>
+<area shape="rect" id="Node000002" href="$class_r_b_tree.html#af57ab67a97b47722acad4f82d59850b1" title=" " alt="" coords="228,5,361,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,30,213,26,214,31,177,35"/>
+<area shape="rect" id="Node000003" href="$class_r_b_tree.html#a842820f689bddad749a5a3ec05856f0c" title=" " alt="" coords="225,55,364,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,51,210,55,209,60,177,56"/>
+</map>

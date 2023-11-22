@@ -23,7 +23,7 @@
   <td id="projectalign">
    <div id="projectname">Gator Library
    </div>
-   <div id="projectbrief">An implmentation of library to demonstate Red-Black Tree and Priority Queue</div>
+   <div id="projectbrief">An implementation of the Red-Black Tree and Priority queue data structure in C++.</div>
   </td>
  </tr>
  </tbody>
@@ -78,7 +78,56 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;type_traits&gt;</code><br />
-<code>#include &quot;book.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="book_8hpp_source.html">book.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for redblack_tree.hpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="redblack__tree_8hpp__incl.png" border="0" usemap="#aredblack__tree_8hpp" alt=""/></div>
+<map name="aredblack__tree_8hpp" id="aredblack__tree_8hpp">
+<area shape="rect" title=" " alt="" coords="35,5,159,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,88,105"/>
+<area shape="poly" title=" " alt="" coords="91,33,66,68,62,65,87,30"/>
+<area shape="rect" href="book_8hpp.html" title=" " alt="" coords="112,79,186,105"/>
+<area shape="poly" title=" " alt="" coords="108,30,134,65,129,68,104,33"/>
+<area shape="rect" title=" " alt="" coords="41,300,95,326"/>
+<area shape="poly" title=" " alt="" coords="124,108,89,127,55,155,29,187,14,227,12,239,14,251,26,271,42,288,38,292,22,274,9,253,7,239,9,226,24,185,51,151,86,123,121,103"/>
+<area shape="rect" title=" " alt="" coords="261,300,317,326"/>
+<area shape="poly" title=" " alt="" coords="187,96,289,115,336,131,354,140,366,151,375,169,377,188,374,207,366,226,342,262,316,291,312,287,338,259,361,224,369,206,372,188,370,171,362,154,351,145,334,136,288,121,186,101"/>
+<area shape="rect" title=" " alt="" coords="78,153,149,178"/>
+<area shape="poly" title=" " alt="" coords="146,106,128,140,124,138,141,104"/>
+<area shape="rect" href="reservation_8hpp.html" title=" " alt="" coords="135,226,246,252"/>
+<area shape="poly" title=" " alt="" coords="155,104,185,211,180,212,150,106"/>
+<area shape="rect" href="utilities_8hpp.html" title="This file contains the declaration of the utilities class and the BookAvailability enum." alt="" coords="24,226,112,252"/>
+<area shape="poly" title=" " alt="" coords="121,108,91,126,78,139,68,154,61,182,63,211,58,211,55,182,63,152,74,136,88,122,118,103"/>
+<area shape="rect" href="priority__queue_8hpp.html" title=" " alt="" coords="224,153,352,178"/>
+<area shape="poly" title=" " alt="" coords="174,103,252,143,249,147,171,108"/>
+<area shape="poly" title=" " alt="" coords="171,255,103,294,100,290,168,250"/>
+<area shape="poly" title=" " alt="" coords="209,250,262,289,259,293,206,255"/>
+<area shape="poly" title=" " alt="" coords="71,252,71,284,65,284,65,252"/>
+<area shape="poly" title=" " alt="" coords="273,181,220,219,217,215,270,177"/>
+<area shape="rect" title=" " alt="" coords="270,226,327,252"/>
+<area shape="poly" title=" " alt="" coords="292,178,297,211,292,211,287,179"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="redblack__tree_8hpp__dep__incl.png" border="0" usemap="#aredblack__tree_8hppdep" alt=""/></div>
+<map name="aredblack__tree_8hppdep" id="aredblack__tree_8hppdep">
+<area shape="rect" title=" " alt="" coords="201,5,325,31"/>
+<area shape="rect" href="gator__library_8hpp.html" title=" " alt="" coords="133,79,249,105"/>
+<area shape="poly" title=" " alt="" coords="242,44,205,80,201,77,238,40"/>
+<area shape="rect" href="redblack__tree_8cpp.html" title=" " alt="" coords="273,79,397,105"/>
+<area shape="poly" title=" " alt="" coords="288,40,325,77,321,80,284,44"/>
+<area shape="rect" href="gator__library_8cpp.html" title=" " alt="" coords="5,153,121,178"/>
+<area shape="poly" title=" " alt="" coords="157,115,86,154,84,150,155,110"/>
+<area shape="rect" href="gl__input_8cpp.html" title="Implementation of the gl_input class." alt="" coords="145,153,237,178"/>
+<area shape="poly" title=" " alt="" coords="194,120,194,152,188,152,188,120"/>
+<area shape="rect" href="main_8cpp.html" title="This file contains the main function." alt="" coords="195,226,270,252"/>
+<area shape="poly" title=" " alt="" coords="222,113,238,130,251,152,255,172,253,193,241,227,236,225,248,192,250,172,246,154,234,134,218,117"/>
+<area shape="poly" title=" " alt="" coords="208,190,228,225,223,227,203,193"/>
+</map>
+</div>
 </div>
 <p><a href="redblack__tree_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -93,21 +142,54 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a86b8a049650acffaabe2d64ff4925445" id="r_a86b8a049650acffaabe2d64ff4925445"><td class="memItemLeft" align="right" valign="top"><a id="a86b8a049650acffaabe2d64ff4925445" name="a86b8a049650acffaabe2d64ff4925445"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>rbtree</b>&#160;&#160;&#160;<a class="el" href="class_r_b_tree.html">RBTree</a></td></tr>
+<tr class="memitem:a86b8a049650acffaabe2d64ff4925445" id="r_a86b8a049650acffaabe2d64ff4925445"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="redblack__tree_8hpp.html#a86b8a049650acffaabe2d64ff4925445">rbtree</a>&#160;&#160;&#160;<a class="el" href="class_r_b_tree.html">RBTree</a></td></tr>
+<tr class="memdesc:a86b8a049650acffaabe2d64ff4925445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Red-black tree type.  <br /></td></tr>
 <tr class="separator:a86b8a049650acffaabe2d64ff4925445"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affef713d0d7b7dba7c5b86903d7e923d" id="r_affef713d0d7b7dba7c5b86903d7e923d"><td class="memItemLeft" align="right" valign="top"><a id="affef713d0d7b7dba7c5b86903d7e923d" name="affef713d0d7b7dba7c5b86903d7e923d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>rbtnode</b>&#160;&#160;&#160;<a class="el" href="class_rbt_node.html">RbtNode</a></td></tr>
+<tr class="memitem:affef713d0d7b7dba7c5b86903d7e923d" id="r_affef713d0d7b7dba7c5b86903d7e923d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a>&#160;&#160;&#160;<a class="el" href="class_rbt_node.html">RbtNode</a></td></tr>
+<tr class="memdesc:affef713d0d7b7dba7c5b86903d7e923d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Red-black tree node type.  <br /></td></tr>
 <tr class="separator:affef713d0d7b7dba7c5b86903d7e923d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ab87bacfdad76e61b9412d7124be44c1c" id="r_ab87bacfdad76e61b9412d7124be44c1c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="redblack__tree_8hpp.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a> { <b>RED</b>
-, <b>BLACK</b>
+<tr class="memitem:ab87bacfdad76e61b9412d7124be44c1c" id="r_ab87bacfdad76e61b9412d7124be44c1c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="redblack__tree_8hpp.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a> { <a class="el" href="redblack__tree_8hpp.html#ab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88">RED</a>
+, <a class="el" href="redblack__tree_8hpp.html#ab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</a>
  }</td></tr>
 <tr class="memdesc:ab87bacfdad76e61b9412d7124be44c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the color of a node in the red-black tree.  <a href="redblack__tree_8hpp.html#ab87bacfdad76e61b9412d7124be44c1c">More...</a><br /></td></tr>
 <tr class="separator:ab87bacfdad76e61b9412d7124be44c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="affef713d0d7b7dba7c5b86903d7e923d" name="affef713d0d7b7dba7c5b86903d7e923d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affef713d0d7b7dba7c5b86903d7e923d">&#9670;&#160;</a></span>rbtnode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define rbtnode&#160;&#160;&#160;<a class="el" href="class_rbt_node.html">RbtNode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Red-black tree node type. </p>
+
+</div>
+</div>
+<a id="a86b8a049650acffaabe2d64ff4925445" name="a86b8a049650acffaabe2d64ff4925445"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b8a049650acffaabe2d64ff4925445">&#9670;&#160;</a></span>rbtree</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define rbtree&#160;&#160;&#160;<a class="el" href="class_r_b_tree.html">RBTree</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Red-black tree type. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ab87bacfdad76e61b9412d7124be44c1c" name="ab87bacfdad76e61b9412d7124be44c1c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab87bacfdad76e61b9412d7124be44c1c">&#9670;&#160;</a></span>Color</h2>
@@ -123,6 +205,10 @@ Enumerations</h2></td></tr>
 
 <p>Represents the color of a node in the red-black tree. </p>
 <p>The Color enum represents the color of a node in the red-black tree. Each node can be either red or black. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88" name="ab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88"></a>RED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3" name="ab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3"></a>BLACK&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>

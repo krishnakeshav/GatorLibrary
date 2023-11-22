@@ -1,0 +1,22 @@
+<map id="pq_reservation::top" name="pq_reservation::top">
+<area shape="rect" id="Node000001" title="Get the highest priority reservation from the priority queue." alt="" coords="904,80,1036,106"/>
+<area shape="rect" id="Node000002" href="$class_gator_library.html#a1375b1f484f7eb778c3dfd11f6a15839" title="Delete a book from the library." alt="" coords="688,55,856,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="888,85,856,81,857,76,889,80"/>
+<area shape="rect" id="Node000009" href="$classbook.html#a05bd9e6f05387cd59a79338f5a20e0ba" title="Prints the reservations for the book." alt="" coords="692,104,852,130"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="889,105,852,110,852,105,888,100"/>
+<area shape="rect" id="Node000003" href="$classgl__input.html#a8b49079e3caa356e876a1ca73dbb02b0" title="Delete a book from the library." alt="" coords="491,55,640,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="672,70,640,70,640,65,672,65"/>
+<area shape="rect" id="Node000004" href="$classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="476,70,444,70,444,65,476,65"/>
+<area shape="rect" id="Node000005" href="$classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" id="Node000006" href="$classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" id="Node000008" href="$classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" id="Node000007" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+<area shape="rect" id="Node000010" href="$classbook.html#a54b2fad21271748ca441329e97d2fc5e" title="Prints the details of the book." alt="" coords="508,104,623,130"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="677,120,623,120,623,114,677,114"/>
+</map>

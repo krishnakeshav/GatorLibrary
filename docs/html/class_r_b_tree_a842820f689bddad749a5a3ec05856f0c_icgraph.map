@@ -1,0 +1,15 @@
+<map id="RBTree::rotate_right" name="RBTree::rotate_right">
+<area shape="rect" id="Node000001" title=" " alt="" coords="555,47,695,72"/>
+<area shape="rect" id="Node000002" href="$class_r_b_tree.html#af44b6c927db53c246d3e7580d76dad76" title=" " alt="" coords="336,5,507,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="543,46,488,34,489,29,545,40"/>
+<area shape="rect" id="Node000004" href="$class_r_b_tree.html#a12378d828ffe1e580c9606df7b4f0408" title=" " alt="" coords="355,79,488,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="542,78,489,89,488,84,541,73"/>
+<area shape="rect" id="Node000003" href="$class_r_b_tree.html#a30b4f0d5202b253454fafd082d3d2652" title="Adds a new book to the red&#45;black tree." alt="" coords="182,5,277,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,21,278,21,278,16,320,16"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="453,66,441,60,422,58,404,60,393,64,388,70,390,78,385,79,383,69,389,60,402,55,422,53,443,55,455,61"/>
+<area shape="rect" id="Node000005" href="$class_r_b_tree.html#ad62799965b1dcdb2b1ce88ce1091fd8b" title=" " alt="" coords="171,87,288,112"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="340,102,288,102,288,97,340,97"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="257,74,248,68,229,65,212,67,203,72,201,77,206,85,201,88,196,78,199,68,211,62,229,60,249,63,260,69"/>
+<area shape="rect" id="Node000006" href="$class_r_b_tree.html#ae537eec905557804f2bbaefe4839938c" title="Removes a book from the red&#45;black tree based on the given key." alt="" coords="5,87,123,112"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="155,102,123,102,123,97,155,97"/>
+</map>

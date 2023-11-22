@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['color_0',['color',['../class_rbt_node.html#ac4d1b64f8acdae7496224cba3cbdf4cb',1,'RbtNode']]]
+  ['authorname_0',['AuthorName',['../classbook.html#a374ee31e7a19d62d483dbcc34a4b3351',1,'book']]],
+  ['availabilitystatus_1',['AvailabilityStatus',['../classbook.html#a04cabe52b6bba198d849b66235d39024',1,'book']]]
 ];

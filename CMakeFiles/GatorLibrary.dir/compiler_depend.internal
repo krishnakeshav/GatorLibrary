@@ -3,8 +3,7 @@
 
 CMakeFiles/gatorLibrary.dir/book.cpp.o
  /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/book.cpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/book.cpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/book.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/book.hpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/string
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/max.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/comp.h
@@ -798,14 +797,13 @@ CMakeFiles/gatorLibrary.dir/book.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/_types/_nl_item.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__bsd_locale_defaults.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cstdarg
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/reservation.hpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/utilities.hpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/priority_queue.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/reservation.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/utilities.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/priority_queue.hpp
 
 CMakeFiles/gatorLibrary.dir/gator_library.cpp.o
  /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gator_library.cpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/gator_library.cpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/gator_library.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gator_library.hpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/string
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/max.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/comp.h
@@ -1544,7 +1542,7 @@ CMakeFiles/gatorLibrary.dir/gator_library.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__functional/unary_negate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/set
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tree
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/book.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/book.hpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/queue
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/deque
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iostream
@@ -1602,14 +1600,13 @@ CMakeFiles/gatorLibrary.dir/gator_library.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/_types/_nl_item.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__bsd_locale_defaults.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cstdarg
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/reservation.hpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/utilities.hpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/priority_queue.hpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/redblack_tree.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/reservation.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/utilities.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/priority_queue.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/redblack_tree.hpp
 
 CMakeFiles/gatorLibrary.dir/gl_input.cpp.o
  /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gl_input.cpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/gl_input.cpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iostream
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__assert
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__config
@@ -2421,20 +2418,19 @@ CMakeFiles/gatorLibrary.dir/gl_input.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/path_iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/u8path.h
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/gator_library.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gator_library.hpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/set
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tree
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/book.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/book.hpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/queue
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/deque
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/reservation.hpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/utilities.hpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/priority_queue.hpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/redblack_tree.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/reservation.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/utilities.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/priority_queue.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/redblack_tree.hpp
 
 CMakeFiles/gatorLibrary.dir/main.cpp.o
  /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/main.cpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/main.cpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iostream
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__assert
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__config
@@ -3228,17 +3224,17 @@ CMakeFiles/gatorLibrary.dir/main.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cstdarg
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/sstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iomanip
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/gator_library.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gator_library.hpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/set
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tree
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/book.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/book.hpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/queue
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/deque
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/reservation.hpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/utilities.hpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/priority_queue.hpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/redblack_tree.hpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/gl_input.cpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/reservation.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/utilities.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/priority_queue.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/redblack_tree.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gl_input.cpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/fstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/filesystem
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/copy_options.h
@@ -3260,8 +3256,7 @@ CMakeFiles/gatorLibrary.dir/main.cpp.o
 
 CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o
  /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/priority_queue.cpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/priority_queue.cpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/priority_queue.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/priority_queue.hpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/vector
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/copy.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/copy_move_common.h
@@ -3995,7 +3990,7 @@ CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/file_clock.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/literals.h
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/reservation.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/reservation.hpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/string
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__ios/fpos.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__string/extern_template_lists.h
@@ -4004,8 +3999,7 @@ CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o
 
 CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o
  /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/redblack_tree.cpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/redblack_tree.cpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/redblack_tree.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/redblack_tree.hpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/type_traits
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__assert
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__config
@@ -4171,7 +4165,7 @@ CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_uintptr_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/_types/_intmax_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/_types/_uintmax_t.h
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/book.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/book.hpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/string
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/max.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/comp.h
@@ -4800,14 +4794,13 @@ CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/_types/_nl_item.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__bsd_locale_defaults.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cstdarg
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/reservation.hpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/utilities.hpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/priority_queue.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/reservation.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/utilities.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/priority_queue.hpp
 
 CMakeFiles/gatorLibrary.dir/reservation.cpp.o
  /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/reservation.cpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/reservation.cpp
- /Users/kkeshav/Desktop/UFL/courses/fall24/ads/Keshav_Krishna/reservation.hpp
+ /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/reservation.hpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/string
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/max.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/comp.h

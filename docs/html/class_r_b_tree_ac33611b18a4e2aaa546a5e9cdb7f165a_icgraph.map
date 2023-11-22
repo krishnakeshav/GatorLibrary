@@ -1,0 +1,10 @@
+<map id="RBTree::successor" name="RBTree::successor">
+<area shape="rect" id="Node000001" title=" " alt="" coords="526,29,661,55"/>
+<area shape="rect" id="Node000002" href="$class_r_b_tree.html#a123fb74ae98e0fe08507e55b227fe70b" title=" " alt="" coords="336,29,478,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="511,45,478,45,478,40,511,40"/>
+<area shape="rect" id="Node000003" href="$class_r_b_tree.html#ad62799965b1dcdb2b1ce88ce1091fd8b" title=" " alt="" coords="171,29,288,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,45,289,45,289,40,320,40"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="257,16,248,10,229,8,212,10,203,15,201,20,206,28,201,30,196,21,199,11,211,5,229,3,249,5,260,12"/>
+<area shape="rect" id="Node000004" href="$class_r_b_tree.html#ae537eec905557804f2bbaefe4839938c" title="Removes a book from the red&#45;black tree based on the given key." alt="" coords="5,29,123,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="155,45,123,45,123,40,155,40"/>
+</map>

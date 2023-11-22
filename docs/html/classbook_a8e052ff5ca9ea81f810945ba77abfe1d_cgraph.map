@@ -1,0 +1,5 @@
+<map id="book::AddReservation" name="book::AddReservation">
+<area shape="rect" id="Node000001" title="Adds a new reservation for the book." alt="" coords="5,5,156,31"/>
+<area shape="rect" id="Node000002" href="$classpq__reservation.html#a9269eff4bbc6b109320fbd7e807e344e" title="Push a new reservation into the priority queue." alt="" coords="204,5,346,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,16,188,16,188,21,156,21"/>
+</map>

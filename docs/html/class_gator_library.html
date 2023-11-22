@@ -23,7 +23,7 @@
   <td id="projectalign">
    <div id="projectname">Gator Library
    </div>
-   <div id="projectbrief">An implmentation of library to demonstate Red-Black Tree and Priority Queue</div>
+   <div id="projectbrief">An implementation of the Red-Black Tree and Priority queue data structure in C++.</div>
   </td>
  </tr>
  </tbody>
@@ -72,6 +72,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_gator_library-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">GatorLibrary Class Reference</div></div>
 </div><!--header-->
@@ -81,6 +82,14 @@ $(function() {
  <a href="class_gator_library.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="gator__library_8hpp_source.html">gator_library.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for GatorLibrary:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_gator_library__coll__graph.png" border="0" usemap="#a_gator_library_coll__map" alt="Collaboration graph"/></div>
+<map name="a_gator_library_coll__map" id="a_gator_library_coll__map">
+<area shape="rect" title="The GatorLibrary class represents a library system.This class provides functionality to manage books ..." alt="" coords="5,5,137,211"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -108,6 +117,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abbfcbf67113738572dd7f6220517bca0" id="r_abbfcbf67113738572dd7f6220517bca0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gator_library.html#abbfcbf67113738572dd7f6220517bca0">FindClosestBook</a> (int targetId)</td></tr>
 <tr class="memdesc:abbfcbf67113738572dd7f6220517bca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the book Id closest to the targetId.  <br /></td></tr>
 <tr class="separator:abbfcbf67113738572dd7f6220517bca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a5651e7ed77c76631bde670182212bbf2" id="r_a5651e7ed77c76631bde670182212bbf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="redblack__tree_8hpp.html#a86b8a049650acffaabe2d64ff4925445">rbtree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gator_library.html#a5651e7ed77c76631bde670182212bbf2">rbtBooks</a></td></tr>
+<tr class="separator:a5651e7ed77c76631bde670182212bbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_gator_library.html" title="The GatorLibrary class represents a library system.This class provides functionality to manage books ...">GatorLibrary</a> class represents a library system.</p>
@@ -156,6 +170,32 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the book is borrowed, false otherwise.</dd></dl>
 <p>If the book is not available, add the reservation to the book's reservation heap. Reservation heap is a priority queue of reservations. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_gator_library_a467a91656bd4ca083699c86729277057_icgraph.png" border="0" usemap="#aclass_gator_library_a467a91656bd4ca083699c86729277057_icgraph" alt=""/></div>
+<map name="aclass_gator_library_a467a91656bd4ca083699c86729277057_icgraph" id="aclass_gator_library_a467a91656bd4ca083699c86729277057_icgraph">
+<area shape="rect" title="Borrow a book from the library." alt="" coords="909,53,1080,79"/>
+<area shape="rect" href="classgl__input.html#a3366b00643086f0b3aec7ba93884715f" title="Borrow a book from the library." alt="" coords="491,29,644,55"/>
+<area shape="poly" title=" " alt="" coords="893,63,644,49,644,44,894,58"/>
+<area shape="rect" href="class_gator_library.html#ab40ed9fc49d838f9797d6e7aa1e3d4ed" title="Return a book to the library." alt="" coords="692,79,861,104"/>
+<area shape="poly" title=" " alt="" coords="894,81,862,84,861,79,893,75"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="476,57,444,61,443,56,475,51"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+<area shape="rect" href="classgl__input.html#aeea77865bd73e2701e186050f4bd480d" title="Return a book to the library." alt="" coords="494,79,641,104"/>
+<area shape="poly" title=" " alt="" coords="676,94,641,94,641,89,676,89"/>
+<area shape="poly" title=" " alt="" coords="479,83,444,79,444,74,479,78"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -176,6 +216,27 @@ Public Member Functions</h2></td></tr>
 
 <p>Display the number of color flips in the red black tree. </p>
 <p>Color flip count is the number of times the color of a node is flipped from red to black or vice versa. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_gator_library_ac3634d61c160904cf59c602ad3fb655a_icgraph.png" border="0" usemap="#aclass_gator_library_ac3634d61c160904cf59c602ad3fb655a_icgraph" alt=""/></div>
+<map name="aclass_gator_library_ac3634d61c160904cf59c602ad3fb655a_icgraph" id="aclass_gator_library_ac3634d61c160904cf59c602ad3fb655a_icgraph">
+<area shape="rect" title="Display the number of color flips in the red black tree." alt="" coords="698,55,885,80"/>
+<area shape="rect" href="classgl__input.html#ae14132daff275eb39f4c25afe4b6f570" title="Count the number of color flips in the red&#45;black tree." alt="" coords="491,55,650,80"/>
+<area shape="poly" title=" " alt="" coords="682,70,650,70,650,65,682,65"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="476,70,443,70,443,65,476,65"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -203,6 +264,44 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <p>If the book is borrowed, the reservation is cancelled for all the patrons. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_gator_library_a1375b1f484f7eb778c3dfd11f6a15839_cgraph.png" border="0" usemap="#aclass_gator_library_a1375b1f484f7eb778c3dfd11f6a15839_cgraph" alt=""/></div>
+<map name="aclass_gator_library_a1375b1f484f7eb778c3dfd11f6a15839_cgraph" id="aclass_gator_library_a1375b1f484f7eb778c3dfd11f6a15839_cgraph">
+<area shape="rect" title="Delete a book from the library." alt="" coords="5,55,174,80"/>
+<area shape="rect" href="classpq__reservation.html#a14715e85417c6b032a73c8511072d995" title="Check if the priority queue is empty." alt="" coords="222,5,372,31"/>
+<area shape="poly" title=" " alt="" coords="146,51,224,33,226,38,147,57"/>
+<area shape="rect" href="classpq__reservation.html#a752a562cbea3fea06730fa06c4745948" title="Remove the highest priority reservation from the priority queue." alt="" coords="229,55,365,80"/>
+<area shape="poly" title=" " alt="" coords="174,65,214,65,214,70,174,70"/>
+<area shape="rect" href="classpq__reservation.html#a020ac7d684f06fcf19a9f4d37f9adb26" title="Get the highest priority reservation from the priority queue." alt="" coords="231,104,363,130"/>
+<area shape="poly" title=" " alt="" coords="147,78,226,97,224,102,146,84"/>
+<area shape="rect" href="classpq__reservation.html#a074e200eda4173be4969bbb794f47c6d" title="Heapify the heap starting from the given index." alt="" coords="420,55,576,80"/>
+<area shape="poly" title=" " alt="" coords="365,65,405,65,405,70,365,70"/>
+<area shape="poly" title=" " alt="" coords="464,56,458,46,462,36,476,30,498,28,523,31,536,38,533,42,521,36,498,33,477,35,466,40,463,45,469,53"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_gator_library_a1375b1f484f7eb778c3dfd11f6a15839_icgraph.png" border="0" usemap="#aclass_gator_library_a1375b1f484f7eb778c3dfd11f6a15839_icgraph" alt=""/></div>
+<map name="aclass_gator_library_a1375b1f484f7eb778c3dfd11f6a15839_icgraph" id="aclass_gator_library_a1375b1f484f7eb778c3dfd11f6a15839_icgraph">
+<area shape="rect" title="Delete a book from the library." alt="" coords="688,55,856,80"/>
+<area shape="rect" href="classgl__input.html#a8b49079e3caa356e876a1ca73dbb02b0" title="Delete a book from the library." alt="" coords="491,55,640,80"/>
+<area shape="poly" title=" " alt="" coords="672,70,640,70,640,65,672,65"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="476,70,444,70,444,65,476,65"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -229,6 +328,37 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_gator_library_abbfcbf67113738572dd7f6220517bca0_cgraph.png" border="0" usemap="#aclass_gator_library_abbfcbf67113738572dd7f6220517bca0_cgraph" alt=""/></div>
+<map name="aclass_gator_library_abbfcbf67113738572dd7f6220517bca0_cgraph" id="aclass_gator_library_abbfcbf67113738572dd7f6220517bca0_cgraph">
+<area shape="rect" title="Find the book Id closest to the targetId." alt="" coords="5,5,206,31"/>
+<area shape="rect" href="class_gator_library.html#a1f19418782655c17b104421e2129982f" title="Display the book details." alt="" coords="254,5,411,31"/>
+<area shape="poly" title=" " alt="" coords="206,16,238,16,238,21,206,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_gator_library_abbfcbf67113738572dd7f6220517bca0_icgraph.png" border="0" usemap="#aclass_gator_library_abbfcbf67113738572dd7f6220517bca0_icgraph" alt=""/></div>
+<map name="aclass_gator_library_abbfcbf67113738572dd7f6220517bca0_icgraph" id="aclass_gator_library_abbfcbf67113738572dd7f6220517bca0_icgraph">
+<area shape="rect" title="Find the book Id closest to the targetId." alt="" coords="716,55,916,80"/>
+<area shape="rect" href="classgl__input.html#a3355afbd09ac1671667a24bb6046631f" title="Find the book Id closest to the targetId." alt="" coords="491,55,668,80"/>
+<area shape="poly" title=" " alt="" coords="700,70,668,70,668,65,700,65"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="476,70,444,70,444,65,476,65"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -280,6 +410,27 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_gator_library_ad540160a89c5b6b9ec43f48371051f42_icgraph.png" border="0" usemap="#aclass_gator_library_ad540160a89c5b6b9ec43f48371051f42_icgraph" alt=""/></div>
+<map name="aclass_gator_library_ad540160a89c5b6b9ec43f48371051f42_icgraph" id="aclass_gator_library_ad540160a89c5b6b9ec43f48371051f42_icgraph">
+<area shape="rect" title="Insert a new book into the library." alt="" coords="685,55,848,80"/>
+<area shape="rect" href="classgl__input.html#aeed43a038e4db4886314ccd8f5636231" title="Insert a new book into the library." alt="" coords="491,55,637,80"/>
+<area shape="poly" title=" " alt="" coords="669,70,637,70,637,65,669,65"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="476,70,444,70,444,65,476,65"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -306,6 +457,37 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_gator_library_a1f19418782655c17b104421e2129982f_icgraph.png" border="0" usemap="#aclass_gator_library_a1f19418782655c17b104421e2129982f_icgraph" alt=""/></div>
+<map name="aclass_gator_library_a1f19418782655c17b104421e2129982f_icgraph" id="aclass_gator_library_a1f19418782655c17b104421e2129982f_icgraph">
+<area shape="rect" title="Display the book details." alt="" coords="964,56,1121,82"/>
+<area shape="rect" href="class_gator_library.html#abbfcbf67113738572dd7f6220517bca0" title="Find the book Id closest to the targetId." alt="" coords="716,5,916,31"/>
+<area shape="poly" title=" " alt="" coords="966,55,876,34,877,29,967,49"/>
+<area shape="rect" href="classgl__input.html#a7248cd404c62a7eec3320a1c94795dfe" title="Display the book details." alt="" coords="510,56,649,82"/>
+<area shape="poly" title=" " alt="" coords="949,72,649,72,649,66,949,66"/>
+<area shape="rect" href="class_gator_library.html#a85e968d5fdea85c2be8d6ba19c8c1f0a" title="Display the book details for all books in the range." alt="" coords="734,107,898,132"/>
+<area shape="poly" title=" " alt="" coords="967,88,877,109,876,103,966,83"/>
+<area shape="rect" href="classgl__input.html#a3355afbd09ac1671667a24bb6046631f" title="Find the book Id closest to the targetId." alt="" coords="491,7,668,32"/>
+<area shape="poly" title=" " alt="" coords="700,21,668,22,668,16,700,16"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,56,443,82"/>
+<area shape="poly" title=" " alt="" coords="508,39,430,58,429,53,507,34"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,7,225,32"/>
+<area shape="poly" title=" " alt="" coords="304,54,224,34,225,29,305,49"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,56,249,82"/>
+<area shape="poly" title=" " alt="" coords="287,72,249,72,249,66,287,66"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,105,254,131"/>
+<area shape="poly" title=" " alt="" coords="305,89,233,107,231,102,304,84"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,81,55,107"/>
+<area shape="poly" title=" " alt="" coords="93,86,55,93,54,87,92,81"/>
+<area shape="poly" title=" " alt="" coords="87,106,55,101,56,95,87,101"/>
+<area shape="poly" title=" " alt="" coords="495,72,444,72,444,66,495,66"/>
+<area shape="rect" href="classgl__input.html#ac96457c61a01a5c116c8c42d227c063a" title="Display the book details for all books in the range." alt="" coords="507,105,652,131"/>
+<area shape="poly" title=" " alt="" coords="718,122,653,121,653,116,718,116"/>
+<area shape="poly" title=" " alt="" coords="507,104,429,85,430,80,508,99"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -343,6 +525,37 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_gator_library_a85e968d5fdea85c2be8d6ba19c8c1f0a_cgraph.png" border="0" usemap="#aclass_gator_library_a85e968d5fdea85c2be8d6ba19c8c1f0a_cgraph" alt=""/></div>
+<map name="aclass_gator_library_a85e968d5fdea85c2be8d6ba19c8c1f0a_cgraph" id="aclass_gator_library_a85e968d5fdea85c2be8d6ba19c8c1f0a_cgraph">
+<area shape="rect" title="Display the book details for all books in the range." alt="" coords="5,5,170,31"/>
+<area shape="rect" href="class_gator_library.html#a1f19418782655c17b104421e2129982f" title="Display the book details." alt="" coords="218,5,375,31"/>
+<area shape="poly" title=" " alt="" coords="170,16,202,16,202,21,170,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_gator_library_a85e968d5fdea85c2be8d6ba19c8c1f0a_icgraph.png" border="0" usemap="#aclass_gator_library_a85e968d5fdea85c2be8d6ba19c8c1f0a_icgraph" alt=""/></div>
+<map name="aclass_gator_library_a85e968d5fdea85c2be8d6ba19c8c1f0a_icgraph" id="aclass_gator_library_a85e968d5fdea85c2be8d6ba19c8c1f0a_icgraph">
+<area shape="rect" title="Display the book details for all books in the range." alt="" coords="685,55,849,80"/>
+<area shape="rect" href="classgl__input.html#ac96457c61a01a5c116c8c42d227c063a" title="Display the book details for all books in the range." alt="" coords="491,55,637,80"/>
+<area shape="poly" title=" " alt="" coords="669,70,637,70,637,65,669,65"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="476,70,444,70,444,65,476,65"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -381,12 +594,66 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <p>If the book is reserved, the book is borrowed by the next patron in the reservation heap. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_gator_library_ab40ed9fc49d838f9797d6e7aa1e3d4ed_cgraph.png" border="0" usemap="#aclass_gator_library_ab40ed9fc49d838f9797d6e7aa1e3d4ed_cgraph" alt=""/></div>
+<map name="aclass_gator_library_ab40ed9fc49d838f9797d6e7aa1e3d4ed_cgraph" id="aclass_gator_library_ab40ed9fc49d838f9797d6e7aa1e3d4ed_cgraph">
+<area shape="rect" title="Return a book to the library." alt="" coords="5,5,175,31"/>
+<area shape="rect" href="class_gator_library.html#a467a91656bd4ca083699c86729277057" title="Borrow a book from the library." alt="" coords="223,5,394,31"/>
+<area shape="poly" title=" " alt="" coords="175,16,207,16,207,21,175,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_gator_library_ab40ed9fc49d838f9797d6e7aa1e3d4ed_icgraph.png" border="0" usemap="#aclass_gator_library_ab40ed9fc49d838f9797d6e7aa1e3d4ed_icgraph" alt=""/></div>
+<map name="aclass_gator_library_ab40ed9fc49d838f9797d6e7aa1e3d4ed_icgraph" id="aclass_gator_library_ab40ed9fc49d838f9797d6e7aa1e3d4ed_icgraph">
+<area shape="rect" title="Return a book to the library." alt="" coords="686,55,855,80"/>
+<area shape="rect" href="classgl__input.html#aeea77865bd73e2701e186050f4bd480d" title="Return a book to the library." alt="" coords="491,55,638,80"/>
+<area shape="poly" title=" " alt="" coords="670,70,638,70,638,65,670,65"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="476,70,444,70,444,65,476,65"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5651e7ed77c76631bde670182212bbf2" name="a5651e7ed77c76631bde670182212bbf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5651e7ed77c76631bde670182212bbf2">&#9670;&#160;</a></span>rbtBooks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="redblack__tree_8hpp.html#a86b8a049650acffaabe2d64ff4925445">rbtree</a> GatorLibrary::rbtBooks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="gator__library_8hpp_source.html">gator_library.hpp</a></li>
-<li><b>gator_library.cpp</b></li>
+<li><a class="el" href="gator__library_8cpp.html">gator_library.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

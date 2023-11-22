@@ -23,7 +23,7 @@
   <td id="projectalign">
    <div id="projectname">Gator Library
    </div>
-   <div id="projectbrief">An implmentation of library to demonstate Red-Black Tree and Priority Queue</div>
+   <div id="projectbrief">An implementation of the Red-Black Tree and Priority queue data structure in C++.</div>
   </td>
  </tr>
  </tbody>
@@ -78,14 +78,24 @@ $(function() {
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_r_b_tree.html#a30b4f0d5202b253454fafd082d3d2652">add</a>(book book_info)</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_r_b_tree.html#a4956d555591326e0552f3c59d6a2b51a">begin</a>()</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_r_b_tree.html#a123fb74ae98e0fe08507e55b227fe70b">BSTreplace</a>(rbtnode *x)</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_r_b_tree.html#a7e73da9bd55cf0ab95289c4f82656601">color_flip_count</a></td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_r_b_tree.html#aa248971031b20c9d240816bc60bb2eff">ColorFlipCount</a>()</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_r_b_tree.html#a5bf4f482a4b1cabde2c7ae392abe961f">empty</a>() const</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_r_b_tree.html#a281395aa680a897a349e15a9271c2709">end</a>()</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_r_b_tree.html#a36c110fa7818d2695eb14e48f6260bda">find</a>(int key) const</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_r_b_tree.html#a7ce47cffb39921ceb63e2dff3c2b0baf">findclosest</a>(int targetId) const</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_r_b_tree.html#ad25597ac27143c466303ecaf43845e2f">operator[]</a>(int key) const</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_r_b_tree.html#a19921f34f32f777bb3c4b85d4ff1d9de">RBTree</a>()</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_r_b_tree.html#af44b6c927db53c246d3e7580d76dad76">fix_colorviolation</a>(rbtnode *&amp;, rbtnode *&amp;)</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_r_b_tree.html#a12378d828ffe1e580c9606df7b4f0408">fix_double_black</a>(rbtnode *node)</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_r_b_tree.html#a2c9d2fb2ec2fe45bb363de62b6e4bace">insert_node</a>(rbtnode *root_node, rbtnode *node)</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_r_b_tree.html#ad25597ac27143c466303ecaf43845e2f">operator[]</a>(int key) const</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_r_b_tree.html#a19921f34f32f777bb3c4b85d4ff1d9de">RBTree</a>()</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_r_b_tree.html#ad62799965b1dcdb2b1ce88ce1091fd8b">remove</a>(rbtnode *node)</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_r_b_tree.html#ae537eec905557804f2bbaefe4839938c">remove</a>(int key)</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_r_b_tree.html#a739954776487e6c75c2d7530a579bb41">root</a></td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_r_b_tree.html#af57ab67a97b47722acad4f82d59850b1">rotate_left</a>(rbtnode *&amp;, rbtnode *&amp;)</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_r_b_tree.html#a842820f689bddad749a5a3ec05856f0c">rotate_right</a>(rbtnode *&amp;, rbtnode *&amp;)</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_r_b_tree.html#ac33611b18a4e2aaa546a5e9cdb7f165a">successor</a>(rbtnode *x)</td><td class="entry"><a class="el" href="class_r_b_tree.html">RBTree</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

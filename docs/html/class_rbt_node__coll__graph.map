@@ -1,0 +1,8 @@
+<map id="RbtNode" name="RbtNode">
+<area shape="rect" id="Node000001" title="Represents a node in the red&#45;black tree." alt="" coords="33,602,117,707"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="118,636,136,641,144,654,142,663,136,669,132,665,137,660,139,655,133,645,117,641"/>
+<area shape="rect" id="Node000002" href="$classbook.html" title="Represents a book in the library." alt="" coords="5,274,145,539"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,539,78,585,73,585,73,539"/>
+<area shape="rect" id="Node000003" href="$classpq__reservation.html" title="A priority queue implementation for reservations.This class represents a priority queue that stores r..." alt="" coords="13,5,137,211"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,210,78,257,73,257,73,210"/>
+</map>

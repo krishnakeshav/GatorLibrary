@@ -8,8 +8,14 @@
 
 #include <string>
 
+/// @brief String representation of the YES enum value.
 #define Yes "Yes"
+
+/// @brief String representation of the NO enum value.
 #define No "No"
+
+
+/// @brief String representation of the NO enum value.
 #define INVALID_STATUS "Invalid Status"
 
 using namespace std;

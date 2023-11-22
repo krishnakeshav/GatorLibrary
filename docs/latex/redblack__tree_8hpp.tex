@@ -2,6 +2,22 @@
 \hypertarget{redblack__tree_8hpp}{}\label{redblack__tree_8hpp}\index{redblack\_tree.hpp@{redblack\_tree.hpp}}
 {\ttfamily \#include $<$type\+\_\+traits$>$}\newline
 {\ttfamily \#include "{}book.\+hpp"{}}\newline
+Include dependency graph for redblack\+\_\+tree.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{redblack__tree_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{redblack__tree_8hpp__dep__incl}
+\end{center}
+\end{figure}
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -12,19 +28,40 @@ class \mbox{\hyperlink{class_r_b_tree}{RBTree}}
 \doxysubsubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{redblack__tree_8hpp_a86b8a049650acffaabe2d64ff4925445}\label{redblack__tree_8hpp_a86b8a049650acffaabe2d64ff4925445} 
-\#define {\bfseries rbtree}~\mbox{\hyperlink{class_r_b_tree}{RBTree}}
-\item 
-\Hypertarget{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}\label{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d} 
-\#define {\bfseries rbtnode}~\mbox{\hyperlink{class_rbt_node}{Rbt\+Node}}
-\end{DoxyCompactItemize}
+\#define \mbox{\hyperlink{redblack__tree_8hpp_a86b8a049650acffaabe2d64ff4925445}{rbtree}}~\mbox{\hyperlink{class_r_b_tree}{RBTree}}
+\begin{DoxyCompactList}\small\item\em Red-\/black tree type. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}{rbtnode}}~\mbox{\hyperlink{class_rbt_node}{Rbt\+Node}}
+\begin{DoxyCompactList}\small\item\em Red-\/black tree node type. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum \mbox{\hyperlink{redblack__tree_8hpp_ab87bacfdad76e61b9412d7124be44c1c}{Color}} \{ {\bfseries RED}
-, {\bfseries BLACK}
+enum \mbox{\hyperlink{redblack__tree_8hpp_ab87bacfdad76e61b9412d7124be44c1c}{Color}} \{ \mbox{\hyperlink{redblack__tree_8hpp_ab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88}{RED}}
+, \mbox{\hyperlink{redblack__tree_8hpp_ab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3}{BLACK}}
  \}
 \begin{DoxyCompactList}\small\item\em Represents the color of a node in the red-\/black tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d}\label{redblack__tree_8hpp_affef713d0d7b7dba7c5b86903d7e923d} 
+\index{redblack\_tree.hpp@{redblack\_tree.hpp}!rbtnode@{rbtnode}}
+\index{rbtnode@{rbtnode}!redblack\_tree.hpp@{redblack\_tree.hpp}}
+\doxysubsubsection{\texorpdfstring{rbtnode}{rbtnode}}
+{\footnotesize\ttfamily \#define rbtnode~\mbox{\hyperlink{class_rbt_node}{Rbt\+Node}}}
+
+
+
+Red-\/black tree node type. 
+
+\Hypertarget{redblack__tree_8hpp_a86b8a049650acffaabe2d64ff4925445}\label{redblack__tree_8hpp_a86b8a049650acffaabe2d64ff4925445} 
+\index{redblack\_tree.hpp@{redblack\_tree.hpp}!rbtree@{rbtree}}
+\index{rbtree@{rbtree}!redblack\_tree.hpp@{redblack\_tree.hpp}}
+\doxysubsubsection{\texorpdfstring{rbtree}{rbtree}}
+{\footnotesize\ttfamily \#define rbtree~\mbox{\hyperlink{class_r_b_tree}{RBTree}}}
+
+
+
+Red-\/black tree type. 
+
 
 
 \doxysubsection{Enumeration Type Documentation}
@@ -38,4 +75,13 @@ enum \mbox{\hyperlink{redblack__tree_8hpp_ab87bacfdad76e61b9412d7124be44c1c}{Col
 
 Represents the color of a node in the red-\/black tree. 
 
-The Color enum represents the color of a node in the red-\/black tree. Each node can be either red or black. 
+The Color enum represents the color of a node in the red-\/black tree. Each node can be either red or black. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RED@{RED}!redblack\_tree.hpp@{redblack\_tree.hpp}}\index{redblack\_tree.hpp@{redblack\_tree.hpp}!RED@{RED}}}\Hypertarget{redblack__tree_8hpp_ab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88}\label{redblack__tree_8hpp_ab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88} 
+RED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLACK@{BLACK}!redblack\_tree.hpp@{redblack\_tree.hpp}}\index{redblack\_tree.hpp@{redblack\_tree.hpp}!BLACK@{BLACK}}}\Hypertarget{redblack__tree_8hpp_ab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3}\label{redblack__tree_8hpp_ab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3} 
+BLACK&\\
+\hline
+
+\end{DoxyEnumFields}

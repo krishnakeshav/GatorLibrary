@@ -1,3 +1,8 @@
+/**
+ * @file main.cpp
+ * @brief This file contains the main function.
+ * 
+*/
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -9,6 +14,13 @@
 
 using namespace std;
 
+/**
+ * @brief The main function.
+ * 
+ * @param argc The number of command line arguments.
+ * @param argv The command line arguments.
+ * @return int The exit code.
+ */
 int main(int argc, char** argv)
 {
     gl_input gl;

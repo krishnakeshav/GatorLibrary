@@ -1,0 +1,16 @@
+<map id="GatorLibrary::DeleteBook" name="GatorLibrary::DeleteBook">
+<area shape="rect" id="Node000001" title="Delete a book from the library." alt="" coords="688,55,856,80"/>
+<area shape="rect" id="Node000002" href="$classgl__input.html#a8b49079e3caa356e876a1ca73dbb02b0" title="Delete a book from the library." alt="" coords="491,55,640,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="672,70,640,70,640,65,672,65"/>
+<area shape="rect" id="Node000003" href="$classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="476,70,444,70,444,65,476,65"/>
+<area shape="rect" id="Node000004" href="$classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" id="Node000005" href="$classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" id="Node000007" href="$classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+</map>

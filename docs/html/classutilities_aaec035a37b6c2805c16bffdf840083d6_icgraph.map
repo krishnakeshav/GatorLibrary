@@ -1,0 +1,5 @@
+<map id="utilities::status_tostring" name="utilities::status_tostring">
+<area shape="rect" id="Node000001" title="Converts a BookAvailability enum value to its corresponding string representation." alt="" coords="168,5,324,31"/>
+<area shape="rect" id="Node000002" href="$classbook.html#a54b2fad21271748ca441329e97d2fc5e" title="Prints the details of the book." alt="" coords="5,5,120,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,21,120,21,120,16,152,16"/>
+</map>

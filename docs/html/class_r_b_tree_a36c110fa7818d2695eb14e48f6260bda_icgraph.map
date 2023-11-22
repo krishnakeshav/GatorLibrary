@@ -1,0 +1,7 @@
+<map id="RBTree::find" name="RBTree::find">
+<area shape="rect" id="Node000001" title="Finds a book in the red&#45;black tree based on the given key." alt="" coords="183,31,278,56"/>
+<area shape="rect" id="Node000002" href="$class_r_b_tree.html#ad25597ac27143c466303ecaf43845e2f" title="Overloads the subscript operator to find a book in the red&#45;black tree based on the given key." alt="" coords="5,5,135,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,36,135,31,136,26,168,31"/>
+<area shape="rect" id="Node000003" href="$class_r_b_tree.html#ae537eec905557804f2bbaefe4839938c" title="Removes a book from the red&#45;black tree based on the given key." alt="" coords="11,55,129,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,56,129,61,129,56,167,50"/>
+</map>

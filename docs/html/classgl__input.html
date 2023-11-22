@@ -23,7 +23,7 @@
   <td id="projectalign">
    <div id="projectname">Gator Library
    </div>
-   <div id="projectbrief">An implmentation of library to demonstate Red-Black Tree and Priority Queue</div>
+   <div id="projectbrief">An implementation of the Red-Black Tree and Priority queue data structure in C++.</div>
   </td>
  </tr>
  </tbody>
@@ -72,23 +72,1063 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classgl__input-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">gl_input Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class to parse the input and call the appropriate functionsThis class provides functionality to parse the input and call the appropriate functions.  
+ <a href="classgl__input.html#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for gl_input:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input__coll__graph.png" border="0" usemap="#agl__input_coll__map" alt="Collaboration graph"/></div>
+<map name="agl__input_coll__map" id="agl__input_coll__map">
+<area shape="rect" title="Class to parse the input and call the appropriate functionsThis class provides functionality to parse..." alt="" coords="5,274,139,599"/>
+<area shape="rect" href="class_gator_library.html" title="The GatorLibrary class represents a library system.This class provides functionality to manage books ..." alt="" coords="6,5,138,211"/>
+<area shape="poly" title=" " alt="" coords="75,211,75,257,69,257,69,211"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a89b0968d003461b808595b47c580b58d" id="r_a89b0968d003461b808595b47c580b58d"><td class="memItemLeft" align="right" valign="top"><a id="a89b0968d003461b808595b47c580b58d" name="a89b0968d003461b808595b47c580b58d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>runwith_file</b> (string filename)</td></tr>
+<tr class="memitem:ae42190307b82dccd5d3caddc73c193e7" id="r_ae42190307b82dccd5d3caddc73c193e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgl__input.html#ae42190307b82dccd5d3caddc73c193e7">gl_input</a> ()</td></tr>
+<tr class="memdesc:ae42190307b82dccd5d3caddc73c193e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classgl__input.html" title="Class to parse the input and call the appropriate functionsThis class provides functionality to parse...">gl_input</a> class.  <br /></td></tr>
+<tr class="separator:ae42190307b82dccd5d3caddc73c193e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b0968d003461b808595b47c580b58d" id="r_a89b0968d003461b808595b47c580b58d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgl__input.html#a89b0968d003461b808595b47c580b58d">runwith_file</a> (string filename)</td></tr>
+<tr class="memdesc:a89b0968d003461b808595b47c580b58d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the program with the given file.  <br /></td></tr>
 <tr class="separator:a89b0968d003461b808595b47c580b58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e2234453b9936eb8b9785be0190d3ba" id="r_a4e2234453b9936eb8b9785be0190d3ba"><td class="memItemLeft" align="right" valign="top"><a id="a4e2234453b9936eb8b9785be0190d3ba" name="a4e2234453b9936eb8b9785be0190d3ba"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (string input)</td></tr>
+<tr class="memitem:a4e2234453b9936eb8b9785be0190d3ba" id="r_a4e2234453b9936eb8b9785be0190d3ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba">run</a> (string input)</td></tr>
+<tr class="memdesc:a4e2234453b9936eb8b9785be0190d3ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the program with the given input.  <br /></td></tr>
 <tr class="separator:a4e2234453b9936eb8b9785be0190d3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fe6abc251739a0fa257acdc9688fc1e" id="r_a1fe6abc251739a0fa257acdc9688fc1e"><td class="memItemLeft" align="right" valign="top"><a id="a1fe6abc251739a0fa257acdc9688fc1e" name="a1fe6abc251739a0fa257acdc9688fc1e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>runwith_stdin</b> ()</td></tr>
+<tr class="memitem:a1fe6abc251739a0fa257acdc9688fc1e" id="r_a1fe6abc251739a0fa257acdc9688fc1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e">runwith_stdin</a> ()</td></tr>
+<tr class="memdesc:a1fe6abc251739a0fa257acdc9688fc1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the program with the standard input.  <br /></td></tr>
 <tr class="separator:a1fe6abc251739a0fa257acdc9688fc1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aeed43a038e4db4886314ccd8f5636231" id="r_aeed43a038e4db4886314ccd8f5636231"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgl__input.html#aeed43a038e4db4886314ccd8f5636231">parse_insert</a> (string input)</td></tr>
+<tr class="memdesc:aeed43a038e4db4886314ccd8f5636231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a new book into the library.  <br /></td></tr>
+<tr class="separator:aeed43a038e4db4886314ccd8f5636231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7248cd404c62a7eec3320a1c94795dfe" id="r_a7248cd404c62a7eec3320a1c94795dfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgl__input.html#a7248cd404c62a7eec3320a1c94795dfe">parse_print</a> (const std::string &amp;input)</td></tr>
+<tr class="memdesc:a7248cd404c62a7eec3320a1c94795dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the book details.  <br /></td></tr>
+<tr class="separator:a7248cd404c62a7eec3320a1c94795dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3366b00643086f0b3aec7ba93884715f" id="r_a3366b00643086f0b3aec7ba93884715f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgl__input.html#a3366b00643086f0b3aec7ba93884715f">parse_borrow</a> (const std::string &amp;input)</td></tr>
+<tr class="memdesc:a3366b00643086f0b3aec7ba93884715f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Borrow a book from the library.  <br /></td></tr>
+<tr class="separator:a3366b00643086f0b3aec7ba93884715f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96457c61a01a5c116c8c42d227c063a" id="r_ac96457c61a01a5c116c8c42d227c063a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgl__input.html#ac96457c61a01a5c116c8c42d227c063a">parse_prints</a> (const std::string &amp;input)</td></tr>
+<tr class="memdesc:ac96457c61a01a5c116c8c42d227c063a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the book details for all books in the range.  <br /></td></tr>
+<tr class="separator:ac96457c61a01a5c116c8c42d227c063a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea77865bd73e2701e186050f4bd480d" id="r_aeea77865bd73e2701e186050f4bd480d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgl__input.html#aeea77865bd73e2701e186050f4bd480d">parse_return</a> (const std::string &amp;input)</td></tr>
+<tr class="memdesc:aeea77865bd73e2701e186050f4bd480d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a book to the library.  <br /></td></tr>
+<tr class="separator:aeea77865bd73e2701e186050f4bd480d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b49079e3caa356e876a1ca73dbb02b0" id="r_a8b49079e3caa356e876a1ca73dbb02b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgl__input.html#a8b49079e3caa356e876a1ca73dbb02b0">parse_delete</a> (const std::string &amp;input)</td></tr>
+<tr class="memdesc:a8b49079e3caa356e876a1ca73dbb02b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a book from the library.  <br /></td></tr>
+<tr class="separator:a8b49079e3caa356e876a1ca73dbb02b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14132daff275eb39f4c25afe4b6f570" id="r_ae14132daff275eb39f4c25afe4b6f570"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgl__input.html#ae14132daff275eb39f4c25afe4b6f570">parse_colorflip</a> (const std::string &amp;input)</td></tr>
+<tr class="memdesc:ae14132daff275eb39f4c25afe4b6f570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of color flips in the red-black tree.  <br /></td></tr>
+<tr class="separator:ae14132daff275eb39f4c25afe4b6f570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3355afbd09ac1671667a24bb6046631f" id="r_a3355afbd09ac1671667a24bb6046631f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgl__input.html#a3355afbd09ac1671667a24bb6046631f">parse_findclosest</a> (const std::string &amp;input)</td></tr>
+<tr class="memdesc:a3355afbd09ac1671667a24bb6046631f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the book Id closest to the targetId.  <br /></td></tr>
+<tr class="separator:a3355afbd09ac1671667a24bb6046631f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b7b6643a49247e2f3b5e784c327800" id="r_a86b7b6643a49247e2f3b5e784c327800"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgl__input.html#a86b7b6643a49247e2f3b5e784c327800">parse_quit</a> (const std::string &amp;command)</td></tr>
+<tr class="memdesc:a86b7b6643a49247e2f3b5e784c327800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate the program.  <br /></td></tr>
+<tr class="separator:a86b7b6643a49247e2f3b5e784c327800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd81d4e3ed5502f7480d24685751406" id="r_acdd81d4e3ed5502f7480d24685751406"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406">parse_input</a> (const string &amp;input)</td></tr>
+<tr class="memdesc:acdd81d4e3ed5502f7480d24685751406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the input and call the appropriate functions.  <br /></td></tr>
+<tr class="separator:acdd81d4e3ed5502f7480d24685751406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6e0d809804de3a556b03f77243161dac" id="r_a6e0d809804de3a556b03f77243161dac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_gator_library.html">GatorLibrary</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgl__input.html#a6e0d809804de3a556b03f77243161dac">library</a></td></tr>
+<tr class="separator:a6e0d809804de3a556b03f77243161dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class to parse the input and call the appropriate functions</p>
+<p>This class provides functionality to parse the input and call the appropriate functions. </p>
+<p>This file contains the implementation of the <a class="el" href="classgl__input.html" title="Class to parse the input and call the appropriate functionsThis class provides functionality to parse...">gl_input</a> class. The <a class="el" href="classgl__input.html" title="Class to parse the input and call the appropriate functionsThis class provides functionality to parse...">gl_input</a> class represents the input to the library system. This class provides functionality to parse the input and call the corresponding function. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae42190307b82dccd5d3caddc73c193e7" name="ae42190307b82dccd5d3caddc73c193e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae42190307b82dccd5d3caddc73c193e7">&#9670;&#160;</a></span>gl_input()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">gl_input::gl_input </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor for <a class="el" href="classgl__input.html" title="Class to parse the input and call the appropriate functionsThis class provides functionality to parse...">gl_input</a> class. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3366b00643086f0b3aec7ba93884715f" name="a3366b00643086f0b3aec7ba93884715f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3366b00643086f0b3aec7ba93884715f">&#9670;&#160;</a></span>parse_borrow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gl_input::parse_borrow </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Borrow a book from the library. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>String. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<p>This function borrows a book from the library. It takes the patron ID, book ID, and patron priority as parameters. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_a3366b00643086f0b3aec7ba93884715f_cgraph.png" border="0" usemap="#aclassgl__input_a3366b00643086f0b3aec7ba93884715f_cgraph" alt=""/></div>
+<map name="aclassgl__input_a3366b00643086f0b3aec7ba93884715f_cgraph" id="aclassgl__input_a3366b00643086f0b3aec7ba93884715f_cgraph">
+<area shape="rect" title="Borrow a book from the library." alt="" coords="5,5,158,31"/>
+<area shape="rect" href="class_gator_library.html#a467a91656bd4ca083699c86729277057" title="Borrow a book from the library." alt="" coords="206,5,377,31"/>
+<area shape="poly" title=" " alt="" coords="158,16,190,16,190,21,158,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_a3366b00643086f0b3aec7ba93884715f_icgraph.png" border="0" usemap="#aclassgl__input_a3366b00643086f0b3aec7ba93884715f_icgraph" alt=""/></div>
+<map name="aclassgl__input_a3366b00643086f0b3aec7ba93884715f_icgraph" id="aclassgl__input_a3366b00643086f0b3aec7ba93884715f_icgraph">
+<area shape="rect" title="Borrow a book from the library." alt="" coords="491,55,644,80"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="476,70,444,70,444,65,476,65"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae14132daff275eb39f4c25afe4b6f570" name="ae14132daff275eb39f4c25afe4b6f570"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae14132daff275eb39f4c25afe4b6f570">&#9670;&#160;</a></span>parse_colorflip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gl_input::parse_colorflip </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Count the number of color flips in the red-black tree. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_ae14132daff275eb39f4c25afe4b6f570_cgraph.png" border="0" usemap="#aclassgl__input_ae14132daff275eb39f4c25afe4b6f570_cgraph" alt=""/></div>
+<map name="aclassgl__input_ae14132daff275eb39f4c25afe4b6f570_cgraph" id="aclassgl__input_ae14132daff275eb39f4c25afe4b6f570_cgraph">
+<area shape="rect" title="Count the number of color flips in the red&#45;black tree." alt="" coords="5,5,164,31"/>
+<area shape="rect" href="class_gator_library.html#ac3634d61c160904cf59c602ad3fb655a" title="Display the number of color flips in the red black tree." alt="" coords="212,5,399,31"/>
+<area shape="poly" title=" " alt="" coords="164,16,196,16,196,21,164,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_ae14132daff275eb39f4c25afe4b6f570_icgraph.png" border="0" usemap="#aclassgl__input_ae14132daff275eb39f4c25afe4b6f570_icgraph" alt=""/></div>
+<map name="aclassgl__input_ae14132daff275eb39f4c25afe4b6f570_icgraph" id="aclassgl__input_ae14132daff275eb39f4c25afe4b6f570_icgraph">
+<area shape="rect" title="Count the number of color flips in the red&#45;black tree." alt="" coords="491,55,650,80"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="476,70,443,70,443,65,476,65"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8b49079e3caa356e876a1ca73dbb02b0" name="a8b49079e3caa356e876a1ca73dbb02b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b49079e3caa356e876a1ca73dbb02b0">&#9670;&#160;</a></span>parse_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gl_input::parse_delete </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Delete a book from the library. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_a8b49079e3caa356e876a1ca73dbb02b0_cgraph.png" border="0" usemap="#aclassgl__input_a8b49079e3caa356e876a1ca73dbb02b0_cgraph" alt=""/></div>
+<map name="aclassgl__input_a8b49079e3caa356e876a1ca73dbb02b0_cgraph" id="aclassgl__input_a8b49079e3caa356e876a1ca73dbb02b0_cgraph">
+<area shape="rect" title="Delete a book from the library." alt="" coords="5,55,154,80"/>
+<area shape="rect" href="class_gator_library.html#a1375b1f484f7eb778c3dfd11f6a15839" title="Delete a book from the library." alt="" coords="202,55,370,80"/>
+<area shape="poly" title=" " alt="" coords="154,65,186,65,186,70,154,70"/>
+<area shape="rect" href="classpq__reservation.html#a14715e85417c6b032a73c8511072d995" title="Check if the priority queue is empty." alt="" coords="418,5,568,31"/>
+<area shape="poly" title=" " alt="" coords="342,51,421,33,422,38,344,57"/>
+<area shape="rect" href="classpq__reservation.html#a752a562cbea3fea06730fa06c4745948" title="Remove the highest priority reservation from the priority queue." alt="" coords="426,55,561,80"/>
+<area shape="poly" title=" " alt="" coords="370,65,410,65,410,70,370,70"/>
+<area shape="rect" href="classpq__reservation.html#a020ac7d684f06fcf19a9f4d37f9adb26" title="Get the highest priority reservation from the priority queue." alt="" coords="427,104,559,130"/>
+<area shape="poly" title=" " alt="" coords="344,78,422,97,421,102,342,84"/>
+<area shape="rect" href="classpq__reservation.html#a074e200eda4173be4969bbb794f47c6d" title="Heapify the heap starting from the given index." alt="" coords="616,55,773,80"/>
+<area shape="poly" title=" " alt="" coords="561,65,601,65,601,70,561,70"/>
+<area shape="poly" title=" " alt="" coords="661,56,654,46,658,36,672,30,695,28,719,31,732,38,729,42,718,36,694,33,673,35,662,40,660,45,665,53"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_a8b49079e3caa356e876a1ca73dbb02b0_icgraph.png" border="0" usemap="#aclassgl__input_a8b49079e3caa356e876a1ca73dbb02b0_icgraph" alt=""/></div>
+<map name="aclassgl__input_a8b49079e3caa356e876a1ca73dbb02b0_icgraph" id="aclassgl__input_a8b49079e3caa356e876a1ca73dbb02b0_icgraph">
+<area shape="rect" title="Delete a book from the library." alt="" coords="491,55,640,80"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="476,70,444,70,444,65,476,65"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3355afbd09ac1671667a24bb6046631f" name="a3355afbd09ac1671667a24bb6046631f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3355afbd09ac1671667a24bb6046631f">&#9670;&#160;</a></span>parse_findclosest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gl_input::parse_findclosest </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find the book Id closest to the targetId. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_a3355afbd09ac1671667a24bb6046631f_cgraph.png" border="0" usemap="#aclassgl__input_a3355afbd09ac1671667a24bb6046631f_cgraph" alt=""/></div>
+<map name="aclassgl__input_a3355afbd09ac1671667a24bb6046631f_cgraph" id="aclassgl__input_a3355afbd09ac1671667a24bb6046631f_cgraph">
+<area shape="rect" title="Find the book Id closest to the targetId." alt="" coords="5,5,182,31"/>
+<area shape="rect" href="class_gator_library.html#abbfcbf67113738572dd7f6220517bca0" title="Find the book Id closest to the targetId." alt="" coords="230,5,430,31"/>
+<area shape="poly" title=" " alt="" coords="182,16,214,16,214,21,182,21"/>
+<area shape="rect" href="class_gator_library.html#a1f19418782655c17b104421e2129982f" title="Display the book details." alt="" coords="478,5,635,31"/>
+<area shape="poly" title=" " alt="" coords="430,16,462,16,462,21,430,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_a3355afbd09ac1671667a24bb6046631f_icgraph.png" border="0" usemap="#aclassgl__input_a3355afbd09ac1671667a24bb6046631f_icgraph" alt=""/></div>
+<map name="aclassgl__input_a3355afbd09ac1671667a24bb6046631f_icgraph" id="aclassgl__input_a3355afbd09ac1671667a24bb6046631f_icgraph">
+<area shape="rect" title="Find the book Id closest to the targetId." alt="" coords="491,55,668,80"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="476,70,444,70,444,65,476,65"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acdd81d4e3ed5502f7480d24685751406" name="acdd81d4e3ed5502f7480d24685751406"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdd81d4e3ed5502f7480d24685751406">&#9670;&#160;</a></span>parse_input()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gl_input::parse_input </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse the input and call the appropriate functions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>String. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<p>This function parses the input and calls the corresponding function based on the operation request on the library. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_acdd81d4e3ed5502f7480d24685751406_cgraph.png" border="0" usemap="#aclassgl__input_acdd81d4e3ed5502f7480d24685751406_cgraph" alt=""/></div>
+<map name="aclassgl__input_acdd81d4e3ed5502f7480d24685751406_cgraph" id="aclassgl__input_acdd81d4e3ed5502f7480d24685751406_cgraph">
+<area shape="rect" title="Parse the input and call the appropriate functions." alt="" coords="5,279,147,304"/>
+<area shape="rect" href="classgl__input.html#a3366b00643086f0b3aec7ba93884715f" title="Borrow a book from the library." alt="" coords="443,228,595,254"/>
+<area shape="poly" title=" " alt="" coords="131,275,194,264,316,250,427,242,427,247,316,255,195,269,132,281"/>
+<area shape="rect" href="classgl__input.html#ae14132daff275eb39f4c25afe4b6f570" title="Count the number of color flips in the red&#45;black tree." alt="" coords="204,128,362,154"/>
+<area shape="poly" title=" " alt="" coords="84,277,126,221,157,190,193,163,202,158,204,163,196,167,161,194,130,225,88,280"/>
+<area shape="rect" href="classgl__input.html#a8b49079e3caa356e876a1ca73dbb02b0" title="Delete a book from the library." alt="" coords="209,79,357,104"/>
+<area shape="poly" title=" " alt="" coords="80,277,95,244,118,199,151,153,193,113,199,110,202,114,196,118,155,157,123,202,99,246,85,279"/>
+<area shape="rect" href="classgl__input.html#a3355afbd09ac1671667a24bb6046631f" title="Find the book Id closest to the targetId." alt="" coords="195,377,371,403"/>
+<area shape="poly" title=" " alt="" coords="96,303,140,333,196,364,210,370,208,375,194,369,137,338,93,307"/>
+<area shape="rect" href="classgl__input.html#aeed43a038e4db4886314ccd8f5636231" title="Insert a new book into the library." alt="" coords="210,279,356,304"/>
+<area shape="poly" title=" " alt="" coords="147,289,195,289,195,294,147,294"/>
+<area shape="rect" href="classgl__input.html#a7248cd404c62a7eec3320a1c94795dfe" title="Display the book details." alt="" coords="450,452,588,478"/>
+<area shape="poly" title=" " alt="" coords="84,304,97,338,120,383,153,428,173,447,196,462,227,476,260,485,329,492,396,488,454,479,455,484,397,494,329,497,259,490,225,481,193,467,170,451,149,432,115,386,92,340,79,306"/>
+<area shape="rect" href="classgl__input.html#ac96457c61a01a5c116c8c42d227c063a" title="Display the book details for all books in the range." alt="" coords="210,328,356,354"/>
+<area shape="poly" title=" " alt="" coords="134,302,212,321,211,326,132,308"/>
+<area shape="rect" href="classgl__input.html#a86b7b6643a49247e2f3b5e784c327800" title="Terminate the program." alt="" coords="216,427,350,452"/>
+<area shape="poly" title=" " alt="" coords="88,303,131,357,161,387,196,413,204,418,202,422,193,418,158,391,127,361,84,307"/>
+<area shape="rect" href="classgl__input.html#aeea77865bd73e2701e186050f4bd480d" title="Return a book to the library." alt="" coords="210,177,356,203"/>
+<area shape="poly" title=" " alt="" coords="96,276,140,249,194,220,225,206,227,211,196,225,143,253,99,280"/>
+<area shape="rect" href="class_gator_library.html#a467a91656bd4ca083699c86729277057" title="Borrow a book from the library." alt="" coords="667,203,839,228"/>
+<area shape="poly" title=" " alt="" coords="595,230,652,224,652,229,596,235"/>
+<area shape="rect" href="class_gator_library.html#ac3634d61c160904cf59c602ad3fb655a" title="Display the number of color flips in the red black tree." alt="" coords="426,128,613,154"/>
+<area shape="poly" title=" " alt="" coords="363,138,410,138,410,144,363,144"/>
+<area shape="rect" href="class_gator_library.html#a1375b1f484f7eb778c3dfd11f6a15839" title="Delete a book from the library." alt="" coords="435,79,603,104"/>
+<area shape="poly" title=" " alt="" coords="357,89,420,89,420,94,357,94"/>
+<area shape="rect" href="classpq__reservation.html#a14715e85417c6b032a73c8511072d995" title="Check if the priority queue is empty." alt="" coords="678,128,828,154"/>
+<area shape="poly" title=" " alt="" coords="584,102,674,122,673,127,583,108"/>
+<area shape="rect" href="classpq__reservation.html#a752a562cbea3fea06730fa06c4745948" title="Remove the highest priority reservation from the priority queue." alt="" coords="685,29,821,55"/>
+<area shape="poly" title=" " alt="" coords="583,75,673,56,674,61,584,81"/>
+<area shape="rect" href="classpq__reservation.html#a020ac7d684f06fcf19a9f4d37f9adb26" title="Get the highest priority reservation from the priority queue." alt="" coords="687,79,819,104"/>
+<area shape="poly" title=" " alt="" coords="604,89,672,89,672,94,604,94"/>
+<area shape="rect" href="classpq__reservation.html#a074e200eda4173be4969bbb794f47c6d" title="Heapify the heap starting from the given index." alt="" coords="887,29,1043,55"/>
+<area shape="poly" title=" " alt="" coords="821,40,871,40,871,45,821,45"/>
+<area shape="poly" title=" " alt="" coords="930,31,923,21,927,11,941,5,965,3,991,5,1004,12,1002,17,989,10,965,8,942,10,930,15,928,20,934,27"/>
+<area shape="rect" href="class_gator_library.html#abbfcbf67113738572dd7f6220517bca0" title="Find the book Id closest to the targetId." alt="" coords="419,377,619,403"/>
+<area shape="poly" title=" " alt="" coords="371,388,403,388,403,393,371,393"/>
+<area shape="rect" href="class_gator_library.html#a1f19418782655c17b104421e2129982f" title="Display the book details." alt="" coords="674,377,832,403"/>
+<area shape="poly" title=" " alt="" coords="620,388,659,388,659,393,620,393"/>
+<area shape="rect" href="class_gator_library.html#ad540160a89c5b6b9ec43f48371051f42" title="Insert a new book into the library." alt="" coords="438,279,601,304"/>
+<area shape="poly" title=" " alt="" coords="356,289,422,289,422,294,356,294"/>
+<area shape="poly" title=" " alt="" coords="561,449,695,406,696,411,563,454"/>
+<area shape="rect" href="class_gator_library.html#a85e968d5fdea85c2be8d6ba19c8c1f0a" title="Display the book details for all books in the range." alt="" coords="437,328,601,354"/>
+<area shape="poly" title=" " alt="" coords="356,338,422,338,422,344,356,344"/>
+<area shape="poly" title=" " alt="" coords="584,352,674,371,673,376,583,357"/>
+<area shape="rect" href="class_gator_library.html#ab40ed9fc49d838f9797d6e7aa1e3d4ed" title="Return a book to the library." alt="" coords="435,177,604,203"/>
+<area shape="poly" title=" " alt="" coords="356,188,419,188,419,193,356,193"/>
+<area shape="poly" title=" " alt="" coords="604,197,652,202,651,207,604,202"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_acdd81d4e3ed5502f7480d24685751406_icgraph.png" border="0" usemap="#aclassgl__input_acdd81d4e3ed5502f7480d24685751406_icgraph" alt=""/></div>
+<map name="aclassgl__input_acdd81d4e3ed5502f7480d24685751406_icgraph" id="aclassgl__input_acdd81d4e3ed5502f7480d24685751406_icgraph">
+<area shape="rect" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aeed43a038e4db4886314ccd8f5636231" name="aeed43a038e4db4886314ccd8f5636231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeed43a038e4db4886314ccd8f5636231">&#9670;&#160;</a></span>parse_insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gl_input::parse_insert </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Insert a new book into the library. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>String. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<p>This function inserts a new book into the library. It takes the book ID, book name, author name, and availability status as parameters. It creates a new book object and inserts it into the red-black tree. The double quotes are ignored while reading the book name, author name, and availability status. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_aeed43a038e4db4886314ccd8f5636231_cgraph.png" border="0" usemap="#aclassgl__input_aeed43a038e4db4886314ccd8f5636231_cgraph" alt=""/></div>
+<map name="aclassgl__input_aeed43a038e4db4886314ccd8f5636231_cgraph" id="aclassgl__input_aeed43a038e4db4886314ccd8f5636231_cgraph">
+<area shape="rect" title="Insert a new book into the library." alt="" coords="5,5,151,31"/>
+<area shape="rect" href="class_gator_library.html#ad540160a89c5b6b9ec43f48371051f42" title="Insert a new book into the library." alt="" coords="199,5,362,31"/>
+<area shape="poly" title=" " alt="" coords="151,16,183,16,183,21,151,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_aeed43a038e4db4886314ccd8f5636231_icgraph.png" border="0" usemap="#aclassgl__input_aeed43a038e4db4886314ccd8f5636231_icgraph" alt=""/></div>
+<map name="aclassgl__input_aeed43a038e4db4886314ccd8f5636231_icgraph" id="aclassgl__input_aeed43a038e4db4886314ccd8f5636231_icgraph">
+<area shape="rect" title="Insert a new book into the library." alt="" coords="491,55,637,80"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="476,70,444,70,444,65,476,65"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7248cd404c62a7eec3320a1c94795dfe" name="a7248cd404c62a7eec3320a1c94795dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7248cd404c62a7eec3320a1c94795dfe">&#9670;&#160;</a></span>parse_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gl_input::parse_print </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Display the book details. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>String. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<p>This function displays the details of a book. It takes the book ID as a parameter and prints the details of the book with the given ID. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_a7248cd404c62a7eec3320a1c94795dfe_cgraph.png" border="0" usemap="#aclassgl__input_a7248cd404c62a7eec3320a1c94795dfe_cgraph" alt=""/></div>
+<map name="aclassgl__input_a7248cd404c62a7eec3320a1c94795dfe_cgraph" id="aclassgl__input_a7248cd404c62a7eec3320a1c94795dfe_cgraph">
+<area shape="rect" title="Display the book details." alt="" coords="5,5,144,31"/>
+<area shape="rect" href="class_gator_library.html#a1f19418782655c17b104421e2129982f" title="Display the book details." alt="" coords="192,5,349,31"/>
+<area shape="poly" title=" " alt="" coords="144,16,176,16,176,21,144,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_a7248cd404c62a7eec3320a1c94795dfe_icgraph.png" border="0" usemap="#aclassgl__input_a7248cd404c62a7eec3320a1c94795dfe_icgraph" alt=""/></div>
+<map name="aclassgl__input_a7248cd404c62a7eec3320a1c94795dfe_icgraph" id="aclassgl__input_a7248cd404c62a7eec3320a1c94795dfe_icgraph">
+<area shape="rect" title="Display the book details." alt="" coords="491,55,630,80"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="475,70,444,70,444,65,475,65"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac96457c61a01a5c116c8c42d227c063a" name="ac96457c61a01a5c116c8c42d227c063a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96457c61a01a5c116c8c42d227c063a">&#9670;&#160;</a></span>parse_prints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gl_input::parse_prints </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Display the book details for all books in the range. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_ac96457c61a01a5c116c8c42d227c063a_cgraph.png" border="0" usemap="#aclassgl__input_ac96457c61a01a5c116c8c42d227c063a_cgraph" alt=""/></div>
+<map name="aclassgl__input_ac96457c61a01a5c116c8c42d227c063a_cgraph" id="aclassgl__input_ac96457c61a01a5c116c8c42d227c063a_cgraph">
+<area shape="rect" title="Display the book details for all books in the range." alt="" coords="5,5,151,31"/>
+<area shape="rect" href="class_gator_library.html#a85e968d5fdea85c2be8d6ba19c8c1f0a" title="Display the book details for all books in the range." alt="" coords="199,5,363,31"/>
+<area shape="poly" title=" " alt="" coords="151,16,183,16,183,21,151,21"/>
+<area shape="rect" href="class_gator_library.html#a1f19418782655c17b104421e2129982f" title="Display the book details." alt="" coords="411,5,568,31"/>
+<area shape="poly" title=" " alt="" coords="364,16,395,16,395,21,364,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_ac96457c61a01a5c116c8c42d227c063a_icgraph.png" border="0" usemap="#aclassgl__input_ac96457c61a01a5c116c8c42d227c063a_icgraph" alt=""/></div>
+<map name="aclassgl__input_ac96457c61a01a5c116c8c42d227c063a_icgraph" id="aclassgl__input_ac96457c61a01a5c116c8c42d227c063a_icgraph">
+<area shape="rect" title="Display the book details for all books in the range." alt="" coords="491,55,637,80"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="476,70,444,70,444,65,476,65"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a86b7b6643a49247e2f3b5e784c327800" name="a86b7b6643a49247e2f3b5e784c327800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b7b6643a49247e2f3b5e784c327800">&#9670;&#160;</a></span>parse_quit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gl_input::parse_quit </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Terminate the program. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_a86b7b6643a49247e2f3b5e784c327800_icgraph.png" border="0" usemap="#aclassgl__input_a86b7b6643a49247e2f3b5e784c327800_icgraph" alt=""/></div>
+<map name="aclassgl__input_a86b7b6643a49247e2f3b5e784c327800_icgraph" id="aclassgl__input_a86b7b6643a49247e2f3b5e784c327800_icgraph">
+<area shape="rect" title="Terminate the program." alt="" coords="491,55,626,80"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="476,70,444,70,444,65,476,65"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aeea77865bd73e2701e186050f4bd480d" name="aeea77865bd73e2701e186050f4bd480d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeea77865bd73e2701e186050f4bd480d">&#9670;&#160;</a></span>parse_return()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gl_input::parse_return </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a book to the library. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_aeea77865bd73e2701e186050f4bd480d_cgraph.png" border="0" usemap="#aclassgl__input_aeea77865bd73e2701e186050f4bd480d_cgraph" alt=""/></div>
+<map name="aclassgl__input_aeea77865bd73e2701e186050f4bd480d_cgraph" id="aclassgl__input_aeea77865bd73e2701e186050f4bd480d_cgraph">
+<area shape="rect" title="Return a book to the library." alt="" coords="5,5,152,31"/>
+<area shape="rect" href="class_gator_library.html#ab40ed9fc49d838f9797d6e7aa1e3d4ed" title="Return a book to the library." alt="" coords="200,5,369,31"/>
+<area shape="poly" title=" " alt="" coords="152,16,184,16,184,21,152,21"/>
+<area shape="rect" href="class_gator_library.html#a467a91656bd4ca083699c86729277057" title="Borrow a book from the library." alt="" coords="417,5,588,31"/>
+<area shape="poly" title=" " alt="" coords="370,16,401,16,401,21,370,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_aeea77865bd73e2701e186050f4bd480d_icgraph.png" border="0" usemap="#aclassgl__input_aeea77865bd73e2701e186050f4bd480d_icgraph" alt=""/></div>
+<map name="aclassgl__input_aeea77865bd73e2701e186050f4bd480d_icgraph" id="aclassgl__input_aeea77865bd73e2701e186050f4bd480d_icgraph">
+<area shape="rect" title="Return a book to the library." alt="" coords="491,55,638,80"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="302,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="476,70,444,70,444,65,476,65"/>
+<area shape="rect" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input." alt="" coords="132,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,224,32,225,27,305,48"/>
+<area shape="rect" href="classgl__input.html#a89b0968d003461b808595b47c580b58d" title="Run the program with the given file." alt="" coords="108,55,249,80"/>
+<area shape="poly" title=" " alt="" coords="287,70,249,70,249,65,287,65"/>
+<area shape="rect" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input." alt="" coords="103,104,254,130"/>
+<area shape="poly" title=" " alt="" coords="305,87,233,106,231,101,304,82"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="93,85,55,91,54,86,92,80"/>
+<area shape="poly" title=" " alt="" coords="87,105,55,99,56,94,87,99"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4e2234453b9936eb8b9785be0190d3ba" name="a4e2234453b9936eb8b9785be0190d3ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e2234453b9936eb8b9785be0190d3ba">&#9670;&#160;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gl_input::run </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Run the program with the given input. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>String.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function runs the program with the given input. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e" title="Run the program with the standard input.">runwith_stdin</a> run_with_file </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_a4e2234453b9936eb8b9785be0190d3ba_cgraph.png" border="0" usemap="#aclassgl__input_a4e2234453b9936eb8b9785be0190d3ba_cgraph" alt=""/></div>
+<map name="aclassgl__input_a4e2234453b9936eb8b9785be0190d3ba_cgraph" id="aclassgl__input_a4e2234453b9936eb8b9785be0190d3ba_cgraph">
+<area shape="rect" title="Run the program with the given input." alt="" coords="5,279,98,304"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="146,279,287,304"/>
+<area shape="poly" title=" " alt="" coords="98,289,130,289,130,294,98,294"/>
+<area shape="rect" href="classgl__input.html#a3366b00643086f0b3aec7ba93884715f" title="Borrow a book from the library." alt="" coords="583,228,736,254"/>
+<area shape="poly" title=" " alt="" coords="272,275,335,264,456,250,567,242,568,247,456,255,335,269,273,281"/>
+<area shape="rect" href="classgl__input.html#ae14132daff275eb39f4c25afe4b6f570" title="Count the number of color flips in the red&#45;black tree." alt="" coords="344,128,502,154"/>
+<area shape="poly" title=" " alt="" coords="224,277,266,221,298,190,334,163,342,158,345,163,336,167,301,194,270,225,228,280"/>
+<area shape="rect" href="classgl__input.html#a8b49079e3caa356e876a1ca73dbb02b0" title="Delete a book from the library." alt="" coords="349,79,497,104"/>
+<area shape="poly" title=" " alt="" coords="220,277,235,244,259,199,292,153,333,113,339,110,342,114,337,118,296,157,263,202,240,246,225,279"/>
+<area shape="rect" href="classgl__input.html#a3355afbd09ac1671667a24bb6046631f" title="Find the book Id closest to the targetId." alt="" coords="335,377,511,403"/>
+<area shape="poly" title=" " alt="" coords="237,303,280,333,336,364,351,370,349,375,334,369,278,338,233,307"/>
+<area shape="rect" href="classgl__input.html#aeed43a038e4db4886314ccd8f5636231" title="Insert a new book into the library." alt="" coords="351,279,496,304"/>
+<area shape="poly" title=" " alt="" coords="287,289,335,289,335,294,287,294"/>
+<area shape="rect" href="classgl__input.html#a7248cd404c62a7eec3320a1c94795dfe" title="Display the book details." alt="" coords="590,452,729,478"/>
+<area shape="poly" title=" " alt="" coords="224,304,237,338,260,383,293,428,313,447,336,462,368,476,401,485,470,492,536,488,594,479,595,484,537,494,470,497,400,490,366,481,334,467,310,451,289,432,256,386,233,340,219,306"/>
+<area shape="rect" href="classgl__input.html#ac96457c61a01a5c116c8c42d227c063a" title="Display the book details for all books in the range." alt="" coords="351,328,496,354"/>
+<area shape="poly" title=" " alt="" coords="274,302,352,321,351,326,273,308"/>
+<area shape="rect" href="classgl__input.html#a86b7b6643a49247e2f3b5e784c327800" title="Terminate the program." alt="" coords="356,427,490,452"/>
+<area shape="poly" title=" " alt="" coords="229,303,271,357,302,387,336,413,345,418,342,422,334,418,298,391,267,361,224,307"/>
+<area shape="rect" href="classgl__input.html#aeea77865bd73e2701e186050f4bd480d" title="Return a book to the library." alt="" coords="350,177,496,203"/>
+<area shape="poly" title=" " alt="" coords="236,276,280,249,334,220,365,206,367,211,336,225,283,253,239,280"/>
+<area shape="rect" href="class_gator_library.html#a467a91656bd4ca083699c86729277057" title="Borrow a book from the library." alt="" coords="808,203,979,228"/>
+<area shape="poly" title=" " alt="" coords="736,230,792,224,793,229,736,235"/>
+<area shape="rect" href="class_gator_library.html#ac3634d61c160904cf59c602ad3fb655a" title="Display the number of color flips in the red black tree." alt="" coords="566,128,753,154"/>
+<area shape="poly" title=" " alt="" coords="503,138,550,138,550,144,503,144"/>
+<area shape="rect" href="class_gator_library.html#a1375b1f484f7eb778c3dfd11f6a15839" title="Delete a book from the library." alt="" coords="575,79,744,104"/>
+<area shape="poly" title=" " alt="" coords="498,89,560,89,560,94,498,94"/>
+<area shape="rect" href="classpq__reservation.html#a14715e85417c6b032a73c8511072d995" title="Check if the priority queue is empty." alt="" coords="818,128,969,154"/>
+<area shape="poly" title=" " alt="" coords="725,102,815,122,813,127,723,108"/>
+<area shape="rect" href="classpq__reservation.html#a752a562cbea3fea06730fa06c4745948" title="Remove the highest priority reservation from the priority queue." alt="" coords="826,29,961,55"/>
+<area shape="poly" title=" " alt="" coords="723,75,813,56,815,61,725,81"/>
+<area shape="rect" href="classpq__reservation.html#a020ac7d684f06fcf19a9f4d37f9adb26" title="Get the highest priority reservation from the priority queue." alt="" coords="827,79,960,104"/>
+<area shape="poly" title=" " alt="" coords="744,89,812,89,812,94,744,94"/>
+<area shape="rect" href="classpq__reservation.html#a074e200eda4173be4969bbb794f47c6d" title="Heapify the heap starting from the given index." alt="" coords="1027,29,1183,55"/>
+<area shape="poly" title=" " alt="" coords="961,40,1011,40,1011,45,961,45"/>
+<area shape="poly" title=" " alt="" coords="1070,31,1063,21,1067,11,1082,5,1105,3,1131,5,1144,12,1142,17,1130,10,1105,8,1083,10,1071,15,1068,20,1074,27"/>
+<area shape="rect" href="class_gator_library.html#abbfcbf67113738572dd7f6220517bca0" title="Find the book Id closest to the targetId." alt="" coords="559,377,760,403"/>
+<area shape="poly" title=" " alt="" coords="512,388,544,388,544,393,512,393"/>
+<area shape="rect" href="class_gator_library.html#a1f19418782655c17b104421e2129982f" title="Display the book details." alt="" coords="815,377,972,403"/>
+<area shape="poly" title=" " alt="" coords="760,388,799,388,799,393,760,393"/>
+<area shape="rect" href="class_gator_library.html#ad540160a89c5b6b9ec43f48371051f42" title="Insert a new book into the library." alt="" coords="578,279,741,304"/>
+<area shape="poly" title=" " alt="" coords="496,289,562,289,562,294,496,294"/>
+<area shape="poly" title=" " alt="" coords="701,449,835,406,837,411,703,454"/>
+<area shape="rect" href="class_gator_library.html#a85e968d5fdea85c2be8d6ba19c8c1f0a" title="Display the book details for all books in the range." alt="" coords="577,328,742,354"/>
+<area shape="poly" title=" " alt="" coords="496,338,562,338,562,344,496,344"/>
+<area shape="poly" title=" " alt="" coords="725,352,815,371,813,376,723,357"/>
+<area shape="rect" href="class_gator_library.html#ab40ed9fc49d838f9797d6e7aa1e3d4ed" title="Return a book to the library." alt="" coords="575,177,744,203"/>
+<area shape="poly" title=" " alt="" coords="497,188,559,188,559,193,497,193"/>
+<area shape="poly" title=" " alt="" coords="745,197,792,202,792,207,744,202"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a89b0968d003461b808595b47c580b58d" name="a89b0968d003461b808595b47c580b58d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89b0968d003461b808595b47c580b58d">&#9670;&#160;</a></span>runwith_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gl_input::runwith_file </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Run the program with the given file. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_a89b0968d003461b808595b47c580b58d_cgraph.png" border="0" usemap="#aclassgl__input_a89b0968d003461b808595b47c580b58d_cgraph" alt=""/></div>
+<map name="aclassgl__input_a89b0968d003461b808595b47c580b58d_cgraph" id="aclassgl__input_a89b0968d003461b808595b47c580b58d_cgraph">
+<area shape="rect" title="Run the program with the given file." alt="" coords="5,279,146,304"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="194,279,335,304"/>
+<area shape="poly" title=" " alt="" coords="146,289,178,289,178,294,146,294"/>
+<area shape="rect" href="classgl__input.html#a3366b00643086f0b3aec7ba93884715f" title="Borrow a book from the library." alt="" coords="631,228,784,254"/>
+<area shape="poly" title=" " alt="" coords="320,275,383,264,504,250,615,242,616,247,504,255,383,269,321,281"/>
+<area shape="rect" href="classgl__input.html#ae14132daff275eb39f4c25afe4b6f570" title="Count the number of color flips in the red&#45;black tree." alt="" coords="392,128,550,154"/>
+<area shape="poly" title=" " alt="" coords="272,277,314,221,346,190,382,163,390,158,393,163,384,167,349,194,318,225,276,280"/>
+<area shape="rect" href="classgl__input.html#a8b49079e3caa356e876a1ca73dbb02b0" title="Delete a book from the library." alt="" coords="397,79,545,104"/>
+<area shape="poly" title=" " alt="" coords="268,277,283,244,307,199,340,153,381,113,387,110,390,114,385,118,344,157,311,202,288,246,273,279"/>
+<area shape="rect" href="classgl__input.html#a3355afbd09ac1671667a24bb6046631f" title="Find the book Id closest to the targetId." alt="" coords="383,377,559,403"/>
+<area shape="poly" title=" " alt="" coords="285,303,328,333,384,364,399,370,397,375,382,369,326,338,281,307"/>
+<area shape="rect" href="classgl__input.html#aeed43a038e4db4886314ccd8f5636231" title="Insert a new book into the library." alt="" coords="399,279,544,304"/>
+<area shape="poly" title=" " alt="" coords="335,289,383,289,383,294,335,294"/>
+<area shape="rect" href="classgl__input.html#a7248cd404c62a7eec3320a1c94795dfe" title="Display the book details." alt="" coords="638,452,777,478"/>
+<area shape="poly" title=" " alt="" coords="272,304,285,338,308,383,341,428,361,447,384,462,416,476,449,485,518,492,584,488,642,479,643,484,585,494,518,497,448,490,414,481,382,467,358,451,337,432,304,386,281,340,267,306"/>
+<area shape="rect" href="classgl__input.html#ac96457c61a01a5c116c8c42d227c063a" title="Display the book details for all books in the range." alt="" coords="399,328,544,354"/>
+<area shape="poly" title=" " alt="" coords="322,302,400,321,399,326,321,308"/>
+<area shape="rect" href="classgl__input.html#a86b7b6643a49247e2f3b5e784c327800" title="Terminate the program." alt="" coords="404,427,538,452"/>
+<area shape="poly" title=" " alt="" coords="277,303,319,357,350,387,384,413,393,418,390,422,382,418,346,391,315,361,272,307"/>
+<area shape="rect" href="classgl__input.html#aeea77865bd73e2701e186050f4bd480d" title="Return a book to the library." alt="" coords="398,177,544,203"/>
+<area shape="poly" title=" " alt="" coords="284,276,328,249,382,220,413,206,415,211,384,225,331,253,287,280"/>
+<area shape="rect" href="class_gator_library.html#a467a91656bd4ca083699c86729277057" title="Borrow a book from the library." alt="" coords="856,203,1027,228"/>
+<area shape="poly" title=" " alt="" coords="784,230,840,224,841,229,784,235"/>
+<area shape="rect" href="class_gator_library.html#ac3634d61c160904cf59c602ad3fb655a" title="Display the number of color flips in the red black tree." alt="" coords="614,128,801,154"/>
+<area shape="poly" title=" " alt="" coords="551,138,598,138,598,144,551,144"/>
+<area shape="rect" href="class_gator_library.html#a1375b1f484f7eb778c3dfd11f6a15839" title="Delete a book from the library." alt="" coords="623,79,792,104"/>
+<area shape="poly" title=" " alt="" coords="546,89,608,89,608,94,546,94"/>
+<area shape="rect" href="classpq__reservation.html#a14715e85417c6b032a73c8511072d995" title="Check if the priority queue is empty." alt="" coords="866,128,1017,154"/>
+<area shape="poly" title=" " alt="" coords="773,102,863,122,861,127,771,108"/>
+<area shape="rect" href="classpq__reservation.html#a752a562cbea3fea06730fa06c4745948" title="Remove the highest priority reservation from the priority queue." alt="" coords="874,29,1009,55"/>
+<area shape="poly" title=" " alt="" coords="771,75,861,56,863,61,773,81"/>
+<area shape="rect" href="classpq__reservation.html#a020ac7d684f06fcf19a9f4d37f9adb26" title="Get the highest priority reservation from the priority queue." alt="" coords="875,79,1008,104"/>
+<area shape="poly" title=" " alt="" coords="792,89,860,89,860,94,792,94"/>
+<area shape="rect" href="classpq__reservation.html#a074e200eda4173be4969bbb794f47c6d" title="Heapify the heap starting from the given index." alt="" coords="1075,29,1231,55"/>
+<area shape="poly" title=" " alt="" coords="1009,40,1059,40,1059,45,1009,45"/>
+<area shape="poly" title=" " alt="" coords="1118,31,1111,21,1115,11,1130,5,1153,3,1179,5,1192,12,1190,17,1178,10,1153,8,1131,10,1119,15,1116,20,1122,27"/>
+<area shape="rect" href="class_gator_library.html#abbfcbf67113738572dd7f6220517bca0" title="Find the book Id closest to the targetId." alt="" coords="607,377,808,403"/>
+<area shape="poly" title=" " alt="" coords="560,388,592,388,592,393,560,393"/>
+<area shape="rect" href="class_gator_library.html#a1f19418782655c17b104421e2129982f" title="Display the book details." alt="" coords="863,377,1020,403"/>
+<area shape="poly" title=" " alt="" coords="808,388,847,388,847,393,808,393"/>
+<area shape="rect" href="class_gator_library.html#ad540160a89c5b6b9ec43f48371051f42" title="Insert a new book into the library." alt="" coords="626,279,789,304"/>
+<area shape="poly" title=" " alt="" coords="544,289,610,289,610,294,544,294"/>
+<area shape="poly" title=" " alt="" coords="749,449,883,406,885,411,751,454"/>
+<area shape="rect" href="class_gator_library.html#a85e968d5fdea85c2be8d6ba19c8c1f0a" title="Display the book details for all books in the range." alt="" coords="625,328,790,354"/>
+<area shape="poly" title=" " alt="" coords="544,338,610,338,610,344,544,344"/>
+<area shape="poly" title=" " alt="" coords="773,352,863,371,861,376,771,357"/>
+<area shape="rect" href="class_gator_library.html#ab40ed9fc49d838f9797d6e7aa1e3d4ed" title="Return a book to the library." alt="" coords="623,177,792,203"/>
+<area shape="poly" title=" " alt="" coords="545,188,607,188,607,193,545,193"/>
+<area shape="poly" title=" " alt="" coords="793,197,840,202,840,207,792,202"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_a89b0968d003461b808595b47c580b58d_icgraph.png" border="0" usemap="#aclassgl__input_a89b0968d003461b808595b47c580b58d_icgraph" alt=""/></div>
+<map name="aclassgl__input_a89b0968d003461b808595b47c580b58d_icgraph" id="aclassgl__input_a89b0968d003461b808595b47c580b58d_icgraph">
+<area shape="rect" title="Run the program with the given file." alt="" coords="103,5,243,31"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,5,55,31"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1fe6abc251739a0fa257acdc9688fc1e" name="a1fe6abc251739a0fa257acdc9688fc1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fe6abc251739a0fa257acdc9688fc1e">&#9670;&#160;</a></span>runwith_stdin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gl_input::runwith_stdin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Run the program with the standard input. </p>
+<p>This function runs the program with the standard input. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba" title="Run the program with the given input.">run</a> run_with_file </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_a1fe6abc251739a0fa257acdc9688fc1e_cgraph.png" border="0" usemap="#aclassgl__input_a1fe6abc251739a0fa257acdc9688fc1e_cgraph" alt=""/></div>
+<map name="aclassgl__input_a1fe6abc251739a0fa257acdc9688fc1e_cgraph" id="aclassgl__input_a1fe6abc251739a0fa257acdc9688fc1e_cgraph">
+<area shape="rect" title="Run the program with the standard input." alt="" coords="5,279,157,304"/>
+<area shape="rect" href="classgl__input.html#acdd81d4e3ed5502f7480d24685751406" title="Parse the input and call the appropriate functions." alt="" coords="205,279,346,304"/>
+<area shape="poly" title=" " alt="" coords="157,289,189,289,189,294,157,294"/>
+<area shape="rect" href="classgl__input.html#a3366b00643086f0b3aec7ba93884715f" title="Borrow a book from the library." alt="" coords="642,228,795,254"/>
+<area shape="poly" title=" " alt="" coords="331,275,394,264,515,250,626,242,627,247,515,255,394,269,332,281"/>
+<area shape="rect" href="classgl__input.html#ae14132daff275eb39f4c25afe4b6f570" title="Count the number of color flips in the red&#45;black tree." alt="" coords="403,128,561,154"/>
+<area shape="poly" title=" " alt="" coords="283,277,325,221,357,190,393,163,401,158,404,163,395,167,360,194,329,225,287,280"/>
+<area shape="rect" href="classgl__input.html#a8b49079e3caa356e876a1ca73dbb02b0" title="Delete a book from the library." alt="" coords="408,79,556,104"/>
+<area shape="poly" title=" " alt="" coords="279,277,294,244,318,199,351,153,392,113,398,110,401,114,396,118,355,157,322,202,299,246,284,279"/>
+<area shape="rect" href="classgl__input.html#a3355afbd09ac1671667a24bb6046631f" title="Find the book Id closest to the targetId." alt="" coords="394,377,570,403"/>
+<area shape="poly" title=" " alt="" coords="296,303,339,333,395,364,410,370,408,375,393,369,337,338,292,307"/>
+<area shape="rect" href="classgl__input.html#aeed43a038e4db4886314ccd8f5636231" title="Insert a new book into the library." alt="" coords="410,279,555,304"/>
+<area shape="poly" title=" " alt="" coords="346,289,394,289,394,294,346,294"/>
+<area shape="rect" href="classgl__input.html#a7248cd404c62a7eec3320a1c94795dfe" title="Display the book details." alt="" coords="649,452,788,478"/>
+<area shape="poly" title=" " alt="" coords="283,304,296,338,319,383,352,428,372,447,395,462,427,476,460,485,529,492,595,488,653,479,654,484,596,494,529,497,459,490,425,481,393,467,369,451,348,432,315,386,292,340,278,306"/>
+<area shape="rect" href="classgl__input.html#ac96457c61a01a5c116c8c42d227c063a" title="Display the book details for all books in the range." alt="" coords="410,328,555,354"/>
+<area shape="poly" title=" " alt="" coords="333,302,411,321,410,326,332,308"/>
+<area shape="rect" href="classgl__input.html#a86b7b6643a49247e2f3b5e784c327800" title="Terminate the program." alt="" coords="415,427,549,452"/>
+<area shape="poly" title=" " alt="" coords="288,303,330,357,361,387,395,413,404,418,401,422,393,418,357,391,326,361,283,307"/>
+<area shape="rect" href="classgl__input.html#aeea77865bd73e2701e186050f4bd480d" title="Return a book to the library." alt="" coords="409,177,555,203"/>
+<area shape="poly" title=" " alt="" coords="295,276,339,249,393,220,424,206,426,211,395,225,342,253,298,280"/>
+<area shape="rect" href="class_gator_library.html#a467a91656bd4ca083699c86729277057" title="Borrow a book from the library." alt="" coords="867,203,1038,228"/>
+<area shape="poly" title=" " alt="" coords="795,230,851,224,852,229,795,235"/>
+<area shape="rect" href="class_gator_library.html#ac3634d61c160904cf59c602ad3fb655a" title="Display the number of color flips in the red black tree." alt="" coords="625,128,812,154"/>
+<area shape="poly" title=" " alt="" coords="562,138,609,138,609,144,562,144"/>
+<area shape="rect" href="class_gator_library.html#a1375b1f484f7eb778c3dfd11f6a15839" title="Delete a book from the library." alt="" coords="634,79,803,104"/>
+<area shape="poly" title=" " alt="" coords="557,89,619,89,619,94,557,94"/>
+<area shape="rect" href="classpq__reservation.html#a14715e85417c6b032a73c8511072d995" title="Check if the priority queue is empty." alt="" coords="877,128,1028,154"/>
+<area shape="poly" title=" " alt="" coords="784,102,874,122,872,127,782,108"/>
+<area shape="rect" href="classpq__reservation.html#a752a562cbea3fea06730fa06c4745948" title="Remove the highest priority reservation from the priority queue." alt="" coords="885,29,1020,55"/>
+<area shape="poly" title=" " alt="" coords="782,75,872,56,874,61,784,81"/>
+<area shape="rect" href="classpq__reservation.html#a020ac7d684f06fcf19a9f4d37f9adb26" title="Get the highest priority reservation from the priority queue." alt="" coords="886,79,1019,104"/>
+<area shape="poly" title=" " alt="" coords="803,89,871,89,871,94,803,94"/>
+<area shape="rect" href="classpq__reservation.html#a074e200eda4173be4969bbb794f47c6d" title="Heapify the heap starting from the given index." alt="" coords="1086,29,1242,55"/>
+<area shape="poly" title=" " alt="" coords="1020,40,1070,40,1070,45,1020,45"/>
+<area shape="poly" title=" " alt="" coords="1129,31,1122,21,1126,11,1141,5,1164,3,1190,5,1203,12,1201,17,1189,10,1164,8,1142,10,1130,15,1127,20,1133,27"/>
+<area shape="rect" href="class_gator_library.html#abbfcbf67113738572dd7f6220517bca0" title="Find the book Id closest to the targetId." alt="" coords="618,377,819,403"/>
+<area shape="poly" title=" " alt="" coords="571,388,603,388,603,393,571,393"/>
+<area shape="rect" href="class_gator_library.html#a1f19418782655c17b104421e2129982f" title="Display the book details." alt="" coords="874,377,1031,403"/>
+<area shape="poly" title=" " alt="" coords="819,388,858,388,858,393,819,393"/>
+<area shape="rect" href="class_gator_library.html#ad540160a89c5b6b9ec43f48371051f42" title="Insert a new book into the library." alt="" coords="637,279,800,304"/>
+<area shape="poly" title=" " alt="" coords="555,289,621,289,621,294,555,294"/>
+<area shape="poly" title=" " alt="" coords="760,449,894,406,896,411,762,454"/>
+<area shape="rect" href="class_gator_library.html#a85e968d5fdea85c2be8d6ba19c8c1f0a" title="Display the book details for all books in the range." alt="" coords="636,328,801,354"/>
+<area shape="poly" title=" " alt="" coords="555,338,621,338,621,344,555,344"/>
+<area shape="poly" title=" " alt="" coords="784,352,874,371,872,376,782,357"/>
+<area shape="rect" href="class_gator_library.html#ab40ed9fc49d838f9797d6e7aa1e3d4ed" title="Return a book to the library." alt="" coords="634,177,803,203"/>
+<area shape="poly" title=" " alt="" coords="556,188,618,188,618,193,556,193"/>
+<area shape="poly" title=" " alt="" coords="804,197,851,202,851,207,803,202"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgl__input_a1fe6abc251739a0fa257acdc9688fc1e_icgraph.png" border="0" usemap="#aclassgl__input_a1fe6abc251739a0fa257acdc9688fc1e_icgraph" alt=""/></div>
+<map name="aclassgl__input_a1fe6abc251739a0fa257acdc9688fc1e_icgraph" id="aclassgl__input_a1fe6abc251739a0fa257acdc9688fc1e_icgraph">
+<area shape="rect" title="Run the program with the standard input." alt="" coords="103,5,254,31"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="The main function." alt="" coords="5,5,55,31"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6e0d809804de3a556b03f77243161dac" name="a6e0d809804de3a556b03f77243161dac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e0d809804de3a556b03f77243161dac">&#9670;&#160;</a></span>library</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_gator_library.html">GatorLibrary</a> gl_input::library</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="gl__input_8cpp_source.html">gl_input.cpp</a></li>
 </ul>

@@ -23,7 +23,7 @@
   <td id="projectalign">
    <div id="projectname">Gator Library
    </div>
-   <div id="projectbrief">An implmentation of library to demonstate Red-Black Tree and Priority Queue</div>
+   <div id="projectbrief">An implementation of the Red-Black Tree and Priority queue data structure in C++.</div>
   </td>
  </tr>
  </tbody>
@@ -72,6 +72,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_r_b_tree-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">RBTree Class Reference</div></div>
 </div><!--header-->
@@ -81,20 +83,27 @@ $(function() {
  <a href="class_r_b_tree.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="redblack__tree_8hpp_source.html">redblack_tree.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for RBTree:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree__coll__graph.png" border="0" usemap="#a_r_b_tree_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_b_tree_coll__map" id="a_r_b_tree_coll__map">
+<area shape="rect" title="Header file for the RBTree class and RbtNode class." alt="" coords="5,5,133,431"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a19921f34f32f777bb3c4b85d4ff1d9de" id="r_a19921f34f32f777bb3c4b85d4ff1d9de"><td class="memItemLeft" align="right" valign="top"><a id="a19921f34f32f777bb3c4b85d4ff1d9de" name="a19921f34f32f777bb3c4b85d4ff1d9de"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RBTree</b> ()</td></tr>
-<tr class="memdesc:a19921f34f32f777bb3c4b85d4ff1d9de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_r_b_tree.html" title="Header file for the RBTree class and RbtNode class.">RBTree</a> object. <br /></td></tr>
+<tr class="memitem:a19921f34f32f777bb3c4b85d4ff1d9de" id="r_a19921f34f32f777bb3c4b85d4ff1d9de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#a19921f34f32f777bb3c4b85d4ff1d9de">RBTree</a> ()</td></tr>
+<tr class="memdesc:a19921f34f32f777bb3c4b85d4ff1d9de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_r_b_tree.html" title="Header file for the RBTree class and RbtNode class.">RBTree</a> object.  <br /></td></tr>
 <tr class="separator:a19921f34f32f777bb3c4b85d4ff1d9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa248971031b20c9d240816bc60bb2eff" id="r_aa248971031b20c9d240816bc60bb2eff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#aa248971031b20c9d240816bc60bb2eff">ColorFlipCount</a> ()</td></tr>
 <tr class="memdesc:aa248971031b20c9d240816bc60bb2eff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of color flips performed during tree operations.  <br /></td></tr>
 <tr class="separator:aa248971031b20c9d240816bc60bb2eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4956d555591326e0552f3c59d6a2b51a" id="r_a4956d555591326e0552f3c59d6a2b51a"><td class="memItemLeft" align="right" valign="top">rbtnode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#a4956d555591326e0552f3c59d6a2b51a">begin</a> ()</td></tr>
+<tr class="memitem:a4956d555591326e0552f3c59d6a2b51a" id="r_a4956d555591326e0552f3c59d6a2b51a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#a4956d555591326e0552f3c59d6a2b51a">begin</a> ()</td></tr>
 <tr class="memdesc:a4956d555591326e0552f3c59d6a2b51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the first node in the red-black tree.  <br /></td></tr>
 <tr class="separator:a4956d555591326e0552f3c59d6a2b51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a281395aa680a897a349e15a9271c2709" id="r_a281395aa680a897a349e15a9271c2709"><td class="memItemLeft" align="right" valign="top">rbtnode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#a281395aa680a897a349e15a9271c2709">end</a> ()</td></tr>
+<tr class="memitem:a281395aa680a897a349e15a9271c2709" id="r_a281395aa680a897a349e15a9271c2709"><td class="memItemLeft" align="right" valign="top"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#a281395aa680a897a349e15a9271c2709">end</a> ()</td></tr>
 <tr class="memdesc:a281395aa680a897a349e15a9271c2709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the end of the red-black tree.  <br /></td></tr>
 <tr class="separator:a281395aa680a897a349e15a9271c2709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30b4f0d5202b253454fafd082d3d2652" id="r_a30b4f0d5202b253454fafd082d3d2652"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#a30b4f0d5202b253454fafd082d3d2652">add</a> (<a class="el" href="classbook.html">book</a> book_info)</td></tr>
@@ -103,25 +112,71 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae537eec905557804f2bbaefe4839938c" id="r_ae537eec905557804f2bbaefe4839938c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#ae537eec905557804f2bbaefe4839938c">remove</a> (int key)</td></tr>
 <tr class="memdesc:ae537eec905557804f2bbaefe4839938c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a book from the red-black tree based on the given key.  <br /></td></tr>
 <tr class="separator:ae537eec905557804f2bbaefe4839938c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36c110fa7818d2695eb14e48f6260bda" id="r_a36c110fa7818d2695eb14e48f6260bda"><td class="memItemLeft" align="right" valign="top">rbtnode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#a36c110fa7818d2695eb14e48f6260bda">find</a> (int key) const</td></tr>
+<tr class="memitem:a36c110fa7818d2695eb14e48f6260bda" id="r_a36c110fa7818d2695eb14e48f6260bda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#a36c110fa7818d2695eb14e48f6260bda">find</a> (int key) const</td></tr>
 <tr class="memdesc:a36c110fa7818d2695eb14e48f6260bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a book in the red-black tree based on the given key.  <br /></td></tr>
 <tr class="separator:a36c110fa7818d2695eb14e48f6260bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ce47cffb39921ceb63e2dff3c2b0baf" id="r_a7ce47cffb39921ceb63e2dff3c2b0baf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#a7ce47cffb39921ceb63e2dff3c2b0baf">findclosest</a> (int targetId) const</td></tr>
 <tr class="memdesc:a7ce47cffb39921ceb63e2dff3c2b0baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the closest book IDs to the given target ID in the red-black tree.  <br /></td></tr>
 <tr class="separator:a7ce47cffb39921ceb63e2dff3c2b0baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad25597ac27143c466303ecaf43845e2f" id="r_ad25597ac27143c466303ecaf43845e2f"><td class="memItemLeft" align="right" valign="top">rbtnode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#ad25597ac27143c466303ecaf43845e2f">operator[]</a> (int key) const</td></tr>
+<tr class="memitem:ad25597ac27143c466303ecaf43845e2f" id="r_ad25597ac27143c466303ecaf43845e2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#ad25597ac27143c466303ecaf43845e2f">operator[]</a> (int key) const</td></tr>
 <tr class="memdesc:ad25597ac27143c466303ecaf43845e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloads the subscript operator to find a book in the red-black tree based on the given key.  <br /></td></tr>
 <tr class="separator:ad25597ac27143c466303ecaf43845e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bf4f482a4b1cabde2c7ae392abe961f" id="r_a5bf4f482a4b1cabde2c7ae392abe961f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#a5bf4f482a4b1cabde2c7ae392abe961f">empty</a> () const</td></tr>
 <tr class="memdesc:a5bf4f482a4b1cabde2c7ae392abe961f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the red-black tree is empty.  <br /></td></tr>
 <tr class="separator:a5bf4f482a4b1cabde2c7ae392abe961f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af57ab67a97b47722acad4f82d59850b1" id="r_af57ab67a97b47722acad4f82d59850b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#af57ab67a97b47722acad4f82d59850b1">rotate_left</a> (<a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&amp;, <a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&amp;)</td></tr>
+<tr class="separator:af57ab67a97b47722acad4f82d59850b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a842820f689bddad749a5a3ec05856f0c" id="r_a842820f689bddad749a5a3ec05856f0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#a842820f689bddad749a5a3ec05856f0c">rotate_right</a> (<a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&amp;, <a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&amp;)</td></tr>
+<tr class="separator:a842820f689bddad749a5a3ec05856f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44b6c927db53c246d3e7580d76dad76" id="r_af44b6c927db53c246d3e7580d76dad76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#af44b6c927db53c246d3e7580d76dad76">fix_colorviolation</a> (<a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&amp;, <a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&amp;)</td></tr>
+<tr class="separator:af44b6c927db53c246d3e7580d76dad76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9d2fb2ec2fe45bb363de62b6e4bace" id="r_a2c9d2fb2ec2fe45bb363de62b6e4bace"><td class="memItemLeft" align="right" valign="top"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#a2c9d2fb2ec2fe45bb363de62b6e4bace">insert_node</a> (<a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *root_node, <a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *node)</td></tr>
+<tr class="separator:a2c9d2fb2ec2fe45bb363de62b6e4bace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad62799965b1dcdb2b1ce88ce1091fd8b" id="r_ad62799965b1dcdb2b1ce88ce1091fd8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#ad62799965b1dcdb2b1ce88ce1091fd8b">remove</a> (<a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *node)</td></tr>
+<tr class="separator:ad62799965b1dcdb2b1ce88ce1091fd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a123fb74ae98e0fe08507e55b227fe70b" id="r_a123fb74ae98e0fe08507e55b227fe70b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#a123fb74ae98e0fe08507e55b227fe70b">BSTreplace</a> (<a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *x)</td></tr>
+<tr class="separator:a123fb74ae98e0fe08507e55b227fe70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac33611b18a4e2aaa546a5e9cdb7f165a" id="r_ac33611b18a4e2aaa546a5e9cdb7f165a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#ac33611b18a4e2aaa546a5e9cdb7f165a">successor</a> (<a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *x)</td></tr>
+<tr class="separator:ac33611b18a4e2aaa546a5e9cdb7f165a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12378d828ffe1e580c9606df7b4f0408" id="r_a12378d828ffe1e580c9606df7b4f0408"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#a12378d828ffe1e580c9606df7b4f0408">fix_double_black</a> (<a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *node)</td></tr>
+<tr class="separator:a12378d828ffe1e580c9606df7b4f0408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a739954776487e6c75c2d7530a579bb41" id="r_a739954776487e6c75c2d7530a579bb41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#a739954776487e6c75c2d7530a579bb41">root</a></td></tr>
+<tr class="separator:a739954776487e6c75c2d7530a579bb41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e73da9bd55cf0ab95289c4f82656601" id="r_a7e73da9bd55cf0ab95289c4f82656601"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_b_tree.html#a7e73da9bd55cf0ab95289c4f82656601">color_flip_count</a></td></tr>
+<tr class="separator:a7e73da9bd55cf0ab95289c4f82656601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for the <a class="el" href="class_r_b_tree.html" title="Header file for the RBTree class and RbtNode class.">RBTree</a> class and <a class="el" href="class_rbt_node.html" title="Represents a node in the red-black tree.">RbtNode</a> class. </p>
 <p>Represents a red-black tree data structure.</p>
 <p>This file defines the <a class="el" href="class_r_b_tree.html" title="Header file for the RBTree class and RbtNode class.">RBTree</a> class and <a class="el" href="class_rbt_node.html" title="Represents a node in the red-black tree.">RbtNode</a> class, which implement a red-black tree data structure. The <a class="el" href="class_r_b_tree.html" title="Header file for the RBTree class and RbtNode class.">RBTree</a> class provides methods for adding, removing, and finding nodes in the red-black tree. The <a class="el" href="class_rbt_node.html" title="Represents a node in the red-black tree.">RbtNode</a> class represents a node in the red-black tree and stores a key-value pair.</p>
 <p>The <a class="el" href="class_r_b_tree.html" title="Header file for the RBTree class and RbtNode class.">RBTree</a> class represents a red-black tree data structure. It provides methods for adding, removing, and finding nodes in the red-black tree. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a19921f34f32f777bb3c4b85d4ff1d9de" name="a19921f34f32f777bb3c4b85d4ff1d9de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19921f34f32f777bb3c4b85d4ff1d9de">&#9670;&#160;</a></span>RBTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RBTree::RBTree </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a new <a class="el" href="class_r_b_tree.html" title="Header file for the RBTree class and RbtNode class.">RBTree</a> object. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a30b4f0d5202b253454fafd082d3d2652" name="a30b4f0d5202b253454fafd082d3d2652"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30b4f0d5202b253454fafd082d3d2652">&#9670;&#160;</a></span>add()</h2>
 
@@ -145,6 +200,23 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree_a30b4f0d5202b253454fafd082d3d2652_cgraph.png" border="0" usemap="#aclass_r_b_tree_a30b4f0d5202b253454fafd082d3d2652_cgraph" alt=""/></div>
+<map name="aclass_r_b_tree_a30b4f0d5202b253454fafd082d3d2652_cgraph" id="aclass_r_b_tree_a30b4f0d5202b253454fafd082d3d2652_cgraph">
+<area shape="rect" title="Adds a new book to the red&#45;black tree." alt="" coords="5,67,101,92"/>
+<area shape="rect" href="class_r_b_tree.html#af44b6c927db53c246d3e7580d76dad76" title=" " alt="" coords="149,29,320,55"/>
+<area shape="poly" title=" " alt="" coords="101,67,153,56,154,61,102,72"/>
+<area shape="rect" href="class_r_b_tree.html#a2c9d2fb2ec2fe45bb363de62b6e4bace" title=" " alt="" coords="164,103,305,128"/>
+<area shape="poly" title=" " alt="" coords="102,86,152,96,151,102,101,92"/>
+<area shape="rect" href="class_r_b_tree.html#af57ab67a97b47722acad4f82d59850b1" title=" " alt="" coords="372,5,504,31"/>
+<area shape="poly" title=" " alt="" coords="320,29,356,25,357,30,321,35"/>
+<area shape="rect" href="class_r_b_tree.html#a842820f689bddad749a5a3ec05856f0c" title=" " alt="" coords="368,55,507,80"/>
+<area shape="poly" title=" " alt="" coords="321,50,353,54,352,60,320,55"/>
+<area shape="poly" title=" " alt="" coords="204,104,198,94,201,84,214,78,234,76,256,79,268,85,265,90,255,84,234,81,215,83,205,88,203,93,208,101"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -155,7 +227,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">rbtnode * RBTree::begin </td>
+          <td class="memname"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> * RBTree::begin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -165,6 +237,56 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns a pointer to the first node in the red-black tree. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the first node. </dd></dl>
+
+</div>
+</div>
+<a id="a123fb74ae98e0fe08507e55b227fe70b" name="a123fb74ae98e0fe08507e55b227fe70b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a123fb74ae98e0fe08507e55b227fe70b">&#9670;&#160;</a></span>BSTreplace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> * RBTree::BSTreplace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Finds the node that can replace the given node in the red-black tree. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree_a123fb74ae98e0fe08507e55b227fe70b_cgraph.png" border="0" usemap="#aclass_r_b_tree_a123fb74ae98e0fe08507e55b227fe70b_cgraph" alt=""/></div>
+<map name="aclass_r_b_tree_a123fb74ae98e0fe08507e55b227fe70b_cgraph" id="aclass_r_b_tree_a123fb74ae98e0fe08507e55b227fe70b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,148,31"/>
+<area shape="rect" href="class_r_b_tree.html#ac33611b18a4e2aaa546a5e9cdb7f165a" title=" " alt="" coords="196,5,330,31"/>
+<area shape="poly" title=" " alt="" coords="148,16,180,16,180,21,148,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree_a123fb74ae98e0fe08507e55b227fe70b_icgraph.png" border="0" usemap="#aclass_r_b_tree_a123fb74ae98e0fe08507e55b227fe70b_icgraph" alt=""/></div>
+<map name="aclass_r_b_tree_a123fb74ae98e0fe08507e55b227fe70b_icgraph" id="aclass_r_b_tree_a123fb74ae98e0fe08507e55b227fe70b_icgraph">
+<area shape="rect" title=" " alt="" coords="336,29,478,55"/>
+<area shape="rect" href="class_r_b_tree.html#ad62799965b1dcdb2b1ce88ce1091fd8b" title=" " alt="" coords="171,29,288,55"/>
+<area shape="poly" title=" " alt="" coords="320,45,289,45,289,40,320,40"/>
+<area shape="poly" title=" " alt="" coords="257,16,248,10,229,8,212,10,203,15,201,20,206,28,201,30,196,21,199,11,211,5,229,3,249,5,260,12"/>
+<area shape="rect" href="class_r_b_tree.html#ae537eec905557804f2bbaefe4839938c" title="Removes a book from the red&#45;black tree based on the given key." alt="" coords="5,29,123,55"/>
+<area shape="poly" title=" " alt="" coords="155,45,123,45,123,40,155,40"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -215,7 +337,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">rbtnode * RBTree::end </td>
+          <td class="memname"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> * RBTree::end </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -235,7 +357,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">rbtnode * RBTree::find </td>
+          <td class="memname"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> * RBTree::find </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
@@ -252,6 +374,18 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the node containing the book, or nullptr if not found. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree_a36c110fa7818d2695eb14e48f6260bda_icgraph.png" border="0" usemap="#aclass_r_b_tree_a36c110fa7818d2695eb14e48f6260bda_icgraph" alt=""/></div>
+<map name="aclass_r_b_tree_a36c110fa7818d2695eb14e48f6260bda_icgraph" id="aclass_r_b_tree_a36c110fa7818d2695eb14e48f6260bda_icgraph">
+<area shape="rect" title="Finds a book in the red&#45;black tree based on the given key." alt="" coords="183,31,278,56"/>
+<area shape="rect" href="class_r_b_tree.html#ad25597ac27143c466303ecaf43845e2f" title="Overloads the subscript operator to find a book in the red&#45;black tree based on the given key." alt="" coords="5,5,135,31"/>
+<area shape="poly" title=" " alt="" coords="167,36,135,31,136,26,168,31"/>
+<area shape="rect" href="class_r_b_tree.html#ae537eec905557804f2bbaefe4839938c" title="Removes a book from the red&#45;black tree based on the given key." alt="" coords="11,55,129,80"/>
+<area shape="poly" title=" " alt="" coords="168,56,129,61,129,56,167,50"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -282,6 +416,176 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af44b6c927db53c246d3e7580d76dad76" name="af44b6c927db53c246d3e7580d76dad76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af44b6c927db53c246d3e7580d76dad76">&#9670;&#160;</a></span>fix_colorviolation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RBTree::fix_colorviolation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&amp;&#160;</td>
+          <td class="paramname"><em>rootnode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&amp;&#160;</td>
+          <td class="paramname"><em>node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Fixes the color violation after inserting a node. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree_af44b6c927db53c246d3e7580d76dad76_cgraph.png" border="0" usemap="#aclass_r_b_tree_af44b6c927db53c246d3e7580d76dad76_cgraph" alt=""/></div>
+<map name="aclass_r_b_tree_af44b6c927db53c246d3e7580d76dad76_cgraph" id="aclass_r_b_tree_af44b6c927db53c246d3e7580d76dad76_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,177,56"/>
+<area shape="rect" href="class_r_b_tree.html#af57ab67a97b47722acad4f82d59850b1" title=" " alt="" coords="228,5,361,31"/>
+<area shape="poly" title=" " alt="" coords="177,30,213,26,214,31,177,35"/>
+<area shape="rect" href="class_r_b_tree.html#a842820f689bddad749a5a3ec05856f0c" title=" " alt="" coords="225,55,364,80"/>
+<area shape="poly" title=" " alt="" coords="177,51,210,55,209,60,177,56"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree_af44b6c927db53c246d3e7580d76dad76_icgraph.png" border="0" usemap="#aclass_r_b_tree_af44b6c927db53c246d3e7580d76dad76_icgraph" alt=""/></div>
+<map name="aclass_r_b_tree_af44b6c927db53c246d3e7580d76dad76_icgraph" id="aclass_r_b_tree_af44b6c927db53c246d3e7580d76dad76_icgraph">
+<area shape="rect" title=" " alt="" coords="149,5,320,31"/>
+<area shape="rect" href="class_r_b_tree.html#a30b4f0d5202b253454fafd082d3d2652" title="Adds a new book to the red&#45;black tree." alt="" coords="5,5,101,31"/>
+<area shape="poly" title=" " alt="" coords="133,21,101,21,101,16,133,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a12378d828ffe1e580c9606df7b4f0408" name="a12378d828ffe1e580c9606df7b4f0408"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12378d828ffe1e580c9606df7b4f0408">&#9670;&#160;</a></span>fix_double_black()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RBTree::fix_double_black </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Fixes the double black violation after removing a node. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree_a12378d828ffe1e580c9606df7b4f0408_cgraph.png" border="0" usemap="#aclass_r_b_tree_a12378d828ffe1e580c9606df7b4f0408_cgraph" alt=""/></div>
+<map name="aclass_r_b_tree_a12378d828ffe1e580c9606df7b4f0408_cgraph" id="aclass_r_b_tree_a12378d828ffe1e580c9606df7b4f0408_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,139,70"/>
+<area shape="poly" title=" " alt="" coords="37,29,35,19,41,10,53,5,72,3,92,5,104,11,102,16,91,10,72,8,55,10,44,14,40,20,42,28"/>
+<area shape="rect" href="class_r_b_tree.html#af57ab67a97b47722acad4f82d59850b1" title=" " alt="" coords="190,12,323,37"/>
+<area shape="poly" title=" " alt="" coords="139,38,174,33,175,38,139,43"/>
+<area shape="rect" href="class_r_b_tree.html#a842820f689bddad749a5a3ec05856f0c" title=" " alt="" coords="187,61,326,87"/>
+<area shape="poly" title=" " alt="" coords="139,56,172,60,171,65,139,61"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree_a12378d828ffe1e580c9606df7b4f0408_icgraph.png" border="0" usemap="#aclass_r_b_tree_a12378d828ffe1e580c9606df7b4f0408_icgraph" alt=""/></div>
+<map name="aclass_r_b_tree_a12378d828ffe1e580c9606df7b4f0408_icgraph" id="aclass_r_b_tree_a12378d828ffe1e580c9606df7b4f0408_icgraph">
+<area shape="rect" title=" " alt="" coords="336,29,469,70"/>
+<area shape="poly" title=" " alt="" coords="430,16,420,10,403,8,386,10,377,14,373,20,375,28,369,29,368,19,373,10,385,5,403,3,422,5,433,11"/>
+<area shape="rect" href="class_r_b_tree.html#ad62799965b1dcdb2b1ce88ce1091fd8b" title=" " alt="" coords="171,37,288,63"/>
+<area shape="poly" title=" " alt="" coords="320,52,288,52,288,47,320,47"/>
+<area shape="poly" title=" " alt="" coords="257,24,248,18,229,15,212,17,203,22,201,28,206,35,201,38,196,28,199,19,211,12,229,10,249,13,260,19"/>
+<area shape="rect" href="class_r_b_tree.html#ae537eec905557804f2bbaefe4839938c" title="Removes a book from the red&#45;black tree based on the given key." alt="" coords="5,37,123,63"/>
+<area shape="poly" title=" " alt="" coords="155,52,123,52,123,47,155,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2c9d2fb2ec2fe45bb363de62b6e4bace" name="a2c9d2fb2ec2fe45bb363de62b6e4bace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c9d2fb2ec2fe45bb363de62b6e4bace">&#9670;&#160;</a></span>insert_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> * RBTree::insert_node </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&#160;</td>
+          <td class="paramname"><em>root_node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&#160;</td>
+          <td class="paramname"><em>node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Inserts a node into the red-black tree. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree_a2c9d2fb2ec2fe45bb363de62b6e4bace_cgraph.png" border="0" usemap="#aclass_r_b_tree_a2c9d2fb2ec2fe45bb363de62b6e4bace_cgraph" alt=""/></div>
+<map name="aclass_r_b_tree_a2c9d2fb2ec2fe45bb363de62b6e4bace_cgraph" id="aclass_r_b_tree_a2c9d2fb2ec2fe45bb363de62b6e4bace_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,147,55"/>
+<area shape="poly" title=" " alt="" coords="51,30,47,21,50,11,60,5,76,3,93,5,103,12,100,16,91,10,76,8,62,10,54,14,52,20,56,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree_a2c9d2fb2ec2fe45bb363de62b6e4bace_icgraph.png" border="0" usemap="#aclass_r_b_tree_a2c9d2fb2ec2fe45bb363de62b6e4bace_icgraph" alt=""/></div>
+<map name="aclass_r_b_tree_a2c9d2fb2ec2fe45bb363de62b6e4bace_icgraph" id="aclass_r_b_tree_a2c9d2fb2ec2fe45bb363de62b6e4bace_icgraph">
+<area shape="rect" title=" " alt="" coords="149,29,290,55"/>
+<area shape="poly" title=" " alt="" coords="247,16,238,10,219,8,202,10,193,15,191,20,196,28,191,30,186,21,189,11,200,5,219,3,240,5,250,12"/>
+<area shape="rect" href="class_r_b_tree.html#a30b4f0d5202b253454fafd082d3d2652" title="Adds a new book to the red&#45;black tree." alt="" coords="5,29,101,55"/>
+<area shape="poly" title=" " alt="" coords="133,45,101,45,101,40,133,40"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="ad25597ac27143c466303ecaf43845e2f" name="ad25597ac27143c466303ecaf43845e2f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad25597ac27143c466303ecaf43845e2f">&#9670;&#160;</a></span>operator[]()</h2>
 
@@ -289,7 +593,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">rbtnode * RBTree::operator[] </td>
+          <td class="memname"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> * RBTree::operator[] </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
@@ -306,11 +610,21 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the node containing the book, or nullptr if not found. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree_ad25597ac27143c466303ecaf43845e2f_cgraph.png" border="0" usemap="#aclass_r_b_tree_ad25597ac27143c466303ecaf43845e2f_cgraph" alt=""/></div>
+<map name="aclass_r_b_tree_ad25597ac27143c466303ecaf43845e2f_cgraph" id="aclass_r_b_tree_ad25597ac27143c466303ecaf43845e2f_cgraph">
+<area shape="rect" title="Overloads the subscript operator to find a book in the red&#45;black tree based on the given key." alt="" coords="5,5,135,31"/>
+<area shape="rect" href="class_r_b_tree.html#a36c110fa7818d2695eb14e48f6260bda" title="Finds a book in the red&#45;black tree based on the given key." alt="" coords="183,5,278,31"/>
+<area shape="poly" title=" " alt="" coords="135,16,167,16,167,21,135,21"/>
+</map>
+</div>
 
 </div>
 </div>
 <a id="ae537eec905557804f2bbaefe4839938c" name="ae537eec905557804f2bbaefe4839938c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae537eec905557804f2bbaefe4839938c">&#9670;&#160;</a></span>remove()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae537eec905557804f2bbaefe4839938c">&#9670;&#160;</a></span>remove() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,12 +646,297 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree_ae537eec905557804f2bbaefe4839938c_cgraph.png" border="0" usemap="#aclass_r_b_tree_ae537eec905557804f2bbaefe4839938c_cgraph" alt=""/></div>
+<map name="aclass_r_b_tree_ae537eec905557804f2bbaefe4839938c_cgraph" id="aclass_r_b_tree_ae537eec905557804f2bbaefe4839938c_cgraph">
+<area shape="rect" title="Removes a book from the red&#45;black tree based on the given key." alt="" coords="5,43,123,68"/>
+<area shape="rect" href="class_r_b_tree.html#a36c110fa7818d2695eb14e48f6260bda" title="Finds a book in the red&#45;black tree based on the given key." alt="" coords="182,5,277,31"/>
+<area shape="poly" title=" " alt="" coords="123,40,166,30,167,35,124,45"/>
+<area shape="rect" href="class_r_b_tree.html#ad62799965b1dcdb2b1ce88ce1091fd8b" title=" " alt="" coords="171,79,288,104"/>
+<area shape="poly" title=" " alt="" coords="124,66,156,73,155,78,123,71"/>
+<area shape="poly" title=" " alt="" coords="201,80,196,70,199,60,211,54,229,52,249,55,260,61,257,66,248,60,229,57,212,59,203,64,201,69,206,77"/>
+<area shape="rect" href="class_r_b_tree.html#a123fb74ae98e0fe08507e55b227fe70b" title=" " alt="" coords="336,37,478,63"/>
+<area shape="poly" title=" " alt="" coords="287,75,333,65,335,70,288,81"/>
+<area shape="rect" href="class_r_b_tree.html#a12378d828ffe1e580c9606df7b4f0408" title=" " alt="" coords="341,111,474,152"/>
+<area shape="poly" title=" " alt="" coords="289,102,326,110,325,116,288,107"/>
+<area shape="rect" href="class_r_b_tree.html#ac33611b18a4e2aaa546a5e9cdb7f165a" title=" " alt="" coords="529,37,663,63"/>
+<area shape="poly" title=" " alt="" coords="479,48,514,48,514,53,479,53"/>
+<area shape="poly" title=" " alt="" coords="373,111,371,101,377,92,389,87,407,85,427,87,438,93,436,98,425,92,407,90,390,92,380,96,377,102,378,110"/>
+<area shape="rect" href="class_r_b_tree.html#af57ab67a97b47722acad4f82d59850b1" title=" " alt="" coords="530,103,662,128"/>
+<area shape="poly" title=" " alt="" coords="474,123,514,120,515,125,474,129"/>
+<area shape="rect" href="class_r_b_tree.html#a842820f689bddad749a5a3ec05856f0c" title=" " alt="" coords="526,152,666,178"/>
+<area shape="poly" title=" " alt="" coords="475,141,511,147,510,152,474,146"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad62799965b1dcdb2b1ce88ce1091fd8b" name="ad62799965b1dcdb2b1ce88ce1091fd8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad62799965b1dcdb2b1ce88ce1091fd8b">&#9670;&#160;</a></span>remove() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RBTree::remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Removes a node from the red-black tree. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree_ad62799965b1dcdb2b1ce88ce1091fd8b_cgraph.png" border="0" usemap="#aclass_r_b_tree_ad62799965b1dcdb2b1ce88ce1091fd8b_cgraph" alt=""/></div>
+<map name="aclass_r_b_tree_ad62799965b1dcdb2b1ce88ce1091fd8b_cgraph" id="aclass_r_b_tree_ad62799965b1dcdb2b1ce88ce1091fd8b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,47,123,72"/>
+<area shape="poly" title=" " alt="" coords="34,48,28,38,32,28,44,22,64,20,86,23,97,29,94,34,84,28,64,25,45,27,36,32,33,37,38,45"/>
+<area shape="rect" href="class_r_b_tree.html#a123fb74ae98e0fe08507e55b227fe70b" title=" " alt="" coords="171,5,313,31"/>
+<area shape="poly" title=" " alt="" coords="122,43,168,33,169,38,123,49"/>
+<area shape="rect" href="class_r_b_tree.html#a12378d828ffe1e580c9606df7b4f0408" title=" " alt="" coords="175,79,309,120"/>
+<area shape="poly" title=" " alt="" coords="124,70,160,78,159,84,123,75"/>
+<area shape="rect" href="class_r_b_tree.html#ac33611b18a4e2aaa546a5e9cdb7f165a" title=" " alt="" coords="364,5,498,31"/>
+<area shape="poly" title=" " alt="" coords="314,16,348,16,348,21,314,21"/>
+<area shape="poly" title=" " alt="" coords="208,79,206,69,212,60,224,55,242,53,261,55,273,61,270,66,260,60,242,58,225,60,215,64,211,70,213,78"/>
+<area shape="rect" href="class_r_b_tree.html#af57ab67a97b47722acad4f82d59850b1" title=" " alt="" coords="365,71,497,96"/>
+<area shape="poly" title=" " alt="" coords="309,91,349,88,349,93,309,97"/>
+<area shape="rect" href="class_r_b_tree.html#a842820f689bddad749a5a3ec05856f0c" title=" " alt="" coords="361,120,500,146"/>
+<area shape="poly" title=" " alt="" coords="309,109,346,115,345,120,308,114"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree_ad62799965b1dcdb2b1ce88ce1091fd8b_icgraph.png" border="0" usemap="#aclass_r_b_tree_ad62799965b1dcdb2b1ce88ce1091fd8b_icgraph" alt=""/></div>
+<map name="aclass_r_b_tree_ad62799965b1dcdb2b1ce88ce1091fd8b_icgraph" id="aclass_r_b_tree_ad62799965b1dcdb2b1ce88ce1091fd8b_icgraph">
+<area shape="rect" title=" " alt="" coords="171,29,288,55"/>
+<area shape="poly" title=" " alt="" coords="257,16,248,10,229,8,212,10,203,15,201,20,206,28,201,30,196,21,199,11,211,5,229,3,249,5,260,12"/>
+<area shape="rect" href="class_r_b_tree.html#ae537eec905557804f2bbaefe4839938c" title="Removes a book from the red&#45;black tree based on the given key." alt="" coords="5,29,123,55"/>
+<area shape="poly" title=" " alt="" coords="155,45,123,45,123,40,155,40"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af57ab67a97b47722acad4f82d59850b1" name="af57ab67a97b47722acad4f82d59850b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af57ab67a97b47722acad4f82d59850b1">&#9670;&#160;</a></span>rotate_left()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RBTree::rotate_left </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&amp;&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&amp;&#160;</td>
+          <td class="paramname"><em>pt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Performs a left rotation on the given nodes. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree_af57ab67a97b47722acad4f82d59850b1_icgraph.png" border="0" usemap="#aclass_r_b_tree_af57ab67a97b47722acad4f82d59850b1_icgraph" alt=""/></div>
+<map name="aclass_r_b_tree_af57ab67a97b47722acad4f82d59850b1_icgraph" id="aclass_r_b_tree_af57ab67a97b47722acad4f82d59850b1_icgraph">
+<area shape="rect" title=" " alt="" coords="555,47,688,72"/>
+<area shape="rect" href="class_r_b_tree.html#af44b6c927db53c246d3e7580d76dad76" title=" " alt="" coords="336,5,507,31"/>
+<area shape="poly" title=" " alt="" coords="541,46,487,34,488,29,542,40"/>
+<area shape="rect" href="class_r_b_tree.html#a12378d828ffe1e580c9606df7b4f0408" title=" " alt="" coords="355,79,488,120"/>
+<area shape="poly" title=" " alt="" coords="541,78,489,89,488,84,540,73"/>
+<area shape="rect" href="class_r_b_tree.html#a30b4f0d5202b253454fafd082d3d2652" title="Adds a new book to the red&#45;black tree." alt="" coords="182,5,277,31"/>
+<area shape="poly" title=" " alt="" coords="320,21,278,21,278,16,320,16"/>
+<area shape="poly" title=" " alt="" coords="453,66,441,60,422,58,404,60,393,64,388,70,390,78,385,79,383,69,389,60,402,55,422,53,443,55,455,61"/>
+<area shape="rect" href="class_r_b_tree.html#ad62799965b1dcdb2b1ce88ce1091fd8b" title=" " alt="" coords="171,87,288,112"/>
+<area shape="poly" title=" " alt="" coords="340,102,288,102,288,97,340,97"/>
+<area shape="poly" title=" " alt="" coords="257,74,248,68,229,65,212,67,203,72,201,77,206,85,201,88,196,78,199,68,211,62,229,60,249,63,260,69"/>
+<area shape="rect" href="class_r_b_tree.html#ae537eec905557804f2bbaefe4839938c" title="Removes a book from the red&#45;black tree based on the given key." alt="" coords="5,87,123,112"/>
+<area shape="poly" title=" " alt="" coords="155,102,123,102,123,97,155,97"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a842820f689bddad749a5a3ec05856f0c" name="a842820f689bddad749a5a3ec05856f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a842820f689bddad749a5a3ec05856f0c">&#9670;&#160;</a></span>rotate_right()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RBTree::rotate_right </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&amp;&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&amp;&#160;</td>
+          <td class="paramname"><em>pt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Performs a right rotation on the given nodes. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree_a842820f689bddad749a5a3ec05856f0c_icgraph.png" border="0" usemap="#aclass_r_b_tree_a842820f689bddad749a5a3ec05856f0c_icgraph" alt=""/></div>
+<map name="aclass_r_b_tree_a842820f689bddad749a5a3ec05856f0c_icgraph" id="aclass_r_b_tree_a842820f689bddad749a5a3ec05856f0c_icgraph">
+<area shape="rect" title=" " alt="" coords="555,47,695,72"/>
+<area shape="rect" href="class_r_b_tree.html#af44b6c927db53c246d3e7580d76dad76" title=" " alt="" coords="336,5,507,31"/>
+<area shape="poly" title=" " alt="" coords="543,46,488,34,489,29,545,40"/>
+<area shape="rect" href="class_r_b_tree.html#a12378d828ffe1e580c9606df7b4f0408" title=" " alt="" coords="355,79,488,120"/>
+<area shape="poly" title=" " alt="" coords="542,78,489,89,488,84,541,73"/>
+<area shape="rect" href="class_r_b_tree.html#a30b4f0d5202b253454fafd082d3d2652" title="Adds a new book to the red&#45;black tree." alt="" coords="182,5,277,31"/>
+<area shape="poly" title=" " alt="" coords="320,21,278,21,278,16,320,16"/>
+<area shape="poly" title=" " alt="" coords="453,66,441,60,422,58,404,60,393,64,388,70,390,78,385,79,383,69,389,60,402,55,422,53,443,55,455,61"/>
+<area shape="rect" href="class_r_b_tree.html#ad62799965b1dcdb2b1ce88ce1091fd8b" title=" " alt="" coords="171,87,288,112"/>
+<area shape="poly" title=" " alt="" coords="340,102,288,102,288,97,340,97"/>
+<area shape="poly" title=" " alt="" coords="257,74,248,68,229,65,212,67,203,72,201,77,206,85,201,88,196,78,199,68,211,62,229,60,249,63,260,69"/>
+<area shape="rect" href="class_r_b_tree.html#ae537eec905557804f2bbaefe4839938c" title="Removes a book from the red&#45;black tree based on the given key." alt="" coords="5,87,123,112"/>
+<area shape="poly" title=" " alt="" coords="155,102,123,102,123,97,155,97"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac33611b18a4e2aaa546a5e9cdb7f165a" name="ac33611b18a4e2aaa546a5e9cdb7f165a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac33611b18a4e2aaa546a5e9cdb7f165a">&#9670;&#160;</a></span>successor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> * RBTree::successor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a> *&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Finds the successor of the given node in the red-black tree. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_b_tree_ac33611b18a4e2aaa546a5e9cdb7f165a_icgraph.png" border="0" usemap="#aclass_r_b_tree_ac33611b18a4e2aaa546a5e9cdb7f165a_icgraph" alt=""/></div>
+<map name="aclass_r_b_tree_ac33611b18a4e2aaa546a5e9cdb7f165a_icgraph" id="aclass_r_b_tree_ac33611b18a4e2aaa546a5e9cdb7f165a_icgraph">
+<area shape="rect" title=" " alt="" coords="526,29,661,55"/>
+<area shape="rect" href="class_r_b_tree.html#a123fb74ae98e0fe08507e55b227fe70b" title=" " alt="" coords="336,29,478,55"/>
+<area shape="poly" title=" " alt="" coords="511,45,478,45,478,40,511,40"/>
+<area shape="rect" href="class_r_b_tree.html#ad62799965b1dcdb2b1ce88ce1091fd8b" title=" " alt="" coords="171,29,288,55"/>
+<area shape="poly" title=" " alt="" coords="320,45,289,45,289,40,320,40"/>
+<area shape="poly" title=" " alt="" coords="257,16,248,10,229,8,212,10,203,15,201,20,206,28,201,30,196,21,199,11,211,5,229,3,249,5,260,12"/>
+<area shape="rect" href="class_r_b_tree.html#ae537eec905557804f2bbaefe4839938c" title="Removes a book from the red&#45;black tree based on the given key." alt="" coords="5,29,123,55"/>
+<area shape="poly" title=" " alt="" coords="155,45,123,45,123,40,155,40"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7e73da9bd55cf0ab95289c4f82656601" name="a7e73da9bd55cf0ab95289c4f82656601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e73da9bd55cf0ab95289c4f82656601">&#9670;&#160;</a></span>color_flip_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RBTree::color_flip_count</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The number of color flips performed during tree operations. </p>
+
+</div>
+</div>
+<a id="a739954776487e6c75c2d7530a579bb41" name="a739954776487e6c75c2d7530a579bb41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a739954776487e6c75c2d7530a579bb41">&#9670;&#160;</a></span>root</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d">rbtnode</a>* RBTree::root</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Pointer to the root node of the red-black tree. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="redblack__tree_8hpp_source.html">redblack_tree.hpp</a></li>
-<li><b>redblack_tree.cpp</b></li>
+<li><a class="el" href="redblack__tree_8cpp.html">redblack_tree.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

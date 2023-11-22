@@ -1,0 +1,5 @@
+<map id="gl_input" name="gl_input">
+<area shape="rect" id="Node000001" title="Class to parse the input and call the appropriate functionsThis class provides functionality to parse..." alt="" coords="5,274,139,599"/>
+<area shape="rect" id="Node000002" href="$class_gator_library.html" title="The GatorLibrary class represents a library system.This class provides functionality to manage books ..." alt="" coords="6,5,138,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,211,75,257,69,257,69,211"/>
+</map>

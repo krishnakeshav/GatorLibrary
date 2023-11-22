@@ -1,0 +1,15 @@
+<map id="RBTree::remove" name="RBTree::remove">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,123,72"/>
+<area shape="poly" id="edge7_Node000001_Node000001" title=" " alt="" coords="34,48,28,38,32,28,44,22,64,20,86,23,97,29,94,34,84,28,64,25,45,27,36,32,33,37,38,45"/>
+<area shape="rect" id="Node000002" href="$class_r_b_tree.html#a123fb74ae98e0fe08507e55b227fe70b" title=" " alt="" coords="171,5,313,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,43,168,33,169,38,123,49"/>
+<area shape="rect" id="Node000004" href="$class_r_b_tree.html#a12378d828ffe1e580c9606df7b4f0408" title=" " alt="" coords="175,79,309,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="124,70,160,78,159,84,123,75"/>
+<area shape="rect" id="Node000003" href="$class_r_b_tree.html#ac33611b18a4e2aaa546a5e9cdb7f165a" title=" " alt="" coords="364,5,498,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="314,16,348,16,348,21,314,21"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="208,79,206,69,212,60,224,55,242,53,261,55,273,61,270,66,260,60,242,58,225,60,215,64,211,70,213,78"/>
+<area shape="rect" id="Node000005" href="$class_r_b_tree.html#af57ab67a97b47722acad4f82d59850b1" title=" " alt="" coords="365,71,497,96"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="309,91,349,88,349,93,309,97"/>
+<area shape="rect" id="Node000006" href="$class_r_b_tree.html#a842820f689bddad749a5a3ec05856f0c" title=" " alt="" coords="361,120,500,146"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="309,109,346,115,345,120,308,114"/>
+</map>

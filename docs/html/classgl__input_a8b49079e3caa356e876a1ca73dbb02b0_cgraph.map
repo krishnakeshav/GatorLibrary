@@ -1,0 +1,14 @@
+<map id="gl_input::parse_delete" name="gl_input::parse_delete">
+<area shape="rect" id="Node000001" title="Delete a book from the library." alt="" coords="5,55,154,80"/>
+<area shape="rect" id="Node000002" href="$class_gator_library.html#a1375b1f484f7eb778c3dfd11f6a15839" title="Delete a book from the library." alt="" coords="202,55,370,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,65,186,65,186,70,154,70"/>
+<area shape="rect" id="Node000003" href="$classpq__reservation.html#a14715e85417c6b032a73c8511072d995" title="Check if the priority queue is empty." alt="" coords="418,5,568,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="342,51,421,33,422,38,344,57"/>
+<area shape="rect" id="Node000004" href="$classpq__reservation.html#a752a562cbea3fea06730fa06c4745948" title="Remove the highest priority reservation from the priority queue." alt="" coords="426,55,561,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="370,65,410,65,410,70,370,70"/>
+<area shape="rect" id="Node000006" href="$classpq__reservation.html#a020ac7d684f06fcf19a9f4d37f9adb26" title="Get the highest priority reservation from the priority queue." alt="" coords="427,104,559,130"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="344,78,422,97,421,102,342,84"/>
+<area shape="rect" id="Node000005" href="$classpq__reservation.html#a074e200eda4173be4969bbb794f47c6d" title="Heapify the heap starting from the given index." alt="" coords="616,55,773,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="561,65,601,65,601,70,561,70"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="661,56,654,46,658,36,672,30,695,28,719,31,732,38,729,42,718,36,694,33,673,35,662,40,660,45,665,53"/>
+</map>

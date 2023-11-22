@@ -1,5 +1,25 @@
 var searchData=
 [
-  ['utilities_0',['utilities',['../classutilities.html',1,'']]],
-  ['utilities_2ehpp_1',['utilities.hpp',['../utilities_8hpp.html',1,'']]]
+  ['rb_0',['RB',['../gl__input_8cpp.html#a171160a766f85c8816b898ed24d28408',1,'gl_input.cpp']]],
+  ['rbtbooks_1',['rbtBooks',['../class_gator_library.html#a5651e7ed77c76631bde670182212bbf2',1,'GatorLibrary']]],
+  ['rbtnode_2',['rbtnode',['../redblack__tree_8hpp.html#affef713d0d7b7dba7c5b86903d7e923d',1,'rbtnode:&#160;redblack_tree.hpp'],['../class_rbt_node.html#a310b1096d79349db90fa26809356caed',1,'RbtNode::RbtNode()'],['../class_rbt_node.html',1,'RbtNode']]],
+  ['rbtree_3',['rbtree',['../class_r_b_tree.html',1,'RBTree'],['../class_r_b_tree.html#a19921f34f32f777bb3c4b85d4ff1d9de',1,'RBTree::RBTree()'],['../redblack__tree_8hpp.html#a86b8a049650acffaabe2d64ff4925445',1,'rbtree:&#160;redblack_tree.hpp']]],
+  ['readme_2emd_4',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['red_5',['RED',['../redblack__tree_8hpp.html#ab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88',1,'redblack_tree.hpp']]],
+  ['red_20black_20tree_6',['Red-black tree',['../index.html#autotoc_md4',1,'']]],
+  ['redblack_5ftree_2ecpp_7',['redblack_tree.cpp',['../redblack__tree_8cpp.html',1,'']]],
+  ['redblack_5ftree_2ehpp_8',['redblack_tree.hpp',['../redblack__tree_8hpp.html',1,'']]],
+  ['remove_9',['remove',['../class_r_b_tree.html#ad62799965b1dcdb2b1ce88ce1091fd8b',1,'RBTree::remove(rbtnode *node)'],['../class_r_b_tree.html#ae537eec905557804f2bbaefe4839938c',1,'RBTree::remove(int key)']]],
+  ['reservation_10',['reservation',['../classreservation.html',1,'reservation'],['../classreservation.html#a4b6f7183364aac8268651118151c38ee',1,'reservation::reservation()']]],
+  ['reservation_2ecpp_11',['reservation.cpp',['../reservation_8cpp.html',1,'']]],
+  ['reservation_2ehpp_12',['reservation.hpp',['../reservation_8hpp.html',1,'']]],
+  ['reservationheap_13',['ReservationHeap',['../classbook.html#a8ed95fa88d96348d7d3c54d332db5f32',1,'book']]],
+  ['returnbook_14',['ReturnBook',['../class_gator_library.html#ab40ed9fc49d838f9797d6e7aa1e3d4ed',1,'GatorLibrary']]],
+  ['right_15',['right',['../class_rbt_node.html#a6e1bcf7f2bd0dfb820a92975d3075684',1,'RbtNode']]],
+  ['root_16',['root',['../class_r_b_tree.html#a739954776487e6c75c2d7530a579bb41',1,'RBTree']]],
+  ['rotate_5fleft_17',['rotate_left',['../class_r_b_tree.html#af57ab67a97b47722acad4f82d59850b1',1,'RBTree']]],
+  ['rotate_5fright_18',['rotate_right',['../class_r_b_tree.html#a842820f689bddad749a5a3ec05856f0c',1,'RBTree']]],
+  ['run_19',['run',['../index.html#autotoc_md2',1,'Instructions to run'],['../classgl__input.html#a4e2234453b9936eb8b9785be0190d3ba',1,'gl_input::run(string input)']]],
+  ['runwith_5ffile_20',['runwith_file',['../classgl__input.html#a89b0968d003461b808595b47c580b58d',1,'gl_input']]],
+  ['runwith_5fstdin_21',['runwith_stdin',['../classgl__input.html#a1fe6abc251739a0fa257acdc9688fc1e',1,'gl_input']]]
 ];

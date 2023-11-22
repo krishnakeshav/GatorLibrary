@@ -1,0 +1,12 @@
+<map id="book::printReservations" name="book::printReservations">
+<area shape="rect" id="Node000001" title="Prints the reservations for the book." alt="" coords="5,55,165,80"/>
+<area shape="rect" id="Node000002" href="$classpq__reservation.html#a14715e85417c6b032a73c8511072d995" title="Check if the priority queue is empty." alt="" coords="213,5,363,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,51,217,33,218,38,142,57"/>
+<area shape="rect" id="Node000003" href="$classpq__reservation.html#a752a562cbea3fea06730fa06c4745948" title="Remove the highest priority reservation from the priority queue." alt="" coords="220,55,356,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,65,205,65,205,70,165,70"/>
+<area shape="rect" id="Node000005" href="$classpq__reservation.html#a020ac7d684f06fcf19a9f4d37f9adb26" title="Get the highest priority reservation from the priority queue." alt="" coords="222,104,354,130"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="142,78,218,97,217,102,140,84"/>
+<area shape="rect" id="Node000004" href="$classpq__reservation.html#a074e200eda4173be4969bbb794f47c6d" title="Heapify the heap starting from the given index." alt="" coords="411,55,567,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="356,65,396,65,396,70,356,70"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="455,56,449,46,453,36,467,30,489,28,514,31,527,38,524,42,512,36,489,33,468,35,457,40,454,45,460,53"/>
+</map>

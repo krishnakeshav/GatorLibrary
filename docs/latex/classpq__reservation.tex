@@ -11,6 +11,16 @@ This class represents a priority queue that stores reservations. Reservations ar
 
 {\ttfamily \#include $<$priority\+\_\+queue.\+hpp$>$}
 
+
+
+Collaboration diagram for pq\+\_\+reservation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classpq__reservation__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -28,6 +38,16 @@ int \mbox{\hyperlink{classpq__reservation_adef1ab588b5f420c7da20476d440d422}{siz
 \begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classpq__reservation}{pq\+\_\+reservation} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classpq__reservation_a97753211db42d76a2eade807eb74e787}{\texorpdfstring{$\sim$}{\string~}pq\+\_\+reservation}} ()
 \begin{DoxyCompactList}\small\item\em Destroy the \doxylink{classpq__reservation}{pq\+\_\+reservation} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classpq__reservation_a074e200eda4173be4969bbb794f47c6d}{heapify}} (int index)
+\begin{DoxyCompactList}\small\item\em Heapify the heap starting from the given index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classreservation}{reservation}} $>$ \mbox{\hyperlink{classpq__reservation_a022052fc69297115b901566efcba3b36}{heap}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -74,6 +94,47 @@ This function checks if the priority queue is empty.
 \begin{DoxyReturn}{Returns}
 True if the priority queue is empty, false otherwise. 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpq__reservation_a14715e85417c6b032a73c8511072d995_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classpq__reservation_a074e200eda4173be4969bbb794f47c6d}\label{classpq__reservation_a074e200eda4173be4969bbb794f47c6d} 
+\index{pq\_reservation@{pq\_reservation}!heapify@{heapify}}
+\index{heapify@{heapify}!pq\_reservation@{pq\_reservation}}
+\doxysubsubsection{\texorpdfstring{heapify()}{heapify()}}
+{\footnotesize\ttfamily void pq\+\_\+reservation\+::heapify (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Heapify the heap starting from the given index. 
+
+This function rearranges the elements in the heap to maintain the heap property. It compares the element at the given index with its children and swaps them if necessary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index to start heapifying from. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classpq__reservation_a074e200eda4173be4969bbb794f47c6d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpq__reservation_a074e200eda4173be4969bbb794f47c6d_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classpq__reservation_a752a562cbea3fea06730fa06c4745948}\label{classpq__reservation_a752a562cbea3fea06730fa06c4745948} 
 \index{pq\_reservation@{pq\_reservation}!pop@{pop}}
 \index{pop@{pop}!pq\_reservation@{pq\_reservation}}
@@ -84,7 +145,23 @@ True if the priority queue is empty, false otherwise.
 
 Remove the highest priority reservation from the priority queue. 
 
-This function removes the highest priority reservation from the priority queue and maintains the heap property. \Hypertarget{classpq__reservation_a9269eff4bbc6b109320fbd7e807e344e}\label{classpq__reservation_a9269eff4bbc6b109320fbd7e807e344e} 
+This function removes the highest priority reservation from the priority queue and maintains the heap property. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{classpq__reservation_a752a562cbea3fea06730fa06c4745948_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpq__reservation_a752a562cbea3fea06730fa06c4745948_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classpq__reservation_a9269eff4bbc6b109320fbd7e807e344e}\label{classpq__reservation_a9269eff4bbc6b109320fbd7e807e344e} 
 \index{pq\_reservation@{pq\_reservation}!push@{push}}
 \index{push@{push}!pq\_reservation@{pq\_reservation}}
 \doxysubsubsection{\texorpdfstring{push()}{push()}}
@@ -101,6 +178,14 @@ This function adds a new reservation to the priority queue and maintains the hea
 {\em new\+Reservation} & The reservation to be added. \\
 \hline
 \end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classpq__reservation_a9269eff4bbc6b109320fbd7e807e344e_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classpq__reservation_adef1ab588b5f420c7da20476d440d422}\label{classpq__reservation_adef1ab588b5f420c7da20476d440d422} 
 \index{pq\_reservation@{pq\_reservation}!size@{size}}
 \index{size@{size}!pq\_reservation@{pq\_reservation}}
@@ -131,9 +216,26 @@ This function returns the highest priority reservation from the priority queue w
 \begin{DoxyReturn}{Returns}
 The highest priority reservation. 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpq__reservation_a020ac7d684f06fcf19a9f4d37f9adb26_icgraph}
+\end{center}
+\end{figure}
 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpq__reservation_a022052fc69297115b901566efcba3b36}\label{classpq__reservation_a022052fc69297115b901566efcba3b36} 
+\index{pq\_reservation@{pq\_reservation}!heap@{heap}}
+\index{heap@{heap}!pq\_reservation@{pq\_reservation}}
+\doxysubsubsection{\texorpdfstring{heap}{heap}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classreservation}{reservation}}$>$ pq\+\_\+reservation\+::heap\hspace{0.3cm}{\ttfamily [private]}}
+
+The heap storing the reservations. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-priority\+\_\+queue.\+hpp\item 
+\mbox{\hyperlink{priority__queue_8hpp}{priority\+\_\+queue.\+hpp}}\item 
 \mbox{\hyperlink{priority__queue_8cpp}{priority\+\_\+queue.\+cpp}}\end{DoxyCompactItemize}

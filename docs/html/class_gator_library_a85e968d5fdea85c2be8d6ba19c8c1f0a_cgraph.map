@@ -1,0 +1,5 @@
+<map id="GatorLibrary::PrintBooks" name="GatorLibrary::PrintBooks">
+<area shape="rect" id="Node000001" title="Display the book details for all books in the range." alt="" coords="5,5,170,31"/>
+<area shape="rect" id="Node000002" href="$class_gator_library.html#a1f19418782655c17b104421e2129982f" title="Display the book details." alt="" coords="218,5,375,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,16,202,16,202,21,170,21"/>
+</map>

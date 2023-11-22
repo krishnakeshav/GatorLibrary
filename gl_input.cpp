@@ -1,9 +1,6 @@
-/*
+/**
     @file gl_input.cpp
     @brief Implementation of the gl_input class
-    @details This file contains the implementation of the gl_input class.
-    The gl_input class represents the input to the library system.
-    This class provides functionality to parse the input and call the corresponding function.
 */
 #include <iostream>
 #include <string>
@@ -13,24 +10,43 @@
 
 #include "gator_library.hpp"
 
-
+/// @brief string constant for the InsertBook() command
 #define INB string("InsertBook(")
+
+/// @brief string constant for the PrintBook() command
 #define PB string("PrintBook(")
+
+/// @brief string constant for the BorrowBook() command
 #define PBS string("PrintBooks(")
+
+/// @brief string constant for the BorrowBook() command
 #define BB string("BorrowBook(")
+
+/// @brief string constant for the ReturnBook() command
 #define RB string("ReturnBook(")
+
+/// @brief string constant for the Quit() command
 #define Q string("Quit(")
+
+/// @brief string constant for the DeleteBook() command
 #define DB string("DeleteBook(")
+
+/// @brief string constant for the ColorFlipCount() command
 #define CFC string("ColorFlipCount(")
+
+/// @brief string constant for the FindClosestBook() command
 #define FCB string("FindClosestBook(")
 
 
 using namespace std;
 
-/*
+/**
     @brief Class to parse the input and call the appropriate functions
     @class gl_input
     This class provides functionality to parse the input and call the appropriate functions.
+    @details This file contains the implementation of the gl_input class.
+    The gl_input class represents the input to the library system.
+    This class provides functionality to parse the input and call the corresponding function.
 */
 
 class gl_input
@@ -38,13 +54,13 @@ class gl_input
     private:
         GatorLibrary library;
 
-        // @brief Insert a new book into the library
-        // @param input String.
-        // @return void
-        // @details This function inserts a new book into the library.
-        // It takes the book ID, book name, author name, and availability status as parameters.
-        // It creates a new book object and inserts it into the red-black tree.
-        // The double quotes are ignored while reading the book name, author name, and availability status.
+        /// @brief Insert a new book into the library
+        /// @param input String.
+        /// @return void
+        /// @details This function inserts a new book into the library.
+        /// It takes the book ID, book name, author name, and availability status as parameters.
+        /// It creates a new book object and inserts it into the red-black tree.
+        /// The double quotes are ignored while reading the book name, author name, and availability status.
         void parse_insert(string input) {
             std::istringstream iss(input);
             
@@ -65,11 +81,11 @@ class gl_input
             library.InsertBook(bookId, title, author, availability);
         }
 
-        // @brief Display the book details
-        // @param input String.
-        // @return void
-        // @details This function displays the details of a book.
-        // It takes the book ID as a parameter and prints the details of the book with the given ID.
+        /// @brief Display the book details
+        /// @param input String.
+        /// @return void
+        /// @details This function displays the details of a book.
+        /// It takes the book ID as a parameter and prints the details of the book with the given ID.
         void parse_print(const std::string& input) {
             int bookID;
             std::istringstream iss(input);
@@ -83,11 +99,11 @@ class gl_input
             library.PrintBook(bookID);
         }
 
-        // @brief Borrow a book from the library
-        // @param input String.
-        // @return void
-        // @details This function borrows a book from the library.
-        // It takes the patron ID, book ID, and patron priority as parameters.
+        /// @brief Borrow a book from the library
+        /// @param input String.
+        /// @return void
+        /// @details This function borrows a book from the library.
+        /// It takes the patron ID, book ID, and patron priority as parameters.
         void parse_borrow(const std::string& input) {
             int patronID, bookID, patronPriority;
             
@@ -106,7 +122,7 @@ class gl_input
             cout << endl;
         }
         
-        // @brief Display the book details for all books in the range
+        /// @brief Display the book details for all books in the range
         // @param input String.
         // @return void
         // @details This function displays the details of all books in the range.
@@ -123,7 +139,7 @@ class gl_input
             library.PrintBooks(bookID1, bookID2);
         }
 
-        // @brief Return a book to the library
+        /// @brief Return a book to the library
         // @param input String.
         // @return void
         // @details This function returns a book to the library.
@@ -142,7 +158,7 @@ class gl_input
             cout << endl;
         }
 
-        // @brief Delete a book from the library
+        /// @brief Delete a book from the library
         // @param input String.
         // @return void
         // @details This function deletes a book from the library.
@@ -161,7 +177,7 @@ class gl_input
             cout << endl;
         }
 
-        // @brief Count the number of color flips in the red-black tree
+        /// @brief Count the number of color flips in the red-black tree
         // @param input String.
         // @return void
         // @details This function counts the number of color flips in the red-black tree.
@@ -170,7 +186,7 @@ class gl_input
             cout << endl;
         }
 
-        // @brief Find the book Id closest to the targetId
+        /// @brief Find the book Id closest to the targetId
         // @param input String.
         // @return void
         // @details This function finds the book ID closest to the target ID.
@@ -187,7 +203,7 @@ class gl_input
             library.FindClosestBook(targetId);
         }
         
-        // @brief Terminate the program
+        /// @brief Terminate the program
         // @param input String.
         // @return void
         // @details This function terminates the program.
@@ -195,10 +211,10 @@ class gl_input
             cout << "Program Terminated!!" << endl;
         }
 
-        // @brief Parse the input and call the appropriate functions
-        // @param input String.
-        // @return void
-        // @details This function parses the input and calls the corresponding function based on the operation request on the library.
+        /// @brief Parse the input and call the appropriate functions
+        /// @param input String.
+        /// @return void
+        /// @details This function parses the input and calls the corresponding function based on the operation request on the library.
         void parse_input(const string& input)
         {
 
@@ -243,13 +259,13 @@ class gl_input
             }
         }
     public:
-        // @brief Constructor for gl_input class
+        /// @brief Constructor for gl_input class
         gl_input()
         {
             library = GatorLibrary();
         }
 
-        // @brief Run the program with the given file
+        /// @brief Run the program with the given file
         // @param filename String.
         // @return void
         // @details This function runs the program with the given file.
@@ -264,20 +280,18 @@ class gl_input
             }
         }
 
-        // @brief Run the program with the given input
-        // @param input String.
-        // @return void
-        // @details This function runs the program with the given input.
-        // @see runwith_stdin run_with_file
+        /// @brief Run the program with the given input
+        /// @param input String.
+        /// @details This function runs the program with the given input.
+        /// @see runwith_stdin run_with_file
         void run(string input)
         {
             parse_input(input);
         }
 
-        // @brief Run the program with the standard input
-        // @return void
-        // @details This function runs the program with the standard input.
-        // @see run run_with_file
+        /// @brief Run the program with the standard input
+        /// @details This function runs the program with the standard input.
+        /// @see run run_with_file
         void runwith_stdin()
         {
             string input;

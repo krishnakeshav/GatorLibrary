@@ -1,4 +1,4 @@
-/*
+/**
     @file: book.cpp
     @brief: This file contains the implementation of the book class.
     @details:
@@ -14,11 +14,7 @@
 
 using namespace std;
 
-/// @brief Constructor for book class
-/// @param id book id
-/// @param name book name
-/// @param author book author
-/// @param available book availability
+
 book::book(int id, string name, string author, BookAvailability available)
 {
     BookId = id;
@@ -67,8 +63,6 @@ void book::printReservations()
     cout << "]" << endl;
 }
 
-/// @brief Add reservation for the patron in the reservation heap
-/// @param newReservation reservation.
 /// @details Add the reservation to the reservation heap.
 /// Reservation heap is a min heap based on priority number and time of reservation.
 void book::AddReservation(reservation newReservation)

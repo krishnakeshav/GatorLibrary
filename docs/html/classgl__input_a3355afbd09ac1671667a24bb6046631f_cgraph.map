@@ -1,0 +1,7 @@
+<map id="gl_input::parse_findclosest" name="gl_input::parse_findclosest">
+<area shape="rect" id="Node000001" title="Find the book Id closest to the targetId." alt="" coords="5,5,182,31"/>
+<area shape="rect" id="Node000002" href="$class_gator_library.html#abbfcbf67113738572dd7f6220517bca0" title="Find the book Id closest to the targetId." alt="" coords="230,5,430,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,16,214,16,214,21,182,21"/>
+<area shape="rect" id="Node000003" href="$class_gator_library.html#a1f19418782655c17b104421e2129982f" title="Display the book details." alt="" coords="478,5,635,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="430,16,462,16,462,21,430,21"/>
+</map>

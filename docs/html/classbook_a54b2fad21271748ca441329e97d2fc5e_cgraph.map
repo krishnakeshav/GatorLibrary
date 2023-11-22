@@ -1,0 +1,16 @@
+<map id="book::PrintBook" name="book::PrintBook">
+<area shape="rect" id="Node000001" title="Prints the details of the book." alt="" coords="5,80,120,106"/>
+<area shape="rect" id="Node000002" href="$classbook.html#a05bd9e6f05387cd59a79338f5a20e0ba" title="Prints the reservations for the book." alt="" coords="168,55,327,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,82,152,78,153,83,120,88"/>
+<area shape="rect" id="Node000007" href="$classutilities.html#aaec035a37b6c2805c16bffdf840083d6" title="Converts a BookAvailability enum value to its corresponding string representation." alt="" coords="169,104,326,130"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="120,98,154,102,153,107,120,103"/>
+<area shape="rect" id="Node000003" href="$classpq__reservation.html#a14715e85417c6b032a73c8511072d995" title="Check if the priority queue is empty." alt="" coords="375,5,525,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="303,51,379,33,380,38,304,57"/>
+<area shape="rect" id="Node000004" href="$classpq__reservation.html#a752a562cbea3fea06730fa06c4745948" title="Remove the highest priority reservation from the priority queue." alt="" coords="383,55,518,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="327,65,367,65,367,70,327,70"/>
+<area shape="rect" id="Node000006" href="$classpq__reservation.html#a020ac7d684f06fcf19a9f4d37f9adb26" title="Get the highest priority reservation from the priority queue." alt="" coords="384,104,516,130"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="304,78,380,97,379,102,303,84"/>
+<area shape="rect" id="Node000005" href="$classpq__reservation.html#a074e200eda4173be4969bbb794f47c6d" title="Heapify the heap starting from the given index." alt="" coords="573,55,730,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="518,65,558,65,558,70,518,70"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="618,56,611,46,615,36,629,30,652,28,676,31,689,38,686,42,675,36,651,33,630,35,619,40,617,45,622,53"/>
+</map>

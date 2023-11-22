@@ -1,0 +1,33 @@
+<map id="gator_library.hpp" name="gator_library.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="147,5,262,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="327,374,380,399"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="263,18,302,23,344,33,386,51,422,77,438,97,446,117,448,164,448,241,441,278,425,312,403,342,381,365,377,361,399,338,420,309,436,276,443,240,443,164,441,118,434,100,418,81,383,55,343,38,301,28,262,23"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="86,79,125,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,34,136,72,133,68,186,29"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="149,79,259,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="207,31,207,63,202,63,202,31"/>
+<area shape="rect" id="Node000005" href="$book_8hpp.html" title=" " alt="" coords="130,153,204,178"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="147,33,107,51,90,64,76,80,72,90,72,98,81,115,99,130,122,143,120,148,96,135,77,118,67,99,67,88,71,78,86,60,104,46,145,28"/>
+<area shape="rect" id="Node000012" href="$redblack__tree_8hpp.html" title=" " alt="" coords="283,79,408,105"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="229,29,309,69,307,74,227,34"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="205,170,267,189,300,204,330,224,353,247,367,269,373,294,372,326,365,359,360,358,367,325,368,295,362,271,349,250,326,228,297,209,265,194,204,176"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,374,62,399"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="130,180,88,199,68,212,50,228,32,251,22,272,19,296,21,325,28,358,23,359,16,326,14,296,17,271,27,248,46,225,65,208,86,194,128,175"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="70,226,141,252"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="159,180,128,216,124,213,155,177"/>
+<area shape="rect" id="Node000008" href="$reservation_8hpp.html" title=" " alt="" coords="30,300,141,326"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="130,179,91,197,74,211,60,228,55,242,57,257,70,286,65,288,51,258,50,241,55,225,70,207,88,193,128,174"/>
+<area shape="rect" id="Node000009" href="$utilities_8hpp.html" title="This file contains the declaration of the utilities class and the BookAvailability enum." alt="" coords="270,300,357,326"/>
+<area shape="poly" id="edge11_Node000005_Node000009" title=" " alt="" coords="205,170,259,187,286,203,308,225,319,255,320,285,315,285,314,256,303,228,283,207,257,192,204,175"/>
+<area shape="rect" id="Node000010" href="$priority__queue_8hpp.html" title=" " alt="" coords="166,226,293,252"/>
+<area shape="poly" id="edge13_Node000005_Node000010" title=" " alt="" coords="179,177,211,213,207,216,175,180"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="132,324,312,371,311,377,130,329"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="79,327,53,363,49,359,75,324"/>
+<area shape="poly" id="edge12_Node000009_Node000002" title=" " alt="" coords="322,325,342,359,337,361,318,327"/>
+<area shape="poly" id="edge15_Node000010_Node000008" title=" " alt="" coords="206,255,125,295,122,290,204,250"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="189,300,246,326"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="230,253,225,285,219,284,225,252"/>
+<area shape="poly" id="edge18_Node000012_Node000005" title=" " alt="" coords="316,108,212,149,210,144,314,103"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="304,153,387,178"/>
+<area shape="poly" id="edge17_Node000012_Node000013" title=" " alt="" coords="348,105,348,137,343,137,343,105"/>
+</map>

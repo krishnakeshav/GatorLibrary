@@ -1,19 +1,460 @@
 \doxysection{gl\+\_\+input Class Reference}
 \hypertarget{classgl__input}{}\label{classgl__input}\index{gl\_input@{gl\_input}}
+
+
+Class to parse the input and call the appropriate functions
+
+This class provides functionality to parse the input and call the appropriate functions.  
+
+
+
+
+Collaboration diagram for gl\+\_\+input\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classgl__input__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classgl__input_a89b0968d003461b808595b47c580b58d}\label{classgl__input_a89b0968d003461b808595b47c580b58d} 
-void {\bfseries runwith\+\_\+file} (string filename)
+\mbox{\hyperlink{classgl__input_ae42190307b82dccd5d3caddc73c193e7}{gl\+\_\+input}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classgl__input}{gl\+\_\+input} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgl__input_a89b0968d003461b808595b47c580b58d}{runwith\+\_\+file}} (string filename)
+\begin{DoxyCompactList}\small\item\em Run the program with the given file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgl__input_a4e2234453b9936eb8b9785be0190d3ba}{run}} (string input)
+\begin{DoxyCompactList}\small\item\em Run the program with the given input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgl__input_a1fe6abc251739a0fa257acdc9688fc1e}{runwith\+\_\+stdin}} ()
+\begin{DoxyCompactList}\small\item\em Run the program with the standard input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classgl__input_a4e2234453b9936eb8b9785be0190d3ba}\label{classgl__input_a4e2234453b9936eb8b9785be0190d3ba} 
-void {\bfseries run} (string input)
+void \mbox{\hyperlink{classgl__input_aeed43a038e4db4886314ccd8f5636231}{parse\+\_\+insert}} (string input)
+\begin{DoxyCompactList}\small\item\em Insert a new book into the library. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgl__input_a7248cd404c62a7eec3320a1c94795dfe}{parse\+\_\+print}} (const std\+::string \&input)
+\begin{DoxyCompactList}\small\item\em Display the book details. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgl__input_a3366b00643086f0b3aec7ba93884715f}{parse\+\_\+borrow}} (const std\+::string \&input)
+\begin{DoxyCompactList}\small\item\em Borrow a book from the library. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgl__input_ac96457c61a01a5c116c8c42d227c063a}{parse\+\_\+prints}} (const std\+::string \&input)
+\begin{DoxyCompactList}\small\item\em Display the book details for all books in the range. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgl__input_aeea77865bd73e2701e186050f4bd480d}{parse\+\_\+return}} (const std\+::string \&input)
+\begin{DoxyCompactList}\small\item\em Return a book to the library. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgl__input_a8b49079e3caa356e876a1ca73dbb02b0}{parse\+\_\+delete}} (const std\+::string \&input)
+\begin{DoxyCompactList}\small\item\em Delete a book from the library. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgl__input_ae14132daff275eb39f4c25afe4b6f570}{parse\+\_\+colorflip}} (const std\+::string \&input)
+\begin{DoxyCompactList}\small\item\em Count the number of color flips in the red-\/black tree. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgl__input_a3355afbd09ac1671667a24bb6046631f}{parse\+\_\+findclosest}} (const std\+::string \&input)
+\begin{DoxyCompactList}\small\item\em Find the book Id closest to the target\+Id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgl__input_a86b7b6643a49247e2f3b5e784c327800}{parse\+\_\+quit}} (const std\+::string \&command)
+\begin{DoxyCompactList}\small\item\em Terminate the program. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgl__input_acdd81d4e3ed5502f7480d24685751406}{parse\+\_\+input}} (const string \&input)
+\begin{DoxyCompactList}\small\item\em Parse the input and call the appropriate functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classgl__input_a1fe6abc251739a0fa257acdc9688fc1e}\label{classgl__input_a1fe6abc251739a0fa257acdc9688fc1e} 
-void {\bfseries runwith\+\_\+stdin} ()
+\mbox{\hyperlink{class_gator_library}{Gator\+Library}} \mbox{\hyperlink{classgl__input_a6e0d809804de3a556b03f77243161dac}{library}}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to parse the input and call the appropriate functions
+
+This class provides functionality to parse the input and call the appropriate functions. 
+
+This file contains the implementation of the \doxylink{classgl__input}{gl\+\_\+input} class. The \doxylink{classgl__input}{gl\+\_\+input} class represents the input to the library system. This class provides functionality to parse the input and call the corresponding function. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgl__input_ae42190307b82dccd5d3caddc73c193e7}\label{classgl__input_ae42190307b82dccd5d3caddc73c193e7} 
+\index{gl\_input@{gl\_input}!gl\_input@{gl\_input}}
+\index{gl\_input@{gl\_input}!gl\_input@{gl\_input}}
+\doxysubsubsection{\texorpdfstring{gl\_input()}{gl\_input()}}
+{\footnotesize\ttfamily gl\+\_\+input\+::gl\+\_\+input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for \doxylink{classgl__input}{gl\+\_\+input} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgl__input_a3366b00643086f0b3aec7ba93884715f}\label{classgl__input_a3366b00643086f0b3aec7ba93884715f} 
+\index{gl\_input@{gl\_input}!parse\_borrow@{parse\_borrow}}
+\index{parse\_borrow@{parse\_borrow}!gl\_input@{gl\_input}}
+\doxysubsubsection{\texorpdfstring{parse\_borrow()}{parse\_borrow()}}
+{\footnotesize\ttfamily void gl\+\_\+input\+::parse\+\_\+borrow (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Borrow a book from the library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & String. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+This function borrows a book from the library. It takes the patron ID, book ID, and patron priority as parameters. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_a3366b00643086f0b3aec7ba93884715f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_a3366b00643086f0b3aec7ba93884715f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgl__input_ae14132daff275eb39f4c25afe4b6f570}\label{classgl__input_ae14132daff275eb39f4c25afe4b6f570} 
+\index{gl\_input@{gl\_input}!parse\_colorflip@{parse\_colorflip}}
+\index{parse\_colorflip@{parse\_colorflip}!gl\_input@{gl\_input}}
+\doxysubsubsection{\texorpdfstring{parse\_colorflip()}{parse\_colorflip()}}
+{\footnotesize\ttfamily void gl\+\_\+input\+::parse\+\_\+colorflip (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Count the number of color flips in the red-\/black tree. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_ae14132daff275eb39f4c25afe4b6f570_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_ae14132daff275eb39f4c25afe4b6f570_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgl__input_a8b49079e3caa356e876a1ca73dbb02b0}\label{classgl__input_a8b49079e3caa356e876a1ca73dbb02b0} 
+\index{gl\_input@{gl\_input}!parse\_delete@{parse\_delete}}
+\index{parse\_delete@{parse\_delete}!gl\_input@{gl\_input}}
+\doxysubsubsection{\texorpdfstring{parse\_delete()}{parse\_delete()}}
+{\footnotesize\ttfamily void gl\+\_\+input\+::parse\+\_\+delete (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Delete a book from the library. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_a8b49079e3caa356e876a1ca73dbb02b0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_a8b49079e3caa356e876a1ca73dbb02b0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgl__input_a3355afbd09ac1671667a24bb6046631f}\label{classgl__input_a3355afbd09ac1671667a24bb6046631f} 
+\index{gl\_input@{gl\_input}!parse\_findclosest@{parse\_findclosest}}
+\index{parse\_findclosest@{parse\_findclosest}!gl\_input@{gl\_input}}
+\doxysubsubsection{\texorpdfstring{parse\_findclosest()}{parse\_findclosest()}}
+{\footnotesize\ttfamily void gl\+\_\+input\+::parse\+\_\+findclosest (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Find the book Id closest to the target\+Id. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_a3355afbd09ac1671667a24bb6046631f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_a3355afbd09ac1671667a24bb6046631f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgl__input_acdd81d4e3ed5502f7480d24685751406}\label{classgl__input_acdd81d4e3ed5502f7480d24685751406} 
+\index{gl\_input@{gl\_input}!parse\_input@{parse\_input}}
+\index{parse\_input@{parse\_input}!gl\_input@{gl\_input}}
+\doxysubsubsection{\texorpdfstring{parse\_input()}{parse\_input()}}
+{\footnotesize\ttfamily void gl\+\_\+input\+::parse\+\_\+input (\begin{DoxyParamCaption}\item[{const string \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Parse the input and call the appropriate functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & String. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+This function parses the input and calls the corresponding function based on the operation request on the library. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_acdd81d4e3ed5502f7480d24685751406_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_acdd81d4e3ed5502f7480d24685751406_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgl__input_aeed43a038e4db4886314ccd8f5636231}\label{classgl__input_aeed43a038e4db4886314ccd8f5636231} 
+\index{gl\_input@{gl\_input}!parse\_insert@{parse\_insert}}
+\index{parse\_insert@{parse\_insert}!gl\_input@{gl\_input}}
+\doxysubsubsection{\texorpdfstring{parse\_insert()}{parse\_insert()}}
+{\footnotesize\ttfamily void gl\+\_\+input\+::parse\+\_\+insert (\begin{DoxyParamCaption}\item[{string}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Insert a new book into the library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & String. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+This function inserts a new book into the library. It takes the book ID, book name, author name, and availability status as parameters. It creates a new book object and inserts it into the red-\/black tree. The double quotes are ignored while reading the book name, author name, and availability status. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classgl__input_aeed43a038e4db4886314ccd8f5636231_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_aeed43a038e4db4886314ccd8f5636231_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgl__input_a7248cd404c62a7eec3320a1c94795dfe}\label{classgl__input_a7248cd404c62a7eec3320a1c94795dfe} 
+\index{gl\_input@{gl\_input}!parse\_print@{parse\_print}}
+\index{parse\_print@{parse\_print}!gl\_input@{gl\_input}}
+\doxysubsubsection{\texorpdfstring{parse\_print()}{parse\_print()}}
+{\footnotesize\ttfamily void gl\+\_\+input\+::parse\+\_\+print (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Display the book details. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & String. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+This function displays the details of a book. It takes the book ID as a parameter and prints the details of the book with the given ID. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classgl__input_a7248cd404c62a7eec3320a1c94795dfe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_a7248cd404c62a7eec3320a1c94795dfe_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgl__input_ac96457c61a01a5c116c8c42d227c063a}\label{classgl__input_ac96457c61a01a5c116c8c42d227c063a} 
+\index{gl\_input@{gl\_input}!parse\_prints@{parse\_prints}}
+\index{parse\_prints@{parse\_prints}!gl\_input@{gl\_input}}
+\doxysubsubsection{\texorpdfstring{parse\_prints()}{parse\_prints()}}
+{\footnotesize\ttfamily void gl\+\_\+input\+::parse\+\_\+prints (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Display the book details for all books in the range. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_ac96457c61a01a5c116c8c42d227c063a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_ac96457c61a01a5c116c8c42d227c063a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgl__input_a86b7b6643a49247e2f3b5e784c327800}\label{classgl__input_a86b7b6643a49247e2f3b5e784c327800} 
+\index{gl\_input@{gl\_input}!parse\_quit@{parse\_quit}}
+\index{parse\_quit@{parse\_quit}!gl\_input@{gl\_input}}
+\doxysubsubsection{\texorpdfstring{parse\_quit()}{parse\_quit()}}
+{\footnotesize\ttfamily void gl\+\_\+input\+::parse\+\_\+quit (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Terminate the program. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_a86b7b6643a49247e2f3b5e784c327800_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgl__input_aeea77865bd73e2701e186050f4bd480d}\label{classgl__input_aeea77865bd73e2701e186050f4bd480d} 
+\index{gl\_input@{gl\_input}!parse\_return@{parse\_return}}
+\index{parse\_return@{parse\_return}!gl\_input@{gl\_input}}
+\doxysubsubsection{\texorpdfstring{parse\_return()}{parse\_return()}}
+{\footnotesize\ttfamily void gl\+\_\+input\+::parse\+\_\+return (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Return a book to the library. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_aeea77865bd73e2701e186050f4bd480d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_aeea77865bd73e2701e186050f4bd480d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgl__input_a4e2234453b9936eb8b9785be0190d3ba}\label{classgl__input_a4e2234453b9936eb8b9785be0190d3ba} 
+\index{gl\_input@{gl\_input}!run@{run}}
+\index{run@{run}!gl\_input@{gl\_input}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void gl\+\_\+input\+::run (\begin{DoxyParamCaption}\item[{string}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Run the program with the given input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & String.\\
+\hline
+\end{DoxyParams}
+This function runs the program with the given input. \begin{DoxySeeAlso}{See also}
+\doxylink{classgl__input_a1fe6abc251739a0fa257acdc9688fc1e}{runwith\+\_\+stdin} run\+\_\+with\+\_\+file 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_a4e2234453b9936eb8b9785be0190d3ba_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgl__input_a89b0968d003461b808595b47c580b58d}\label{classgl__input_a89b0968d003461b808595b47c580b58d} 
+\index{gl\_input@{gl\_input}!runwith\_file@{runwith\_file}}
+\index{runwith\_file@{runwith\_file}!gl\_input@{gl\_input}}
+\doxysubsubsection{\texorpdfstring{runwith\_file()}{runwith\_file()}}
+{\footnotesize\ttfamily void gl\+\_\+input\+::runwith\+\_\+file (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Run the program with the given file. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_a89b0968d003461b808595b47c580b58d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{classgl__input_a89b0968d003461b808595b47c580b58d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgl__input_a1fe6abc251739a0fa257acdc9688fc1e}\label{classgl__input_a1fe6abc251739a0fa257acdc9688fc1e} 
+\index{gl\_input@{gl\_input}!runwith\_stdin@{runwith\_stdin}}
+\index{runwith\_stdin@{runwith\_stdin}!gl\_input@{gl\_input}}
+\doxysubsubsection{\texorpdfstring{runwith\_stdin()}{runwith\_stdin()}}
+{\footnotesize\ttfamily void gl\+\_\+input\+::runwith\+\_\+stdin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Run the program with the standard input. 
+
+This function runs the program with the standard input. \begin{DoxySeeAlso}{See also}
+\doxylink{classgl__input_a4e2234453b9936eb8b9785be0190d3ba}{run} run\+\_\+with\+\_\+file 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgl__input_a1fe6abc251739a0fa257acdc9688fc1e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{classgl__input_a1fe6abc251739a0fa257acdc9688fc1e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classgl__input_a6e0d809804de3a556b03f77243161dac}\label{classgl__input_a6e0d809804de3a556b03f77243161dac} 
+\index{gl\_input@{gl\_input}!library@{library}}
+\index{library@{library}!gl\_input@{gl\_input}}
+\doxysubsubsection{\texorpdfstring{library}{library}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gator_library}{Gator\+Library}} gl\+\_\+input\+::library\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-gl\+\_\+input.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{gl__input_8cpp}{gl\+\_\+input.\+cpp}}\end{DoxyCompactItemize}

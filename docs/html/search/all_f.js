@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['timeofreservation_0',['TimeOfReservation',['../classreservation.html#af5695488e4b1ff517aefffa925dd9fc7',1,'reservation']]],
-  ['top_1',['top',['../classpq__reservation.html#a020ac7d684f06fcf19a9f4d37f9adb26',1,'pq_reservation']]]
+  ['q_0',['Q',['../gl__input_8cpp.html#acbcee443d6d55cb8600b3f240f5cf907',1,'gl_input.cpp']]],
+  ['queue_1',['Priority queue',['../index.html#autotoc_md5',1,'']]]
 ];
