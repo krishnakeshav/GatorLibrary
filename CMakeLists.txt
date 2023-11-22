@@ -10,9 +10,10 @@ add_executable(gatorLibrary
     main.cpp
     book.cpp
     reservation.cpp
+    priority_queue.cpp
     redblack_tree.cpp
     gator_library.cpp
     gl_input.cpp
 )
 
-target_include_directories(gatorLibrary PRIVATE gatorLibrary)
+target_include_directories(gatorLibrary PRIVATE GatorLibrary)

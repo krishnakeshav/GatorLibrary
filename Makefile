@@ -225,6 +225,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+priority_queue.o: priority_queue.cpp.o
+.PHONY : priority_queue.o
+
+# target to build an object file
+priority_queue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o
+.PHONY : priority_queue.cpp.o
+
+priority_queue.i: priority_queue.cpp.i
+.PHONY : priority_queue.i
+
+# target to preprocess a source file
+priority_queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/priority_queue.cpp.i
+.PHONY : priority_queue.cpp.i
+
+priority_queue.s: priority_queue.cpp.s
+.PHONY : priority_queue.s
+
+# target to generate assembly for a file
+priority_queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gatorLibrary.dir/build.make CMakeFiles/gatorLibrary.dir/priority_queue.cpp.s
+.PHONY : priority_queue.cpp.s
+
 redblack_tree.o: redblack_tree.cpp.o
 .PHONY : redblack_tree.o
 
@@ -294,6 +318,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... priority_queue.o"
+	@echo "... priority_queue.i"
+	@echo "... priority_queue.s"
 	@echo "... redblack_tree.o"
 	@echo "... redblack_tree.i"
 	@echo "... redblack_tree.s"

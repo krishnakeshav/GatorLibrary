@@ -111,10 +111,24 @@ CMakeFiles/gatorLibrary.dir/reservation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gatorLibrary.dir/reservation.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/reservation.cpp -o CMakeFiles/gatorLibrary.dir/reservation.cpp.s
 
+CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o: CMakeFiles/gatorLibrary.dir/flags.make
+CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o: priority_queue.cpp
+CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o: CMakeFiles/gatorLibrary.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o -MF CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o.d -o CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o -c /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/priority_queue.cpp
+
+CMakeFiles/gatorLibrary.dir/priority_queue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gatorLibrary.dir/priority_queue.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/priority_queue.cpp > CMakeFiles/gatorLibrary.dir/priority_queue.cpp.i
+
+CMakeFiles/gatorLibrary.dir/priority_queue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gatorLibrary.dir/priority_queue.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/priority_queue.cpp -o CMakeFiles/gatorLibrary.dir/priority_queue.cpp.s
+
 CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o: CMakeFiles/gatorLibrary.dir/flags.make
 CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o: redblack_tree.cpp
 CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o: CMakeFiles/gatorLibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o -MF CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o.d -o CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o -c /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/redblack_tree.cpp
 
 CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.s: cmake_force
 CMakeFiles/gatorLibrary.dir/gator_library.cpp.o: CMakeFiles/gatorLibrary.dir/flags.make
 CMakeFiles/gatorLibrary.dir/gator_library.cpp.o: gator_library.cpp
 CMakeFiles/gatorLibrary.dir/gator_library.cpp.o: CMakeFiles/gatorLibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gatorLibrary.dir/gator_library.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gatorLibrary.dir/gator_library.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gatorLibrary.dir/gator_library.cpp.o -MF CMakeFiles/gatorLibrary.dir/gator_library.cpp.o.d -o CMakeFiles/gatorLibrary.dir/gator_library.cpp.o -c /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gator_library.cpp
 
 CMakeFiles/gatorLibrary.dir/gator_library.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/gatorLibrary.dir/gator_library.cpp.s: cmake_force
 CMakeFiles/gatorLibrary.dir/gl_input.cpp.o: CMakeFiles/gatorLibrary.dir/flags.make
 CMakeFiles/gatorLibrary.dir/gl_input.cpp.o: gl_input.cpp
 CMakeFiles/gatorLibrary.dir/gl_input.cpp.o: CMakeFiles/gatorLibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gatorLibrary.dir/gl_input.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gatorLibrary.dir/gl_input.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gatorLibrary.dir/gl_input.cpp.o -MF CMakeFiles/gatorLibrary.dir/gl_input.cpp.o.d -o CMakeFiles/gatorLibrary.dir/gl_input.cpp.o -c /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gl_input.cpp
 
 CMakeFiles/gatorLibrary.dir/gl_input.cpp.i: cmake_force
@@ -158,6 +172,7 @@ gatorLibrary_OBJECTS = \
 "CMakeFiles/gatorLibrary.dir/main.cpp.o" \
 "CMakeFiles/gatorLibrary.dir/book.cpp.o" \
 "CMakeFiles/gatorLibrary.dir/reservation.cpp.o" \
+"CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o" \
 "CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o" \
 "CMakeFiles/gatorLibrary.dir/gator_library.cpp.o" \
 "CMakeFiles/gatorLibrary.dir/gl_input.cpp.o"
@@ -168,12 +183,13 @@ gatorLibrary_EXTERNAL_OBJECTS =
 gatorLibrary: CMakeFiles/gatorLibrary.dir/main.cpp.o
 gatorLibrary: CMakeFiles/gatorLibrary.dir/book.cpp.o
 gatorLibrary: CMakeFiles/gatorLibrary.dir/reservation.cpp.o
+gatorLibrary: CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o
 gatorLibrary: CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o
 gatorLibrary: CMakeFiles/gatorLibrary.dir/gator_library.cpp.o
 gatorLibrary: CMakeFiles/gatorLibrary.dir/gl_input.cpp.o
 gatorLibrary: CMakeFiles/gatorLibrary.dir/build.make
 gatorLibrary: CMakeFiles/gatorLibrary.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable gatorLibrary"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable gatorLibrary"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gatorLibrary.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

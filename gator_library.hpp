@@ -1,3 +1,12 @@
+
+/**
+ * @brief The GatorLibrary class represents a library system.
+ * @class GatorLibrary
+ * This class provides functionality to manage books in the library,
+ * including inserting, borrowing, returning, and deleting books.
+ * It also provides functions to print book information, count color flips in the red-black tree,
+ * and find the closest book to a given book ID.
+ */
 #pragma once
 
 #include <string>

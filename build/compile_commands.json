@@ -1,32 +1,37 @@
 [
 {
   "directory": "/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gatorLibrary -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11 -o CMakeFiles/gatorLibrary.dir/main.cpp.o -c /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/main.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/GatorLibrary -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11 -o CMakeFiles/gatorLibrary.dir/main.cpp.o -c /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/main.cpp",
   "file": "/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/main.cpp"
 },
 {
   "directory": "/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gatorLibrary -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11 -o CMakeFiles/gatorLibrary.dir/book.cpp.o -c /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/book.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/GatorLibrary -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11 -o CMakeFiles/gatorLibrary.dir/book.cpp.o -c /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/book.cpp",
   "file": "/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/book.cpp"
 },
 {
   "directory": "/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gatorLibrary -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11 -o CMakeFiles/gatorLibrary.dir/reservation.cpp.o -c /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/reservation.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/GatorLibrary -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11 -o CMakeFiles/gatorLibrary.dir/reservation.cpp.o -c /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/reservation.cpp",
   "file": "/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/reservation.cpp"
 },
 {
   "directory": "/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gatorLibrary -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11 -o CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o -c /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/redblack_tree.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/GatorLibrary -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11 -o CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o -c /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/priority_queue.cpp",
+  "file": "/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/priority_queue.cpp"
+},
+{
+  "directory": "/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/GatorLibrary -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11 -o CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o -c /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/redblack_tree.cpp",
   "file": "/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/redblack_tree.cpp"
 },
 {
   "directory": "/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gatorLibrary -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11 -o CMakeFiles/gatorLibrary.dir/gator_library.cpp.o -c /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gator_library.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/GatorLibrary -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11 -o CMakeFiles/gatorLibrary.dir/gator_library.cpp.o -c /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gator_library.cpp",
   "file": "/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gator_library.cpp"
 },
 {
   "directory": "/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gatorLibrary -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11 -o CMakeFiles/gatorLibrary.dir/gl_input.cpp.o -c /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gl_input.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/GatorLibrary -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11 -o CMakeFiles/gatorLibrary.dir/gl_input.cpp.o -c /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gl_input.cpp",
   "file": "/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gl_input.cpp"
 }
 ]

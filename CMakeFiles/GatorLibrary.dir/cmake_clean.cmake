@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gatorLibrary.dir/gl_input.cpp.o.d"
   "CMakeFiles/gatorLibrary.dir/main.cpp.o"
   "CMakeFiles/gatorLibrary.dir/main.cpp.o.d"
+  "CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o"
+  "CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o.d"
   "CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o"
   "CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o.d"
   "CMakeFiles/gatorLibrary.dir/reservation.cpp.o"

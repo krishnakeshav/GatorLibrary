@@ -1,19 +1,35 @@
+/*
+    @file: gator_library.cpp
+    @class: GatorLibrary
+    @brief: Implementation of the GatorLibrary class
+    @details: This file contains the implementation of the GatorLibrary class.
+    The GatorLibrary class represents a library system.
+    This class provides functionality to manage books in the library,
+    including inserting, borrowing, returning, and deleting books.
+    It also provides functions to print book information, count color flips in the red-black tree,
+    and find the closest book to a given book ID.
+*/
+
 #include "gator_library.hpp"
 
 using namespace std;
 
+/// @brief Display the book details
+/// @param bookID Integer.
 void GatorLibrary::PrintBook(int bookID)
 {
     rbtnode* bookToPrint = rbtBooks.find(bookID);
     if (bookToPrint == nullptr)
     {
-        //cout << "BookID " << bookID << " not found in library" << endl;
         return;
     }
     bookToPrint->value.PrintBook();
     cout << endl;
 }
 
+/// @brief Display the book details for all books in the range
+/// @param bookID1
+/// @param bookID2
 void GatorLibrary::PrintBooks(int bookID1, int bookID2)
 {
     for (size_t bookId = bookID1; bookId <= bookID2; bookId++)
@@ -22,10 +38,11 @@ void GatorLibrary::PrintBooks(int bookID1, int bookID2)
     }
 }
 
+/// @brief Find the book Id closest to the targetId
+/// @param targetId Integer.
 void GatorLibrary::FindClosestBook(int targetId)
 {
     vector<int> closestBooks = rbtBooks.findclosest(targetId);
-    //cout << "Closes book(s) to " << targetId << " is/are = [";
     for (size_t i = 0; i < closestBooks.size(); i++)
     {
         PrintBook(closestBooks[i]);
@@ -33,12 +50,24 @@ void GatorLibrary::FindClosestBook(int targetId)
     }
 }
 
+/// @brief Insert a new book into the library
+/// @param bookID String.
+/// @param bookName String.
+/// @param authorName String.
+/// @param availabilityStatus String.
 void GatorLibrary::InsertBook(int bookID, string bookName, string authorName, string availabilityStatus)
 {
     book newBook(bookID, bookName, authorName, availabilityStatus);
     rbtBooks.add(newBook);
 }
 
+/// @brief Borrow a book from the library
+/// @param patronID Integer.
+/// @param bookID Integer.
+/// @param patronPriority Integer.
+/// @return True if the book is borrowed, false otherwise.
+/// @details If the book is not available, add the reservation to the book's reservation heap.
+///          Reservation heap is a priority queue of reservations.
 bool GatorLibrary::BorrowBook(int patronID, int bookID, int patronPriority)
 {
     bool ret = true;
@@ -69,6 +98,10 @@ bool GatorLibrary::BorrowBook(int patronID, int bookID, int patronPriority)
     return ret;
 }
 
+/// @brief Return a book to the library
+/// @param patronID Integer.
+/// @param bookID Integer.
+/// @details If the book is reserved, the book is borrowed by the next patron in the reservation heap.
 void GatorLibrary::ReturnBook(int patronID, int bookID)
 {
     rbtnode* bookToReturn = rbtBooks.find(bookID);
@@ -88,7 +121,7 @@ void GatorLibrary::ReturnBook(int patronID, int bookID)
             bookToReturn->value.ReservationHeap.pop();
             if (BorrowBook(nextReservation.PatronId, bookID, nextReservation.PriorityNumber))
             {
-                cout << "Book " << bookID << " Alloted by Patron " << patronID << endl;
+                cout << "Book " << bookID << " Allotted to Patron " << patronID << endl;
             }
         }
     }
@@ -98,6 +131,9 @@ void GatorLibrary::ReturnBook(int patronID, int bookID)
     }
 }
 
+/// @brief Delete a book from the library
+/// @param bookID Integer.
+/// @details If the book is borrowed, the reservation is cancelled for all the patrons.
 void GatorLibrary::DeleteBook(int bookID)
 {
     rbtnode* bookToDelete = rbtBooks.find(bookID);
@@ -107,7 +143,7 @@ void GatorLibrary::DeleteBook(int bookID)
         return;
     }
     
-    priority_queue<reservation, vector<reservation>, Compare> patrons = bookToDelete->value.ReservationHeap;
+    pq_reservation patrons = bookToDelete->value.ReservationHeap;
     vector<int> patronsToCancel;
 
     bool occupied = bookToDelete->value.AvailabilityStatus == NO;
@@ -116,11 +152,7 @@ void GatorLibrary::DeleteBook(int bookID)
     rbtBooks.remove(bookID);
     
     cout << "Book " << bookID << " is no longer available.";
-    if (occupied)
-    {
-        //cout << " Reservation made by Patron " << currentBorrower << " is cancelled!";
-        patronsToCancel.push_back(currentBorrower);
-    }
+
     while (!patrons.empty())
     {
         reservation nextReservation = patrons.top();
@@ -138,10 +170,13 @@ void GatorLibrary::DeleteBook(int bookID)
                 cout << ", ";
             }
         }
-        cout << " have been cancelled!" << endl;
+        cout << " have been cancelled!";
     }
+    cout << endl;
 }
 
+/// @brief Display the number of color flips in the red black tree
+/// @details Color flip count is the number of times the color of a node is flipped from red to black or vice versa.
 void GatorLibrary::ColorFlipCount()
 {
     cout << "Color Flip Count: " << rbtBooks.ColorFlipCount() << endl;

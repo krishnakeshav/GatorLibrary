@@ -1,0 +1,294 @@
+\doxysection{gl\+\_\+input.\+cpp}
+\hypertarget{gl__input_8cpp_source}{}\label{gl__input_8cpp_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ \ \ \ @file\ gl\_input.cpp}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ @brief\ Implementation\ of\ the\ gl\_input\ class}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ \ \ \ @details\ This\ file\ contains\ the\ implementation\ of\ the\ gl\_input\ class.}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ \ \ \ The\ gl\_input\ class\ represents\ the\ input\ to\ the\ library\ system.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ \ \ \ This\ class\ provides\ functionality\ to\ parse\ the\ input\ and\ call\ the\ corresponding\ function.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}gator\_library.hpp"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ INB\ string("{}InsertBook("{})}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ PB\ string("{}PrintBook("{})}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ PBS\ string("{}PrintBooks("{})}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ BB\ string("{}BorrowBook("{})}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ RB\ string("{}ReturnBook("{})}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ Q\ string("{}Quit("{})}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ DB\ string("{}DeleteBook("{})}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ CFC\ string("{}ColorFlipCount("{})}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ FCB\ string("{}FindClosestBook("{})}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ \ \ \ @brief\ Class\ to\ parse\ the\ input\ and\ call\ the\ appropriate\ functions}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ \ \ \ @class\ gl\_input}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ \ \ \ This\ class\ provides\ functionality\ to\ parse\ the\ input\ and\ call\ the\ appropriate\ functions.}}
+\DoxyCodeLine{00034\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classgl__input}{gl\_input}}}
+\DoxyCodeLine{00037\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_gator_library}{GatorLibrary}}\ library;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @brief\ Insert\ a\ new\ book\ into\ the\ library}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @param\ input\ String.}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @return\ void}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @details\ This\ function\ inserts\ a\ new\ book\ into\ the\ library.}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ It\ takes\ the\ book\ ID,\ book\ name,\ author\ name,\ and\ availability\ status\ as\ parameters.}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ It\ creates\ a\ new\ book\ object\ and\ inserts\ it\ into\ the\ red-\/black\ tree.}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ double\ quotes\ are\ ignored\ while\ reading\ the\ book\ name,\ author\ name,\ and\ availability\ status.}}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ parse\_insert(\textcolor{keywordtype}{string}\ input)\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ std::istringstream\ iss(input);}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ bookId;}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ title,\ author,\ availability;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ skip;\ \textcolor{comment}{//\ to\ skip\ the\ double\ quotes}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ discard;\ \ \textcolor{comment}{//\ To\ discard\ '('}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ iss.ignore(INB.length());\ \ \textcolor{comment}{//\ Ignore\ the\ macro\ name\ "{}InsertBook("{}}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ iss\ >>\ bookId\ >>\ discard;\ \ \textcolor{comment}{//\ Discard\ '('\ and\ read\ bookID}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ getline(getline(iss,\ skip,\ \textcolor{charliteral}{'"{}'}),\ title,\ \textcolor{charliteral}{'"{}'});\ \ \textcolor{comment}{//\ Read\ title\ until\ the\ next\ '"{}'\ and\ ignore\ the\ '"{}'}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ getline(getline(iss,\ skip,\ \textcolor{charliteral}{'"{}'}),\ author,\ \textcolor{charliteral}{'"{}'});\ \ \textcolor{comment}{//\ Read\ author\ until\ the\ next\ '"{}'\ and\ ignore\ the\ '"{}'}}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ getline(getline(iss,\ skip,\ \textcolor{charliteral}{'"{}'}),\ availability,\ \textcolor{charliteral}{'"{}'});\ \ \textcolor{comment}{//\ Read\ availability\ until\ the\ next\ '"{}'\ and\ ignore\ the\ '"{}'}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ library.\mbox{\hyperlink{class_gator_library_ad540160a89c5b6b9ec43f48371051f42}{InsertBook}}(bookId,\ title,\ author,\ availability);}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @brief\ Display\ the\ book\ details}}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @param\ input\ String.}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @return\ void}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @details\ This\ function\ displays\ the\ details\ of\ a\ book.}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ It\ takes\ the\ book\ ID\ as\ a\ parameter\ and\ prints\ the\ details\ of\ the\ book\ with\ the\ given\ ID.}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ parse\_print(\textcolor{keyword}{const}\ std::string\&\ input)\ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ bookID;}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ std::istringstream\ iss(input);}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ discard;\ \ \textcolor{comment}{//\ To\ discard\ '('}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Skip\ the\ macro\ name\ "{}PrintBook"{}\ and\ the\ opening\ parenthesis}}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ iss.ignore(PB.length());}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ iss\ >>\ bookID\ >>\ discard;\ \ \textcolor{comment}{//\ Discard\ '('\ and\ read\ bookID}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ library.\mbox{\hyperlink{class_gator_library_a1f19418782655c17b104421e2129982f}{PrintBook}}(bookID);}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @brief\ Borrow\ a\ book\ from\ the\ library}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @param\ input\ String.}}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @return\ void}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @details\ This\ function\ borrows\ a\ book\ from\ the\ library.}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ It\ takes\ the\ patron\ ID,\ book\ ID,\ and\ patron\ priority\ as\ parameters.}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ parse\_borrow(\textcolor{keyword}{const}\ std::string\&\ input)\ \{}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ patronID,\ bookID,\ patronPriority;}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ std::istringstream\ iss(input);}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ discard;\ \ \textcolor{comment}{//\ To\ discard\ '('}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Skip\ the\ macro\ name\ "{}BorrowBook"{}\ and\ the\ opening\ parenthesis}}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ iss.ignore(BB.length());}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ iss\ >>\ patronID\ >>\ discard\ >>\ bookID\ >>\ discard\ >>\ patronPriority\ >>\ discard;\ \ \textcolor{comment}{//\ Discard\ '('\ and\ read\ patronID}}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (library.\mbox{\hyperlink{class_gator_library_a467a91656bd4ca083699c86729277057}{BorrowBook}}(patronID,\ bookID,\ patronPriority))}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Book\ "{}}\ <<\ bookID\ <<\ \textcolor{stringliteral}{"{}\ Allocated\ to\ Patron\ "{}}\ <<\ patronID\ <<\ endl;}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ endl;}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @brief\ Display\ the\ book\ details\ for\ all\ books\ in\ the\ range}}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @param\ input\ String.}}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @return\ void}}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @details\ This\ function\ displays\ the\ details\ of\ all\ books\ in\ the\ range.}}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ It\ takes\ the\ book\ ID\ range\ as\ parameters\ and\ prints\ the\ details\ of\ all\ books\ in\ the\ range.}}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ parse\_prints(\textcolor{keyword}{const}\ std::string\&\ input)\ \{}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ bookID1,\ bookID2;}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ std::istringstream\ iss(input);}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ discard;\ \ \textcolor{comment}{//\ To\ discard\ '('}}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Skip\ the\ macro\ name\ "{}PrintBooks"{}\ and\ the\ opening\ parenthesis}}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ iss.ignore(PBS.length());}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ iss\ >>\ bookID1\ >>\ discard\ >>\ bookID2\ >>\ discard;\ \ \textcolor{comment}{//\ Discard\ '('\ and\ read\ bookID1\ and\ bookID2}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ library.\mbox{\hyperlink{class_gator_library_a85e968d5fdea85c2be8d6ba19c8c1f0a}{PrintBooks}}(bookID1,\ bookID2);}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @brief\ Return\ a\ book\ to\ the\ library}}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @param\ input\ String.}}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @return\ void}}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @details\ This\ function\ returns\ a\ book\ to\ the\ library.}}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ It\ produces\ the\ patron\ ID\ and\ book\ ID\ as\ parameters.}}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ parse\_return(\textcolor{keyword}{const}\ std::string\&\ input)\ \{}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ patronID,\ bookID;}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ std::istringstream\ iss(input);}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ discard;\ \textcolor{comment}{//\ To\ discard\ '('}}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Skip\ the\ macro\ name\ "{}ReturnBook"{}\ and\ the\ opening\ parenthesis}}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ iss.ignore(RB.length());}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ iss\ >>\ patronID\ >>\ discard\ >>\ bookID\ >>\ discard;\ \textcolor{comment}{//\ Discard\ '('\ and\ read\ patronID}}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ library.\mbox{\hyperlink{class_gator_library_ab40ed9fc49d838f9797d6e7aa1e3d4ed}{ReturnBook}}(patronID,\ bookID);}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ endl;}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @brief\ Delete\ a\ book\ from\ the\ library}}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @param\ input\ String.}}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @return\ void}}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @details\ This\ function\ deletes\ a\ book\ from\ the\ library.}}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ It\ produces\ the\ book\ ID\ as\ a\ parameter\ and\ deletes\ the\ book\ with\ the\ given\ ID.}}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ parse\_delete(\textcolor{keyword}{const}\ std::string\&\ input)\ \{}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ bookID;}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ std::istringstream\ iss(input);}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ discard;\ \ \textcolor{comment}{//\ To\ discard\ '('}}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Skip\ the\ macro\ name\ "{}DeleteBook"{}\ and\ the\ opening\ parenthesis}}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ iss.ignore(DB.length());}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ iss\ >>\ bookID\ >>\ discard;\ \ \textcolor{comment}{//\ Discard\ '('\ and\ read\ bookID}}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ library.\mbox{\hyperlink{class_gator_library_a1375b1f484f7eb778c3dfd11f6a15839}{DeleteBook}}(bookID);}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ endl;}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @brief\ Count\ the\ number\ of\ color\ flips\ in\ the\ red-\/black\ tree}}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @param\ input\ String.}}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @return\ void}}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @details\ This\ function\ counts\ the\ number\ of\ color\ flips\ in\ the\ red-\/black\ tree.}}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ parse\_colorflip(\textcolor{keyword}{const}\ std::string\&\ input)\ \{}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ library.\mbox{\hyperlink{class_gator_library_ac3634d61c160904cf59c602ad3fb655a}{ColorFlipCount}}();}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ endl;}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @brief\ Find\ the\ book\ Id\ closest\ to\ the\ targetId}}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @param\ input\ String.}}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @return\ void}}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @details\ This\ function\ finds\ the\ book\ ID\ closest\ to\ the\ target\ ID.}}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ It\ takes\ the\ target\ ID\ as\ a\ parameter\ and\ prints\ the\ details\ of\ the\ book\ closest\ to\ the\ target\ ID.}}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ parse\_findclosest(\textcolor{keyword}{const}\ std::string\&\ input)\ \{}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ targetId;}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ std::istringstream\ iss(input);}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ discard;\ \ \textcolor{comment}{//\ To\ discard\ '('}}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Skip\ the\ macro\ name\ "{}FindClosestBook"{}\ and\ the\ opening\ parenthesis}}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ iss.ignore(FCB.length());}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ iss\ >>\ targetId\ >>\ discard;\ \ \textcolor{comment}{//\ Discard\ '('\ and\ read\ targetId}}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ library.\mbox{\hyperlink{class_gator_library_abbfcbf67113738572dd7f6220517bca0}{FindClosestBook}}(targetId);}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @brief\ Terminate\ the\ program}}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @param\ input\ String.}}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @return\ void}}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @details\ This\ function\ terminates\ the\ program.}}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ parse\_quit(\textcolor{keyword}{const}\ std::string\&\ command)\ \{}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Program\ Terminated!!"{}}\ <<\ endl;}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @brief\ Parse\ the\ input\ and\ call\ the\ appropriate\ functions}}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @param\ input\ String.}}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @return\ void}}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @details\ This\ function\ parses\ the\ input\ and\ calls\ the\ corresponding\ function\ based\ on\ the\ operation\ request\ on\ the\ library.}}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ parse\_input(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ input)}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (input.find(INB)\ !=\ string::npos)\ \{}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ parse\_insert(input);}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (input.find(DB)\ !=\ string::npos)\ \{}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ parse\_delete(input);}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (input.find(CFC)\ !=\ string::npos)}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ parse\_colorflip(input);}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (input.find(FCB)\ !=\ string::npos)}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ parse\_findclosest(input);}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (input.find(PBS)\ !=\ string::npos)}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ parse\_prints(input);}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (input.find(PB)\ !=\ string::npos)}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ parse\_print(input);}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (input.find(BB)\ !=\ string::npos)}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ parse\_borrow(input);}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (input.find(RB)\ !=\ string::npos)}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ parse\_return(input);}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (input.find(Q)\ !=\ string::npos)}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ parse\_quit(input);}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ exit(0);}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ command"{}}\ <<\ endl;}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00245\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @brief\ Constructor\ for\ gl\_input\ class}}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classgl__input}{gl\_input}}()}
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \ \ \ \ library\ =\ \mbox{\hyperlink{class_gator_library}{GatorLibrary}}();}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @brief\ Run\ the\ program\ with\ the\ given\ file}}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @param\ filename\ String.}}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @return\ void}}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @details\ This\ function\ runs\ the\ program\ with\ the\ given\ file.}}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @see\ runwith\_stdin\ run}}
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ runwith\_file(\textcolor{keywordtype}{string}\ filename)}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ ifstream\ file(filename);}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ line;}
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (getline(file,\ line))}
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ parse\_input(line);}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00266\ }
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @brief\ Run\ the\ program\ with\ the\ given\ input}}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @param\ input\ String.}}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @return\ void}}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @details\ This\ function\ runs\ the\ program\ with\ the\ given\ input.}}
+\DoxyCodeLine{00271\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @see\ runwith\_stdin\ run\_with\_file}}
+\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ run(\textcolor{keywordtype}{string}\ input)}
+\DoxyCodeLine{00273\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00274\ \ \ \ \ \ \ \ \ \ \ \ \ parse\_input(input);}
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00276\ }
+\DoxyCodeLine{00277\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @brief\ Run\ the\ program\ with\ the\ standard\ input}}
+\DoxyCodeLine{00278\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @return\ void}}
+\DoxyCodeLine{00279\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @details\ This\ function\ runs\ the\ program\ with\ the\ standard\ input.}}
+\DoxyCodeLine{00280\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @see\ run\ run\_with\_file}}
+\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ runwith\_stdin()}
+\DoxyCodeLine{00282\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ input;}
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (getline(cin,\ input))}
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ parse\_input(input);}
+\DoxyCodeLine{00287\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00288\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00289\ \};}
+
+\end{DoxyCode}

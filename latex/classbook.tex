@@ -1,0 +1,87 @@
+\doxysection{book Class Reference}
+\hypertarget{classbook}{}\label{classbook}\index{book@{book}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classbook_a8e052ff5ca9ea81f810945ba77abfe1d}{Add\+Reservation}} (\mbox{\hyperlink{classreservation}{reservation}} new\+Reservation)
+\begin{DoxyCompactList}\small\item\em Add reservation for the patron in the reservation heap. \end{DoxyCompactList}\item 
+\Hypertarget{classbook_a788269f966a08a6780ee9c1443932af0}\label{classbook_a788269f966a08a6780ee9c1443932af0} 
+void {\bfseries Delete\+Reservation} (int patron\+ID)
+\item 
+\Hypertarget{classbook_a54b2fad21271748ca441329e97d2fc5e}\label{classbook_a54b2fad21271748ca441329e97d2fc5e} 
+void {\bfseries Print\+Book} ()
+\item 
+\Hypertarget{classbook_a48d39da017ded63c86fe746940d1991a}\label{classbook_a48d39da017ded63c86fe746940d1991a} 
+{\bfseries book} (int id, string name, string author, string availability\+Status)
+\item 
+\mbox{\hyperlink{classbook_a98ca199cecaf0490e35d5657071a30e0}{book}} (int id, string name, string author, \mbox{\hyperlink{utilities_8hpp_ac016fb47b0b9353584f9b15d67379900}{Book\+Availability}} available)
+\begin{DoxyCompactList}\small\item\em Constructor for book class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classbook_a2269c854494b84085d4e147540e102f1}\label{classbook_a2269c854494b84085d4e147540e102f1} 
+int {\bfseries Book\+Id}
+\item 
+\Hypertarget{classbook_aabf81a2670b3e611587f60185eabeb85}\label{classbook_aabf81a2670b3e611587f60185eabeb85} 
+string {\bfseries Book\+Name}
+\item 
+\Hypertarget{classbook_a374ee31e7a19d62d483dbcc34a4b3351}\label{classbook_a374ee31e7a19d62d483dbcc34a4b3351} 
+string {\bfseries Author\+Name}
+\item 
+\Hypertarget{classbook_a04cabe52b6bba198d849b66235d39024}\label{classbook_a04cabe52b6bba198d849b66235d39024} 
+\mbox{\hyperlink{utilities_8hpp_ac016fb47b0b9353584f9b15d67379900}{Book\+Availability}} {\bfseries Availability\+Status}
+\item 
+\Hypertarget{classbook_adfc5ffc1210c50c812795c41c6f3ffc9}\label{classbook_adfc5ffc1210c50c812795c41c6f3ffc9} 
+int {\bfseries Borrowed\+By}
+\item 
+\Hypertarget{classbook_a8ed95fa88d96348d7d3c54d332db5f32}\label{classbook_a8ed95fa88d96348d7d3c54d332db5f32} 
+\mbox{\hyperlink{classpq__reservation}{pq\+\_\+reservation}} {\bfseries Reservation\+Heap}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classbook_a98ca199cecaf0490e35d5657071a30e0}\label{classbook_a98ca199cecaf0490e35d5657071a30e0} 
+\index{book@{book}!book@{book}}
+\index{book@{book}!book@{book}}
+\doxysubsubsection{\texorpdfstring{book()}{book()}}
+{\footnotesize\ttfamily book\+::book (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{name,  }\item[{string}]{author,  }\item[{\mbox{\hyperlink{utilities_8hpp_ac016fb47b0b9353584f9b15d67379900}{Book\+Availability}}}]{available }\end{DoxyParamCaption})}
+
+
+
+Constructor for book class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & book id \\
+\hline
+{\em name} & book name \\
+\hline
+{\em author} & book author \\
+\hline
+{\em available} & book availability \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classbook_a8e052ff5ca9ea81f810945ba77abfe1d}\label{classbook_a8e052ff5ca9ea81f810945ba77abfe1d} 
+\index{book@{book}!AddReservation@{AddReservation}}
+\index{AddReservation@{AddReservation}!book@{book}}
+\doxysubsubsection{\texorpdfstring{AddReservation()}{AddReservation()}}
+{\footnotesize\ttfamily void book\+::\+Add\+Reservation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classreservation}{reservation}}}]{new\+Reservation }\end{DoxyParamCaption})}
+
+
+
+Add reservation for the patron in the reservation heap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Reservation} & reservation.\\
+\hline
+\end{DoxyParams}
+Add the reservation to the reservation heap. Reservation heap is a min heap based on priority number and time of reservation. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+book.\+hpp\item 
+book.\+cpp\end{DoxyCompactItemize}

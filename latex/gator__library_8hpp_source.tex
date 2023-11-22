@@ -1,0 +1,38 @@
+\doxysection{gator\+\_\+library.\+hpp}
+\hypertarget{gator__library_8hpp_source}{}\label{gator__library_8hpp_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}book.hpp"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{redblack__tree_8hpp}{redblack\_tree.hpp}}"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_gator_library}{GatorLibrary}}}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ rbtree\ rbtBooks;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ print\ functions}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gator_library_a1f19418782655c17b104421e2129982f}{PrintBook}}(\textcolor{keywordtype}{int}\ bookID);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gator_library_a85e968d5fdea85c2be8d6ba19c8c1f0a}{PrintBooks}}(\textcolor{keywordtype}{int}\ bookID1,\ \textcolor{keywordtype}{int}\ bookID2);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ operations}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gator_library_ad540160a89c5b6b9ec43f48371051f42}{InsertBook}}(\textcolor{keywordtype}{int}\ bookID,\ \textcolor{keywordtype}{string}\ bookName,\ \textcolor{keywordtype}{string}\ authorName,\ \textcolor{keywordtype}{string}\ availabilityStatus);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_gator_library_a467a91656bd4ca083699c86729277057}{BorrowBook}}(\textcolor{keywordtype}{int}\ patronID,\ \textcolor{keywordtype}{int}\ bookID,\ \textcolor{keywordtype}{int}\ patronPriority);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gator_library_ab40ed9fc49d838f9797d6e7aa1e3d4ed}{ReturnBook}}(\textcolor{keywordtype}{int}\ patronID,\ \textcolor{keywordtype}{int}\ bookID);}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gator_library_a1375b1f484f7eb778c3dfd11f6a15839}{DeleteBook}}(\textcolor{keywordtype}{int}\ bookID);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ info\ functions}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gator_library_ac3634d61c160904cf59c602ad3fb655a}{ColorFlipCount}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gator_library_abbfcbf67113738572dd7f6220517bca0}{FindClosestBook}}(\textcolor{keywordtype}{int}\ targetId);}
+\DoxyCodeLine{00041\ \};}
+
+\end{DoxyCode}

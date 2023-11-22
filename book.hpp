@@ -7,9 +7,23 @@
 
 #include "reservation.hpp"
 #include "utilities.hpp"
+#include "priority_queue.hpp"
 
 using namespace std;
 
+/*
+    @file book.hpp
+    @class book
+    @brief represents the book and details about the book.
+    @details
+    BookId: Unique identifier for the book.
+    BookName: Name of the book.
+    AuthorName: Name of the author.
+    AvailabilityStatus: Availability status of the book.
+    BorrowedBy: PatronId of the patron who borrowed the book.
+    ReservationHeap: Priority queue of reservations for the book.
+
+*/
 class book
 {
 
@@ -23,7 +37,8 @@ public:
     BookAvailability AvailabilityStatus;
     int BorrowedBy;
 
-    priority_queue<reservation, vector<reservation>, Compare> ReservationHeap;
+    // priority queue for reservations
+    pq_reservation ReservationHeap;
 
     void AddReservation(reservation newReservation);
     void DeleteReservation(int patronID);

@@ -115,7 +115,7 @@ void RBTree::fix_colorviolation(rbtnode *&rootnode, rbtnode *&node)
             // if uncle is also red, only recoloring is required
             if (uncle != nullptr && uncle->color == RED)
             {
-                color_flip_count += (grandparent->color != RED);
+                color_flip_count += (grandparent != root && grandparent->color != RED);
                 grandparent->color = RED;
 
                 color_flip_count += (parent_node->color != BLACK);
@@ -154,7 +154,7 @@ void RBTree::fix_colorviolation(rbtnode *&rootnode, rbtnode *&node)
             // uncle of parent is also red, only recoloring is required
             if (uncle != nullptr && uncle->color == Color::RED)
             {
-                color_flip_count += (grandparent->color != RED);
+                color_flip_count += (grandparent != root && grandparent->color != RED);
                 grandparent->color = Color::RED;
 
                 color_flip_count += (parent_node->color != BLACK);
@@ -177,25 +177,25 @@ void RBTree::fix_colorviolation(rbtnode *&rootnode, rbtnode *&node)
                 // if node is right child of parent, left rotation is required
                 rotate_left(rootnode, grandparent);
                 
-                Color pcolor = parent_node->color;
-                Color gcolor = grandparent->color;
                 swap(parent_node->color, grandparent->color);
-                color_flip_count += (pcolor != parent_node->color);
-                color_flip_count += (gcolor != grandparent->color);
+                color_flip_count += (parent_node->color != grandparent->color ? 2 : 0);
 
                 node = parent_node;
             }
         }
     }
     
-    color_flip_count += (rootnode->color != BLACK);
+    //color_flip_count += ((rootnode != nullptr) && rootnode->color != BLACK);
+    //color_flip_count += (rootnode->color != BLACK);
     rootnode->color = BLACK;
 }
 
 void RBTree::add(book book_info)
 {
     rbtnode* node = new rbtnode(book_info.BookId, book_info);
+    bool was_null = (root == nullptr);
     root = insert_node(root, node);
+    node->color = was_null ? Color::BLACK : Color::RED;
     fix_colorviolation(root, node);
 }
 
@@ -304,9 +304,8 @@ void RBTree::fix_double_black(rbtnode *node)
     {
         if (sibling->color == RED)
         {
-            Color last_color = parent->color;
+            color_flip_count += (parent->color != Color::RED);
             parent->color = RED;
-            color_flip_count += (last_color != parent->color);
 
             sibling->color = BLACK;
             color_flip_count++;
@@ -332,6 +331,7 @@ void RBTree::fix_double_black(rbtnode *node)
 
                         color_flip_count += (sibling->color != parent->color);
                         sibling->color = parent->color;
+                        
                         rotate_right(root, parent);
                     }
                     else
@@ -369,6 +369,7 @@ void RBTree::fix_double_black(rbtnode *node)
             }
             else
             {
+                // handle the case of 2 black children
                 color_flip_count += (sibling->color != RED);
                 sibling->color = RED;
 

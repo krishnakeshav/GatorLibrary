@@ -52,42 +52,49 @@ build cmake_object_order_depends_target_gatorLibrary: phony || CMakeFiles/gatorL
 build CMakeFiles/gatorLibrary.dir/main.cpp.o: CXX_COMPILER__gatorLibrary_Debug /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/main.cpp || cmake_object_order_depends_target_gatorLibrary
   DEP_FILE = CMakeFiles/gatorLibrary.dir/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11
-  INCLUDES = -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gatorLibrary
+  INCLUDES = -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/GatorLibrary
   OBJECT_DIR = CMakeFiles/gatorLibrary.dir
   OBJECT_FILE_DIR = CMakeFiles/gatorLibrary.dir
 
 build CMakeFiles/gatorLibrary.dir/book.cpp.o: CXX_COMPILER__gatorLibrary_Debug /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/book.cpp || cmake_object_order_depends_target_gatorLibrary
   DEP_FILE = CMakeFiles/gatorLibrary.dir/book.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11
-  INCLUDES = -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gatorLibrary
+  INCLUDES = -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/GatorLibrary
   OBJECT_DIR = CMakeFiles/gatorLibrary.dir
   OBJECT_FILE_DIR = CMakeFiles/gatorLibrary.dir
 
 build CMakeFiles/gatorLibrary.dir/reservation.cpp.o: CXX_COMPILER__gatorLibrary_Debug /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/reservation.cpp || cmake_object_order_depends_target_gatorLibrary
   DEP_FILE = CMakeFiles/gatorLibrary.dir/reservation.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11
-  INCLUDES = -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gatorLibrary
+  INCLUDES = -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/GatorLibrary
+  OBJECT_DIR = CMakeFiles/gatorLibrary.dir
+  OBJECT_FILE_DIR = CMakeFiles/gatorLibrary.dir
+
+build CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o: CXX_COMPILER__gatorLibrary_Debug /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/priority_queue.cpp || cmake_object_order_depends_target_gatorLibrary
+  DEP_FILE = CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11
+  INCLUDES = -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/GatorLibrary
   OBJECT_DIR = CMakeFiles/gatorLibrary.dir
   OBJECT_FILE_DIR = CMakeFiles/gatorLibrary.dir
 
 build CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o: CXX_COMPILER__gatorLibrary_Debug /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/redblack_tree.cpp || cmake_object_order_depends_target_gatorLibrary
   DEP_FILE = CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11
-  INCLUDES = -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gatorLibrary
+  INCLUDES = -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/GatorLibrary
   OBJECT_DIR = CMakeFiles/gatorLibrary.dir
   OBJECT_FILE_DIR = CMakeFiles/gatorLibrary.dir
 
 build CMakeFiles/gatorLibrary.dir/gator_library.cpp.o: CXX_COMPILER__gatorLibrary_Debug /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gator_library.cpp || cmake_object_order_depends_target_gatorLibrary
   DEP_FILE = CMakeFiles/gatorLibrary.dir/gator_library.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11
-  INCLUDES = -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gatorLibrary
+  INCLUDES = -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/GatorLibrary
   OBJECT_DIR = CMakeFiles/gatorLibrary.dir
   OBJECT_FILE_DIR = CMakeFiles/gatorLibrary.dir
 
 build CMakeFiles/gatorLibrary.dir/gl_input.cpp.o: CXX_COMPILER__gatorLibrary_Debug /Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gl_input.cpp || cmake_object_order_depends_target_gatorLibrary
   DEP_FILE = CMakeFiles/gatorLibrary.dir/gl_input.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu++11
-  INCLUDES = -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/gatorLibrary
+  INCLUDES = -I/Users/kkeshav/Desktop/UFL/courses/fall24/ads/GatorLibrary/GatorLibrary
   OBJECT_DIR = CMakeFiles/gatorLibrary.dir
   OBJECT_FILE_DIR = CMakeFiles/gatorLibrary.dir
 
@@ -99,7 +106,7 @@ build CMakeFiles/gatorLibrary.dir/gl_input.cpp.o: CXX_COMPILER__gatorLibrary_Deb
 #############################################
 # Link the executable gatorLibrary
 
-build gatorLibrary: CXX_EXECUTABLE_LINKER__gatorLibrary_Debug CMakeFiles/gatorLibrary.dir/main.cpp.o CMakeFiles/gatorLibrary.dir/book.cpp.o CMakeFiles/gatorLibrary.dir/reservation.cpp.o CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o CMakeFiles/gatorLibrary.dir/gator_library.cpp.o CMakeFiles/gatorLibrary.dir/gl_input.cpp.o
+build gatorLibrary: CXX_EXECUTABLE_LINKER__gatorLibrary_Debug CMakeFiles/gatorLibrary.dir/main.cpp.o CMakeFiles/gatorLibrary.dir/book.cpp.o CMakeFiles/gatorLibrary.dir/reservation.cpp.o CMakeFiles/gatorLibrary.dir/priority_queue.cpp.o CMakeFiles/gatorLibrary.dir/redblack_tree.cpp.o CMakeFiles/gatorLibrary.dir/gator_library.cpp.o CMakeFiles/gatorLibrary.dir/gl_input.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
   OBJECT_DIR = CMakeFiles/gatorLibrary.dir
   POST_BUILD = :
