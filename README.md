@@ -1,6 +1,9 @@
 # GatorLibrary
 Gator library project in C++ using implementation of Red Black tree and Priority queue.
 
+# Documentation
+https://krishnakeshav.github.io/GatorLibrary/
+
 ## Overview
 Implmentation of red black tree and priority queue using min heap in C++. Subsequently, demonstrate its usage to implment a library.
 
