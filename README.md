@@ -6,6 +6,7 @@ Implmentation of red black tree and priority queue using min heap in C++. Subseq
 
 ## Instructions to run
 ./make
+
 ./gatorLibrary "testcase1.txt" > out.txt
 
 ## Operations
@@ -18,6 +19,9 @@ Min heap - push, pop, top, get minimum
 
 ## Tools
 language - C++
+
 version - 17
+
 build - Cmake
+
 documentation - Doxygen
