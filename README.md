@@ -7,7 +7,10 @@ https://krishnakeshav.github.io/GatorLibrary/
 ## Overview
 Implmentation of red black tree and priority queue using min heap in C++. Subsequently, demonstrate its usage to implment a library.
 
-## Instructions to run
+## Instructions to build source and run
+
+cmake .
+
 ./make
 
 ./gatorLibrary "testcase1.txt" > out.txt
